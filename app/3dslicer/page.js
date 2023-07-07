@@ -1,5 +1,4 @@
 import Image from "next/image";
-import hero from "./assets/hero.png";
 import image1 from "./assets/image-1.png";
 import image2 from "./assets/image-2.png";
 import image3 from "./assets/image-3.png";
@@ -21,17 +20,9 @@ import image18 from "./assets/image-18.png";
 import image19 from "./assets/image-19.png";
 import image20 from "./assets/image-20.png";
 
-export default function Home() {
+export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 space-y-4">
-      <div className="flex flex-rows space-x-4">
-        <p>Mendiweb</p>
-        <p>Home</p>
-        <p>About</p>
-        <p>Tutorials</p>
-      </div>
-      <Image src={hero} width={1920} height={1080} />
-
       <div className="space-y-4">
         <div className="flex flex-row space-x-4">
           <Image src={image1} width={1000} height={600} />
@@ -177,29 +168,45 @@ export default function Home() {
               module.
             </p>
           </div>
-            <div>
-              <Image src={image13} width={1920} height={1080} />
-              <p>
-                Once in the segment editor module, click on the "
-                <span className="font-bold">Add</span>” button to add the
-                segment we will be working with.
-              </p>
-            </div>
+          <div>
+            <Image src={image13} width={1920} height={1080} />
+            <p>
+              Once in the segment editor module, click on the "
+              <span className="font-bold">Add</span>” button to add the segment
+              we will be working with.
+            </p>
+          </div>
         </div>
 
         <div>
           <Image src={image14} width={1920} height={1080} />
-          <p className="text-center">With a segment added, clicking the "<span className="font-bold">Color Selection Button</span>” will bring up a menu that will allow the user to select and assign different colors for different structures if so desired. For this activity, let us select bone. </p>
+          <p className="text-center">
+            With a segment added, clicking the "
+            <span className="font-bold">Color Selection Button</span>” will
+            bring up a menu that will allow the user to select and assign
+            different colors for different structures if so desired. For this
+            activity, let us select bone.{" "}
+          </p>
         </div>
 
         <div>
           <Image src={image15} width={1920} height={1080} />
-          <p className="text-center">To perform threshold based segmentation, click on the "<span className="font-bold">Threshold</span>” effect. </p>
+          <p className="text-center">
+            To perform threshold based segmentation, click on the "
+            <span className="font-bold">Threshold</span>” effect.{" "}
+          </p>
         </div>
 
         <div className="flex flex-row space-x-4">
           <Image src={image16} width={1920} height={1080} />
-          <p className="text-justify">Once the threshold effect has been activated, we can adjust the threshold range we desire to focus on. We can either input a specific number or drag the slider from left to right until we achieve our desired threshold. For the purpose of this activity, we will input 450 in the minimum threshold (left box) as indicated above. </p>
+          <p className="text-justify">
+            Once the threshold effect has been activated, we can adjust the
+            threshold range we desire to focus on. We can either input a
+            specific number or drag the slider from left to right until we
+            achieve our desired threshold. For the purpose of this activity, we
+            will input 450 in the minimum threshold (left box) as indicated
+            above.{" "}
+          </p>
         </div>
 
         <div>
@@ -209,16 +216,41 @@ export default function Home() {
 
         <div className="flex flex-row space-x-4">
           <Image src={image18} width={1920} height={1080} />
-          <p className="text-justify">With the threshold effect applied, click on the show 3D button to render the 3D image. Depending on the computer used, a short lag period may happen. If the 3D image does not appear in the upper right corner, we can click on the "<span className="font-bold">Center View</span> button on the upper left of the blue window. Clicking on the 3D image with the left mouse button will allow the user to move the 3D image. To zoom in and out, click and hold the right mouse button and drag until desired view is achieved. </p>
+          <p className="text-justify">
+            With the threshold effect applied, click on the show 3D button to
+            render the 3D image. Depending on the computer used, a short lag
+            period may happen. If the 3D image does not appear in the upper
+            right corner, we can click on the "
+            <span className="font-bold">Center View</span> button on the upper
+            left of the blue window. Clicking on the 3D image with the left
+            mouse button will allow the user to move the 3D image. To zoom in
+            and out, click and hold the right mouse button and drag until
+            desired view is achieved.{" "}
+          </p>
         </div>
 
         <div className="flex flex-row space-x-4">
           <Image src={image19} width={1920} height={1080} />
-          <p className="text-justify">Once we are satisfied with our 3D image, we may now save our file. We can choose to rename the file by clicking on the segmentation drop-down menu and select "<span className="font-bold">Rename Current Segmentation</span>". For the purpose of the exercise, let us rename it to “<span className="font-bold">Skull</span>”. We can now save our file as "<span className="font-bold">STL</span>" by clicking on the small down arrow on the right side of the segmentation button as indicated above to access the drop-down menu. Select export to files.</p>
+          <p className="text-justify">
+            Once we are satisfied with our 3D image, we may now save our file.
+            We can choose to rename the file by clicking on the segmentation
+            drop-down menu and select "
+            <span className="font-bold">Rename Current Segmentation</span>". For
+            the purpose of the exercise, let us rename it to “
+            <span className="font-bold">Skull</span>”. We can now save our file
+            as "<span className="font-bold">STL</span>" by clicking on the small
+            down arrow on the right side of the segmentation button as indicated
+            above to access the drop-down menu. Select export to files.
+          </p>
         </div>
         <div>
           <Image src={image20} width={1920} height={1080} />
-          <p className="text-center">Selecting export to files will prompt a small window to appear where the user can then select the destination folder by clicking on the file path as indicated above. Once the desired file destination is set, click export to save the file. </p>
+          <p className="text-center">
+            Selecting export to files will prompt a small window to appear where
+            the user can then select the destination folder by clicking on the
+            file path as indicated above. Once the desired file destination is
+            set, click export to save the file.{" "}
+          </p>
         </div>
       </div>
     </main>
