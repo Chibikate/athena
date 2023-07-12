@@ -11,8 +11,8 @@ export default function Page() {
     <div className="space-y-4">
       <div className="flex flex-row space-x-4 my-6">
         <Image src={Image1} width={450} height={300} />
-        <div className="space-y-4">
-          <p className="text-justify">
+        <div className="space-y-4 px-8">
+          <p className="text-justify font-semibold text-primary">
             The Web-based Tutorial on Virtual Surgical Planning for
             Reconstruction of Simple Mandibular Fractures is an innovative
             platform designed to empower surgeons and medical professionals in
@@ -22,7 +22,7 @@ export default function Page() {
             knowledge to ensure precise and successful procedures.
           </p>
           
-          <p>
+          <p className="text-justify font-semibold text-primary">
             With interactive modules, immersive visuals, and interactive
             simulations, this tutorial equips learners with the necessary skills
             to navigate the complexities of simple mandibular fracture
