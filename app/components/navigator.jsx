@@ -12,7 +12,7 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export default function Navigator() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className='flex flex-rows space-x-4 justify-between items-center bg-[#1d2d44] p-4'>
+    <div className='flex flex-rows space-x-4 justify-between items-center bg-primary p-4'>
       <div className='flex flex-rows items-center space-x-4'>
         <Link href={"/"}>
           <Image src={Logo} alt='mandiweb logo' />

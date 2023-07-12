@@ -12,10 +12,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={`${inter.className}`}>
         <Navigator />
-        <div className='py-4'>{children}</div>
+        {children}
         <Footer />
       </body>
     </html>
