@@ -14,14 +14,14 @@ export default function Navigator() {
   return (
     <div className='flex flex-rows space-x-4 justify-between items-center bg-primary p-4'>
       <div className='flex flex-rows items-center space-x-4'>
-        <Link href={"/"}>
+        <Link href={"/mandiweb"}>
           <Image src={Logo} alt='mandiweb logo' />
         </Link>
 
         <div>
           <p className={`${anton.className} text-xl text-white`}>MandiWeb</p>
           <p className={`font-medium text-white`}>
-            Web-based Tutorial on Virtual Planning for <br />
+            Web-based Tutorial on Virtual Surgical Planning for <br />
             Reconstruction of Simple Mandibular Fractures
           </p>
         </div>
@@ -31,13 +31,13 @@ export default function Navigator() {
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='flex items-center justify-between h-16'>
             <div className='ml-10 flex items-baseline space-x-4'>
-              <Link href='/'>
+              <Link href='/mandiweb'>
                 <p className='text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
                   Home
                 </p>
               </Link>
 
-              <Link href='/aboutus'>
+              <Link href='/mandiweb/aboutus'>
                 <p className='text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
                   About us
                 </p>
@@ -58,17 +58,17 @@ export default function Navigator() {
 
                 {isHovered && (
                   <div className='absolute right-2 mt-2 py-2 w-48 bg-white shadow-lg rounded-md'>
-                    <Link href='/thingstodownload'>
+                    <Link href='/mandiweb/thingstodownload'>
                       <p className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
                         Things to download
                       </p>
                     </Link>
-                    <Link href='/3dslicer'>
+                    <Link href='/mandiweb/3dslicer'>
                       <p className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
                         3D slicer
                       </p>
                     </Link>
-                    <Link href='/meshmixer'>
+                    <Link href='/mandiweb/meshmixer'>
                       <p className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
                         Meshmixer
                       </p>

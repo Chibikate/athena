@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col space-y-4">
       <p className={`text-3xl font-bold mx-16 text-primary my-4`}>
-        Web-based Tutorial on Virtual Planning <br />
+        Web-based Tutorial on Virtual Surgical Planning <br />
         for Reconstruction of Simple Mandibular Fractures
       </p>
 
