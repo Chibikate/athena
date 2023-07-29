@@ -8,9 +8,11 @@ import Image17 from "./assets/Image17.png";
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 space-y-4">
-      <div className="space-y-4">
-        <div className="flex flex-row space-x-4"></div>
-        <div className="flex flex-row space-x-4">
+      <div className="space-y-4 p-8">
+        <div className="flex flex-row space-x-4 items-center"> 
+        </div>
+      
+        <div className="flex flex-row space-x-4 bg-gray-100 p-8 rounded-lg shadow-md">
           <div>
             <Image src={Image13} width={1920} height={1080} />
             <p className="text-center">
@@ -28,7 +30,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div>
+        <div className="bg-gray-100 p-8 rounded-lg shadow-md">
           <div className="flex flex-row space-x-4">
             <Image src={Image15} width={570} height={600} />
             <p className="text-justify">
@@ -38,19 +40,22 @@ export default function Page() {
         </div>
 
         <div className="flex flex-row space-x-4">
-          <div>
+          <div className="bg-gray-100 p-8 rounded-lg shadow-md">
             <Image src={Image16} width={1920} height={1080} />
             <p className="text-center">To mirror the remaining mandible, click on "
               <span className="font-bold">Edit</span>” in the left toolbar and select “
               <span className="font-bold">Mirror</span>”.
             </p>
           </div>
-          <div>
+          <div className="bg-gray-100 p-8 rounded-lg shadow-md">
             <Image src={Image17} width={1920} height={1080} />
             <p className="text-center"> A mirror image of the selected part will appear. To bring the mandible together, click and drag the arrow as shown above or click on the desired area.
             </p>
           </div>
         </div>
+      </div>
+      <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
+        Next
       </div>
     </main>
   );
