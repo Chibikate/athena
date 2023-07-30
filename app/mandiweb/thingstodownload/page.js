@@ -48,8 +48,19 @@ export default function Page() {
             After you have downloaded the following software and files. You can
             now proceed to 3D Slicer.
           </p>
+          <div className="flex justify-end">
+          <div className="w-32 h-12 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8 cursor-pointer">
+            <Link href="/mandiweb/3dslicer">
+              Let's start!
+            </Link>
+          </div>
         </div>
+      </div>
       </div>
     </div>
   );
 }
+
+
+
+

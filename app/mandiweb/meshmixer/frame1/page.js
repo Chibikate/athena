@@ -4,6 +4,7 @@ import Image3 from "./assets/Image3.png";
 import Image4 from "./assets/Image4.png";
 import Image5 from "./assets/Image5.png";
 import Image6 from "./assets/Image6.png";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -66,8 +67,13 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-        Next
+      <div className="flex space-x-4 mt-8">
+        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
+          <Link href="/mandiweb/meshmixer">Back</Link>
+        </div>
+        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
+          <Link href="/mandiweb/meshmixer/frame2">Next</Link>
+        </div>
       </div>
     </main>
   );

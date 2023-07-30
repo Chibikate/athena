@@ -47,9 +47,13 @@ export default function Page() {
         </p>
       </div>
 
-
-        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8 cursor-pointer">
-          Next
+      <div className="flex space-x-4 mt-8">
+        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
+          <Link href="/mandiweb/3dslicer">Back</Link>
+        </div>
+        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
+          <Link href="/mandiweb/3dslicer/frame2">Next</Link>
+        </div>
         </div>
     </main>
   );

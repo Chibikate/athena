@@ -4,6 +4,7 @@ import image17 from "./assets/image-17.png";
 import image18 from "./assets/image-18.png";
 import image19 from "./assets/image-19.png";
 import image20 from "./assets/image-20.png";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -73,8 +74,13 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-        Next
+      <div className="flex space-x-4 mt-8">
+        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
+          <Link href="/mandiweb/3dslicer/frame3">Back</Link>
+        </div>
+        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
+          <Link href="/mandiweb/3dslicer/frame5">Next</Link>
+        </div>
       </div>
     </main>
   );
