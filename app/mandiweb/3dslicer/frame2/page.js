@@ -35,7 +35,7 @@ export default function Page() {
       <div className="bg-gray-100 p-8 rounded-lg shadow-md">
         <Image src={image6} width={1920} height={1080} />
         <p className="text-center mt-4">
-          Click on the "Magnifying Glass" icon on the toolbar, just left from
+          Click on the <span className="font-bold">"Magnifying Glass"</span>icon on the toolbar, just left from
           the module drop-down box to bring up the search function and type in "
           <span className="font-bold">Crop</span>". Select{" "}
           <span className="font-bold">Crop Volume</span> and click on{" "}
@@ -70,7 +70,7 @@ export default function Page() {
           focus must be on the midface and mandible cutting out the rest of the
           skull but making sure the temporomandibular joint is included. Once
           the region of interest is selected, click apply to apply the crop.
-          Click the "eye" icon once again to remove the bounding box.
+          Click the <span className="font-bold">"eye"</span> icon once again to remove the bounding box.
         </p>
       </div>
 

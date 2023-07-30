@@ -2,6 +2,7 @@ import Image from "next/image";
 import image2 from "./assets/image-2.png";
 import image3 from "./assets/image-3.png";
 import image4 from "./assets/image-4.png";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -12,7 +13,7 @@ export default function Page() {
           <div>
             <h3 className="text-2xl font-bold mb-4">Load DICOM to 3D Slicer</h3>
             <p>
-              Load the data by clicking on the "Load DICOM Data" button shown in
+              Load the data by clicking on the <span className="font-bold">"Load DICOM Data"</span> button shown in
               the picture.
             </p>
           </div>
@@ -23,7 +24,7 @@ export default function Page() {
         <Image src={image3} width={1920} height={1080} />
         <p className="text-center mt-4">
           After loading, your dataset should show in the list as shown above.
-          Click the "Patient Name" then click "Load"
+          Click the <span className="font-bold">"Patient Name" </span> then click <span className="font-bold">"Load"</span>
         </p>
       </div>
 
@@ -46,9 +47,10 @@ export default function Page() {
         </p>
       </div>
 
-      <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-        Next
-      </div>
+
+        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8 cursor-pointer">
+          Next
+        </div>
     </main>
   );
 }

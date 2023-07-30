@@ -29,7 +29,7 @@ export default function Page() {
             <p className="mt-4">
               Select{" "}
               <span className="font-bold">No series description cropped</span>{" "}
-              then choose "CT bone window level" as indicated above.
+              then choose <span className="font-bold">"CT bone window level"</span> as indicated above.
             </p>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Page() {
               <span className="font-bold">Color Selection Button</span> will
               bring up a menu that will allow the user to select and assign
               different colors for different structures if so desired. For this
-              activity, let us select "Bone."
+              activity, let us select <span className="font-bold">"Bone"</span>.
             </p>
           </div>
         </div>

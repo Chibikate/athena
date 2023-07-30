@@ -97,40 +97,9 @@ export default function Home() {
             authorName={"Kaye"}
             authorName2={"Kate"}
           />
-
-<Card
-            title={"Virtual Surgical Planning"}
-            subtitle={"For For Reconstruction of Simple Head and Nose "}
-            desc={
-              "Learn and discover the interactive learning activities, and practical insights into the reconstruction of simple mandibular fractures, ultimately enhancing knowledge acquisition and advancing healthcare practices."
-            }
-            logo={page}
-            color={"bg-[#dde40c]"}
-            textColor={"text-[#dde40c]"}
-            author={kaye}
-            author2={kate}
-            authorName={"Kaye"}
-            authorName2={"Kate"}
-          />
-
-<Card
-            title={"Virtual Surgical Planning"}
-            subtitle={"For Reconstruction of Complex Manduibular Fractures"}
-            desc={
-              "Learn and discover the interactive learning activities, and practical insights into the reconstruction of simple mandibular fractures, ultimately enhancing knowledge acquisition and advancing healthcare practices."
-            }
-            logo={page}
-            color={"bg-[#bd2a36]"}
-            textColor={"text-[#bd2a36]"}
-            author={kaye}
-            author2={kate}
-            authorName={"Kaye"}
-            authorName2={"Kate"}
-          />
-
-          </div>
-        </div>
-      </div>
+</div>
+</div>
+</div>
     </main>
   );
 }
