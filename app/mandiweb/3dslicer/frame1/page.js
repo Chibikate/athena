@@ -2,6 +2,10 @@ import Image from "next/image";
 import image2 from "./assets/image-2.png";
 import image3 from "./assets/image-3.png";
 import image4 from "./assets/image-4.png";
+import image1 from "./assets/image-1.png";
+import image5 from "./assets/image-5.png";
+import image6 from "./assets/image-6.png";
+
 import Link from "next/link";
 
 export default function Page() {
@@ -9,7 +13,7 @@ export default function Page() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 space-y-4">
       <div className="space-y-4 bg-gray-100 p-8 rounded-lg shadow-md">
         <div className="flex flex-row space-x-4 items-center">
-          <Image src={image2} width={1920} height={1080} />
+          <Image src={image1} width={1920} height={1080} />
           <div>
             <h3 className="text-2xl font-bold mb-4">Load DICOM to 3D Slicer</h3>
             <p>
@@ -20,8 +24,29 @@ export default function Page() {
         </div>
       </div>
 
+      <div className="space-y-4 bg-gray-100 p-8 rounded-lg shadow-md"> 
+      <div  className="flex flex-row space-x-4 items-center">
+        <Image src={image2} width={1850} height={1080} />
+        <h3 className="text-2xl font-bold mb-4">Add Dicom data</h3>
+      </div>
+        </div>
+
+        <div className="space-y-4 bg-gray-100 p-8 rounded-lg shadow-md"> 
+      <div  className="flex flex-row space-x-4 items-center">
+        <Image src={image3} width={1850} height={1080} />
+        <h3 className="text-2xl font-bold mb-4">Import Files</h3>
+      </div>
+        </div>
+
+        <div className="space-y-4 bg-gray-100 p-8 rounded-lg shadow-md"> 
+      <div  className="flex flex-row space-x-4 items-center">
+        <Image src={image4} width={1850} height={1080} />
+        <h3 className="text-2xl font-bold mb-4">Select the downloaded folder and click import</h3>
+      </div>
+        </div>
+
       <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-        <Image src={image3} width={1920} height={1080} />
+        <Image src={image5} width={1920} height={1080} />
         <p className="text-center mt-4">
           After loading, your dataset should show in the list as shown above.
           Click the <span className="font-bold">"Patient Name" </span> then click <span className="font-bold">"Load"</span>
@@ -29,7 +54,7 @@ export default function Page() {
       </div>
 
       <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-        <Image src={image4} width={800} height={750} />
+        <Image src={image6} width={800} height={750} />
         <p className="text-justify mt-4">
           The CT scan files should show up once the DICOM files are done
           loading. To zoom in and out, hold "

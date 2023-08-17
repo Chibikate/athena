@@ -24,7 +24,7 @@ export default function Page() {
           <Link href="/mandiweb/3dslicer/frame4">Back</Link>
         </div>
         <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-          <Link href="/mandiweb/3dslicer/frame6">Next</Link>
+          <Link href="/mandiweb/meshmixer">Quiz</Link>
         </div>
         </div>
     </main>
