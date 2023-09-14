@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Image1 from "./assets/Image1.png";
+import Image1 from "./assets/image1.png";
 import Link from "next/link";
 
 export default function Page() {
