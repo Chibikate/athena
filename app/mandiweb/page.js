@@ -9,14 +9,22 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center space-y-4">
       <div className="relative rounded-lg shadow-lg overflow-hidden">
-        <Image src={hero} width={1920} height={800} />
+        <Image
+          alt="Somethings never change"
+          src={hero}
+          width={1920}
+          height={800}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
         <div className="absolute bottom-0 left-0 p-8 text-white">
-          <p className="text-2xl font-bold mb-4">Welcome to the Virtual Surgical Planning Tutorial!</p>
+          <p className="text-2xl font-bold mb-4">
+            Welcome to the Virtual Surgical Planning Tutorial!
+          </p>
           <p className="text-xl font-semibold">
-            Are you ready to embark on a transformative learning journey? Explore our
-            interactive modules, immersive visuals, and cutting-edge virtual surgical
-            planning techniques to master the art of mandibular fracture reconstruction.
+            Are you ready to embark on a transformative learning journey?
+            Explore our interactive modules, immersive visuals, and cutting-edge
+            virtual surgical planning techniques to master the art of mandibular
+            fracture reconstruction.
           </p>
         </div>
       </div>
@@ -52,13 +60,24 @@ export default function Home() {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </div>
         <div className="flex flex-row space-x-16 items-center">
           <Link href="mandiweb/thingstodownload">
             <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">
-              <Image src={Image2} width={200} height={150} className="rounded-md" />
+              <Image
+                alt="Somethings never change"
+                src={Image2}
+                width={200}
+                height={150}
+                className="rounded-md"
+              />
               <p className="text-center font-bold text-primary hover:text-secondary">
                 Things to download
               </p>
@@ -67,15 +86,31 @@ export default function Home() {
 
           <Link href="mandiweb/3dslicer">
             <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">
-              <Image src={Image4} width={200} height={150} className="rounded-md" />
-              <p className="text-center font-bold text-primary hover:text-secondary">3D slicer</p>
+              <Image
+                alt="Somethings never change"
+                src={Image4}
+                width={200}
+                height={150}
+                className="rounded-md"
+              />
+              <p className="text-center font-bold text-primary hover:text-secondary">
+                3D slicer
+              </p>
             </div>
           </Link>
 
           <Link href="mandiweb/meshmixer">
             <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">
-              <Image src={Image3} width={200} height={150} className="rounded-md" />
-              <p className="text-center font-bold text-primary hover:text-secondary">Meshmixer</p>
+              <Image
+                alt="Somethings never change"
+                src={Image3}
+                width={200}
+                height={150}
+                className="rounded-md"
+              />
+              <p className="text-center font-bold text-primary hover:text-secondary">
+                Meshmixer
+              </p>
             </div>
           </Link>
         </div>
