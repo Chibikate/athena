@@ -13,7 +13,12 @@ export default function Page() {
 
         <div className="bg-gray-100 p-8 rounded-lg shadow-md">
           <div className="flex flex-row space-x-4">
-            <Image src={Image18} width={570} height={600} />
+            <Image
+              alt="Somethings never change"
+              src={Image18}
+              width={570}
+              height={600}
+            />
             <p className="text-justify">
               To recreate the diseased side in reference to the remaining
               anatomy, we can unhide the remaining part by clicking on “
@@ -27,30 +32,49 @@ export default function Page() {
 
         <div className="flex flex-row space-x-4 bg-gray-100 p-8 rounded-lg shadow-md">
           <div>
-            <Image src={Image19} width={1920} height={1080} />
+            <Image
+              alt="Somethings never change"
+              src={Image19}
+              width={1920}
+              height={1080}
+            />
             <p className="text-center">
               Since the mandible is still a mesh, we have to make the model into
               a solid that could be 3D printed. To do this, click on “Edit” on
-              the left toolbar and click on “Make Solid”. .
+              the left toolbar and click on &ldquo;Make Solid&rdquo;.
             </p>
           </div>
           <div>
-            <Image src={Image20} width={1920} height={1080} />
+            <Image
+              alt="Somethings never change"
+              src={Image20}
+              width={1920}
+              height={1080}
+            />
             <p className="text-center">
               {" "}
-              Apply the “<span className="font-bold">Make Solid</span>” function
-              by clicking on “<span className="font-bold">Accept</span>".
+              Apply the &ldquo;<span className="font-bold">Make Solid</span>
+              &rdquo; function by clicking on &ldquo;
+              <span className="font-bold">Accept</span>
+              &rdquo;.
             </p>
           </div>
         </div>
 
         <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-          <Image src={Image21} width={1920} height={1080} />
+          <Image
+            alt="Somethings never change"
+            src={Image21}
+            width={1920}
+            height={1080}
+          />
           <p className="text-center">
-            To save as "<span className="font-bold">.STL</span>", click on “
-            <span className="font-bold">File</span>” in the top toolbar and
-            select “<span className="font-bold">Export</span>” or access it via
-            its hotkey “<span className="font-bold">Ctrl+E</span>”.
+            To save as &ldquo;<span className="font-bold">.STL</span>&rdquo;,
+            click on &ldquo;<span className="font-bold">File</span>&rdquo; in
+            the top toolbar and select &ldquo;
+            <span className="font-bold">Export</span>&rdquo; or access it via
+            its hotkey &ldquo;<span className="font-bold">Ctrl+E</span>
+            &rdquo;.
           </p>
         </div>
       </div>
@@ -60,7 +84,7 @@ export default function Page() {
           <Link href="/mandiweb/meshmixer/frame3">Back</Link>
         </div>
         <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-        Next
+          Next
         </div>
       </div>
     </main>
