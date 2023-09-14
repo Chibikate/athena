@@ -14,8 +14,12 @@ export default function Page() {
         <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
           <div>
             <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-
-            <Image src={image10} width={1920} height={1080} />
+              <Image
+                alt="somethings never change"
+                src={image10}
+                width={1920}
+                height={1080}
+              />
             </div>
             <p className="mt-4">
               Click on the module drop-down menu and select the{" "}
@@ -24,13 +28,21 @@ export default function Page() {
           </div>
           <div>
             <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-
-            <Image src={image11} width={1920} height={1080} />
+              <Image
+                alt="somethings never change"
+                src={image11}
+                width={1920}
+                height={1080}
+              />
             </div>
             <p className="mt-4">
               Select{" "}
               <span className="font-bold">No series description cropped</span>{" "}
-              then choose <span className="font-bold">"CT bone window level"</span> as indicated above.
+              then choose{" "}
+              <span className="font-bold">
+                &ldquo;CT bone window level&rdquo;
+              </span>{" "}
+              as indicated above.
             </p>
           </div>
         </div>
@@ -38,18 +50,27 @@ export default function Page() {
         <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
           <div>
             <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-
-     <Image src={image12} width={1920} height={1080} />
-            </ div>
+              <Image
+                alt="somethings never change"
+                src={image12}
+                width={1920}
+                height={1080}
+              />
+            </div>
             <p className="mt-4">
               Once again, click on the module drop-down menu from the toolbar
-              and select the{" "}
-              <span className="font-bold">Segment Editor</span> module.
+              and select the <span className="font-bold">Segment Editor</span>{" "}
+              module.
             </p>
           </div>
           <div>
             <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-              <Image src={image13} width={1920} height={1080} />
+              <Image
+                alt="somethings never change"
+                src={image13}
+                width={1920}
+                height={1080}
+              />
             </div>
             <p className="mt-4">
               Once in the segment editor module, click on the{" "}
@@ -61,20 +82,31 @@ export default function Page() {
 
         <div className="bg-gray-100 p-8 rounded-lg shadow-md">
           <div className="flex flex-col items-center">
-            <Image src={image14} width={1920} height={1080} />
+            <Image
+              alt="somethings never change"
+              src={image14}
+              width={1920}
+              height={1080}
+            />
             <p className="mt-4 text-center">
               With a segment added, clicking the{" "}
               <span className="font-bold">Color Selection Button</span> will
               bring up a menu that will allow the user to select and assign
               different colors for different structures if so desired. For this
-              activity, let us select <span className="font-bold">"Bone"</span>.
+              activity, let us select{" "}
+              <span className="font-bold">&ldquo;Bone&rdquo;</span>.
             </p>
           </div>
         </div>
 
         <div className="bg-gray-100 p-8 rounded-lg shadow-md">
           <div className="flex flex-col items-center">
-            <Image src={image15} width={1920} height={1080} />
+            <Image
+              alt="somethings never change"
+              src={image15}
+              width={1920}
+              height={1080}
+            />
             <p className="mt-4 text-center">
               To perform threshold-based segmentation, click on the{" "}
               <span className="font-bold">Threshold</span> effect.
@@ -90,7 +122,7 @@ export default function Page() {
         <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
           <Link href="/mandiweb/3dslicer/frame4">Next</Link>
         </div>
-        </div>
+      </div>
     </main>
   );
 }
