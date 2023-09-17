@@ -44,20 +44,20 @@ const quizQuestions = [
       "  C. Nothing.",
       "  D. Provides a workspace for annotations.",
     ],
-    correctAnswer: "A. It is where the 3D image will be shown once activated)",
+    correctAnswer: "A. It is where the 3D image will be shown once activated.",
   },
   {
     question:
       `5.Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized? 
       i.) Crop Volume  ii.) Volume Rendering   iii.)segment editor   iv) Volumes   v.)Threshold`,
     options: ["  A. i, iii, iv", "  B. i, ii, iii", "  C. ii, iv, v", "  D. i, ii, iv"],
-    correctAnswer: "A. i, iii, iv)",
+    correctAnswer: "A. i, iii, iv",
   },
   {
     question:
       "6. What file format is often used in 3D printing to describe the surface geometry of objects, allowing them to be produced with precision using additive manufacturing?",
     options: ["  A. STL", "  B. PNG", "  C. DOCX", "  D. MP3"],
-    correctAnswer: "A. STL)",
+    correctAnswer: "A. STL",
   },
   {
     question: "7. What does the abbreviation \"STL\" stand for?",
@@ -67,7 +67,7 @@ const quizQuestions = [
       "  C. Structured Texture Lexicon",
       "  D. Standard Tessellation Language",
     ],
-    correctAnswer: "D. Standard Tessellation Language)",
+    correctAnswer: "D. Standard Tessellation Language",
   },
 ];
 
@@ -77,14 +77,15 @@ export default function QuizApp() {
 
   const handleAnswerChange = (event, questionIndex) => {
     const updatedAnswers = [...userAnswers];
-    updatedAnswers[questionIndex] = event.target.value.trim(); // Trim the user's answer
+    updatedAnswers[questionIndex] = event.target.value.trim(); // Trim to remove extra spaces
     setUserAnswers(updatedAnswers);
   };
 
   const calculateScore = () => {
     let score = 0;
     userAnswers.forEach((answer, index) => {
-      if (answer === quizQuestions[index].correctAnswer.trim()) { // Trim the correct answer
+      // Compare only the selected letter (e.g., "A.") against the correct letter (e.g., "A.")
+      if (answer === quizQuestions[index].correctAnswer) {
         score++;
       }
     });
@@ -100,7 +101,7 @@ export default function QuizApp() {
 
   return (
     <div className="quiz-container" style={quizContainerStyle}>
-      <h1 style={{ textAlign: "center" }}>3D Slicer Quiz</h1>
+      <h1 style={{ textAlign: "center" }}>MeshMixer Quiz</h1>
       {!showResults ? (
         <div>
           {quizQuestions.map((question, index) => (
@@ -115,7 +116,7 @@ export default function QuizApp() {
                         name={`question-${index}`}
                         value={option}
                         onChange={(e) => handleAnswerChange(e, index)}
-                        checked={userAnswers[index] === option.trim()} // Trim the user's answer for comparison
+                        checked={userAnswers[index] === option.trim()}
                       />
                       {option}
                     </label>
@@ -124,22 +125,37 @@ export default function QuizApp() {
               </ul>
             </div>
           ))}
-          <button onClick={() => {setShowResults(true); console.log(userAnswers)}} style={submitButtonStyle}>Submit</button>
+          {score === quizQuestions.length ? (
+            <div>
+              <p>Your Score: {score} out of {quizQuestions.length}</p>
+              <p>Congratulations! You passed the quiz.</p>
+              <a href="/mandiweb/meshmixer">Click here to proceed Meshmixer</a>
+            </div>
+          ) : (
+            <button onClick={() => setShowResults(true)} style={submitButtonStyle}>
+              Submit
+            </button>
+          )}
         </div>
       ) : (
         <div>
           <p>Your Score: {score} out of {quizQuestions.length}</p>
           {score === quizQuestions.length ? (
-            <p>Congratulations! You passed the quiz.</p>
+            <a href="/mandiweb/meshmixer">Click here to proceed Meshmixer</a>
           ) : (
-            <p>Sorry, you didn't pass. You can retake the quiz to improve your score.</p>
+            <div>
+              <p>Sorry, you didn't pass. You can retake the quiz to improve your score.</p>
+              <button onClick={retakeQuiz} style={retakeButtonStyle}>
+                Retake Quiz
+              </button>
+            </div>
           )}
-          <button onClick={retakeQuiz} style={retakeButtonStyle}>Retake Quiz</button>
         </div>
       )}
     </div>
   );
 }
+
 
 const quizContainerStyle = {
   width: "70%",

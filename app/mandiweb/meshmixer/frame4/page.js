@@ -84,7 +84,7 @@ export default function Page() {
           <Link href="/mandiweb/meshmixer/frame3">Back</Link>
         </div>
         <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-          Next
+          <Link href="/mandiweb/meshmixer/frame5">Next</Link>
         </div>
       </div>
     </main>
