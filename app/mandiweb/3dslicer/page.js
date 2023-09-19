@@ -12,10 +12,17 @@ export default function Page() {
     <div className="bg-white rounded-lg shadow-md p-6">
       <div className="flex items-center space-x-4">
         <div className="w-1/2">
-          <Image src={Image1} width={800} height={300} alt="Image Description" />
+          <Image
+            src={Image1}
+            width={800}
+            height={300}
+            alt="Image Description"
+          />
         </div>
         <div className="w-1/2">
-          <h2 className="text-3xl font-bold mb-2">Conversion of DICOM to STL</h2>
+          <h2 className="text-3xl font-bold mb-2">
+            Conversion of DICOM to STL
+          </h2>
           <div className="h-1 bg-gray-300"></div>
           <ul className="mt-4 space-y-2">
             <ListItem text="Discover how to navigate the 3D slicer's user interface." />
@@ -28,7 +35,7 @@ export default function Page() {
 
       <div className="flex justify-end mt-4">
         <div className="w-32 h-12 bg-primary flex items-center justify-center text-white font-bold rounded-lg shadow-md cursor-pointer">
-          <Link href="/mandiweb/3dslicer/frame1">Continue!</Link>
+          <Link href="/mandiweb/3dslicer/screen">Continue!</Link>
         </div>
       </div>
     </div>
