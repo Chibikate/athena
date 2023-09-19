@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Anton } from "next/font/google";
 
 import Logo from "../assets/Logo.svg";
-import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
@@ -15,7 +14,11 @@ export default function Navigator() {
     <div className="flex flex-rows space-x-4 justify-between items-center bg-primary p-4">
       <div className="flex flex-rows items-center space-x-4">
         <Link href={"/mandiweb"}>
-          <Image src={Logo} alt="mandiweb logo" />
+          <Image
+            src={Logo}
+            alt="mandiweb logo"
+            className="transform transition duration-300 hover:scale-105"
+          />
         </Link>
 
         <div>

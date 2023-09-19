@@ -51,22 +51,8 @@ export default function Home() {
       </div>
 
       <div className="flex items-center justify-center space-y-4 py-4">
-        <div className="text-primary flex items-center cursor-pointer hover:text-secondary">
-          <p className="mr-2">Click here to start</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-primary"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
+        <div className="text-primary flex items-center cursor-pointer pr-4 transform transition duration-300 hover:scale-105">
+          <p className="mr-2">Click here to start →</p>
         </div>
         <div className="flex flex-row space-x-16 items-center">
           <Link href="mandiweb/thingstodownload">
