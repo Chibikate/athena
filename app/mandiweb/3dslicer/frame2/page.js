@@ -1,9 +1,5 @@
 import Image from "next/image";
 import image5 from "./assets/image-5.png";
-import image6 from "./assets/image-6.png";
-import image7 from "./assets/image-7.png";
-import image8 from "./assets/image-8.png";
-import image9 from "./assets/image-9.png";
 import Link from "next/link";
 
 export default function Page() {
@@ -26,67 +22,12 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-        <Image alt="something never " src={image6} width={1920} height={1080} />
-        <p className="text-center mt-4">
-          Click on the{" "}
-          <span className="font-bold">&ldquo;Magnifying Glass&rdquo;</span>icon
-          on the toolbar, just left from the module drop-down box to bring up
-          the search function and type in &ldquo;
-          <span className="font-bold">Crop</span>&rdquo;. Select{" "}
-          <span className="font-bold">Crop Volume</span> and click on{" "}
-          <span className="font-bold">Switch to Module</span>.
-        </p>
-      </div>
-
-      <div className="flex flex-row space-x-4 bg-gray-100 p-8 rounded-lg shadow-md">
-        <div>
-          <Image
-            alt="something never "
-            src={image7}
-            width={1900}
-            height={1050}
-          />
-          <p>
-            Once in the Crop Volume module, click on the input{" "}
-            <span className="font-bold">Region of Interest (ROI)</span> drop
-            down box and select{" "}
-            <span className="font-bold">Create New Annotation ROI</span>.
-          </p>
-        </div>
-        <div>
-          <Image
-            alt="something never "
-            src={image8}
-            width={1920}
-            height={1090}
-          />
-          <p>
-            Clicking on the &ldquo;<span className="font-bold">Eye</span>&rdquo;
-            icon will reveal a bounding box that could be adjusted by clicking
-            and dragging on the points to narrow the region of interest.
-          </p>
-        </div>
-      </div>
-
-      <div className="flex flex-row space-x-4 bg-gray-100 p-8 rounded-lg shadow-md">
-        <Image alt="something never " src={image9} width={1920} height={1080} />
-        <p className="text-justify">
-          Drag the bounding box to focus on the areas needed. For this exercise,
-          focus must be on the midface and mandible cutting out the rest of the
-          skull but making sure the temporomandibular joint is included. Once
-          the region of interest is selected, click apply to apply the crop.
-          Click the <span className="font-bold">&ldquo;eye&rdquo;</span> icon
-          once again to remove the bounding box.
-        </p>
-      </div>
-
       <div className="flex space-x-4 mt-8">
         <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-          <Link href="/mandiweb/3dslicer/frame1">Back</Link>
+          <Link href="/mandiweb/3dslicer/frame1-4">Back</Link>
         </div>
         <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-          <Link href="/mandiweb/3dslicer/frame3">Next</Link>
+          <Link href="/mandiweb/3dslicer/frame2-1">Next</Link>
         </div>
       </div>
     </main>
