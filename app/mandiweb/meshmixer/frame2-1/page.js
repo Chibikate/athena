@@ -5,9 +5,8 @@ import Link from "next/link";
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 space-y-4">
-      <div className="space-y-4 p-8">
-        <div className="flex flex-row space-x-4 items-center">
-          <div className="bg-gray-100 p-8 rounded-lg shadow-md"></div>
+      <div className="bg-gray-100 p-8 rounded-lg shadow-md">
+        <div className="flex flex-col space-y-4 items-center">
           <Image
               alt="Somethings never change"
               src={Image8}

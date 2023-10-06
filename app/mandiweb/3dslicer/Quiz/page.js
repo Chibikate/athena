@@ -101,7 +101,7 @@ export default function QuizApp() {
 
   return (
     <div className="quiz-container" style={quizContainerStyle}>
-      <h1 style={{ textAlign: "center" }}>MeshMixer Quiz</h1>
+      <h1 style={{ textAlign: "center" }}>3D Slicer Quiz</h1>
       {!showResults ? (
         <div>
           {quizQuestions.map((question, index) => (
