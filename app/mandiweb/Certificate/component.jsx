@@ -8,8 +8,10 @@ const inter = EB_Garamond({ subsets: ["latin"] });
 
 const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
   return (
-    <div className="container mx-auto mt-10 text-center min-h-screen flex flex-col items-center justify-center" ref={ref}>
-      <h1 className="text-2xl font-semibold mb-4 py-7">Certificate</h1>
+    <div
+      className="container mx-auto mt-10 text-center min-h-screen flex flex-col items-center justify-center"
+      ref={ref}
+    >
       <div
         className={`w-[845px] mx-auto p-5 border rounded-md shadow-md ${inter.className} border-primary flex flex-col items-center`}
       >
@@ -43,6 +45,6 @@ const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
       </div>
     </div>
   );
-})
+});
 
 export default CertificateComponent;

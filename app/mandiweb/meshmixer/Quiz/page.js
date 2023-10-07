@@ -68,8 +68,10 @@ const quizQuestions = [
     const score = calculateScore();
   
     return (
+      <div className="min-h-screen items-center">
+
       <div className="quiz-container" style={quizContainerStyle}>
-        <h1 style={{ textAlign: "center" }}>MeshMixer Quiz</h1>
+        <h1 className="text-primary py-4 text-center text-lg font-bold">Meshmixer Quiz</h1>
         {!showResults ? (
           <div>
             {quizQuestions.map((question, index) => (
@@ -85,7 +87,7 @@ const quizQuestions = [
                           value={option}
                           onChange={(e) => handleAnswerChange(e, index)}
                           checked={userAnswers[index] === option.trim()}
-                        />
+                          />
                         {option}
                       </label>
                     </li>
@@ -116,6 +118,7 @@ const quizQuestions = [
             )}
           </div>
         )}
+        </div>
       </div>
     );
   }

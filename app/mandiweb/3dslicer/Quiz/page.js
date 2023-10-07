@@ -100,8 +100,9 @@ export default function QuizApp() {
   const score = calculateScore();
 
   return (
-    <div className="quiz-container" style={quizContainerStyle}>
-      <h1 style={{ textAlign: "center" }}>3D Slicer Quiz</h1>
+   <div className="min-h-screen items-center">
+     <div className="quiz-container" style={quizContainerStyle}>
+      <h1 className="text-primary py-4 text-center text-lg font-bold">3D Slicer Quiz</h1>
       {!showResults ? (
         <div>
           {quizQuestions.map((question, index) => (
@@ -129,7 +130,7 @@ export default function QuizApp() {
             <div>
               <p>Your Score: {score} out of {quizQuestions.length}</p>
               <p>Congratulations! You passed the quiz.</p>
-              <a href="/mandiweb/meshmixer">Click here to proceed Meshmixer</a>
+              <a href="/mandiweb/meshmixer">Click here to proceed <span className="underline font-bold">Meshmixer</span></a>
             </div>
           ) : (
             <button onClick={() => setShowResults(true)} style={submitButtonStyle}>
@@ -138,10 +139,10 @@ export default function QuizApp() {
           )}
         </div>
       ) : (
-        <div>
+        <div className="justify-center items-center">
           <p>Your Score: {score} out of {quizQuestions.length}</p>
           {score === quizQuestions.length ? (
-            <a href="/mandiweb/meshmixer">Click here to proceed Meshmixer</a>
+            <a href="/mandiweb/meshmixer">Click here to proceed <span className="underline font-bold">Meshmixer</span></a>
           ) : (
             <div>
               <p>Sorry, you didn't pass. You can retake the quiz to improve your score.</p>
@@ -153,6 +154,8 @@ export default function QuizApp() {
         </div>
       )}
     </div>
+   </div>
+
   );
 }
 
