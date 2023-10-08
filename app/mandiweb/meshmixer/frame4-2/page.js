@@ -10,7 +10,7 @@ export default function Page() {
           <div className="bg-gray-100 p-8 rounded-lg shadow-md">
             <div className="flex flex-row space-x-4">
                 </div>
-                <div className="bg-gray-100 p-8 rounded-lg shadow-md">
+
           <Image
             alt="Somethings never change"
             src={Image21}
@@ -26,7 +26,6 @@ export default function Page() {
             &rdquo;.
           </p>
         </div>
-      </div>
       </div>
 
       <div className="flex space-x-4 mt-8">

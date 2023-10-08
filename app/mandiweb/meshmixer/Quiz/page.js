@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from "react";
+import Link from "next/link";
 
 const quizQuestions = [
     {
@@ -99,17 +100,18 @@ const quizQuestions = [
               <div>
                 <p>Your Score: {score} out of {quizQuestions.length}</p>
                 <p>Congratulations! You passed the quiz.</p>
-                <a href="mandiweb/meshmixer/certificate">Click here to get your certificate</a>
+                <Link href="/mandiweb/Fillup">Click here to get your <span className="underline font-bold">certificate</span></Link>
               </div>
             ) : (
               <button onClick={() => setShowResults(true)} style={submitButtonStyle}>Submit</button>
             )}
           </div>
         ) : (
+    
           <div>
             <p>Your Score: {score} out of {quizQuestions.length}</p>
             {score === quizQuestions.length ? (
-              <a href="/certificate-page">Click here to get your certificate</a>
+              <Link href="/mandiweb/Fillup"> Click here to get your <span className="underline font-bold"> Certificate</span></Link>
             ) : (
               <div>
                 <p>Sorry, you didn't pass. You can retake the quiz to improve your score.</p>
