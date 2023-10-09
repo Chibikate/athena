@@ -11,7 +11,7 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export default function Navigator() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="flex flex-rows space-x-4 justify-between items-center bg-primary p-4">
+    <div className="flex flex-rows space-x-4 justify-between items-center bg-primary">
       <div className="flex flex-rows items-center space-x-4">
         <Link href={"/mandiweb"}>
           <Image
@@ -22,10 +22,9 @@ export default function Navigator() {
         </Link>
 
         <div>
-          <p className={`${anton.className} text-xl text-white`}>MandiWeb</p>
-          <p className={`font-medium text-white`}>
-            Web-based Tutorial on Virtual Surgical Planning for <br />
-            Reconstruction of Simple Mandibular Fractures
+        <p style={{ fontSize: '12px', color: 'white' }}>
+        Web-based Tutorial System in the Standardized Process <br/>of Virtual
+          Surgical Planning for Mandibular Reconstruction
           </p>
         </div>
       </div>
@@ -43,6 +42,12 @@ export default function Navigator() {
               <Link href="/mandiweb/aboutus">
                 <p className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   About us
+                </p>
+              </Link>
+
+              <Link href="/mandiweb/thingstodownload">
+                <p className="text-white hover:text-white px-5 py-2 rounded-md text-sm font-medium bg-[#0091AD]">
+                  Start
                 </p>
               </Link>
 

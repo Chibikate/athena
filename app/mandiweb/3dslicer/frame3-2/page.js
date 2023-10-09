@@ -2,54 +2,65 @@ import Image from "next/image";
 import image13 from "./assets/image-13.png";
 import image14 from "./assets/image-14.png";
 import Link from "next/link";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 space-y-4">
-      <div className="space-y-4 p-8">
-        <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
-          <div className="w-full md:w-1/2">
-            <div className="bg-gray-100 p-8 rounded-lg shadow-md">
+    <main className="flex flex-row items-center justify-between p-8 space-y-4">
+      <div className="flex justify-between mt-8 space-x-4">
+        <Link href="/mandiweb/3dslicer/frame3-1">
+          <div className="w-16 h-16 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
+            <ChevronLeftIcon className="w-8 h-8" />
+          </div>
+        </Link>
+      </div>
+
+      <div className="flex flex-row space-x-4 bg-[#A9CAFB] p-8 rounded-lg shadow-md">
+        <div>
+          <div className="flex flex-col space-y-2 items-center">
+            <p className="text-center mt-4">
+              Once in the segment editor module, click on the{" "}
+              <span className="font-bold">Add</span> button<br/> to add the segment
+              we will be working with.
+            </p>
+          </div>
+          <div className="flex items-center justify-center py-6">
+            <Image
+              alt="somethings never change"
+              src={image13}
+              width={500}
+              height={450}
+            />
+          </div>
+        </div>
+
+        <div>
+          <div className="flex flex-col space-y-2 items-center">
+            <p className="text-center mt-4">
+                With a segment added, clicking the{" "}
+                <span className="font-bold">Color <br/>Selection Button</span> will
+                bring up a menu that will <br/>allow the user to select and assign 
+                different colors <br/> for different structures if so desired. For
+                this activity,<br/> let us select{" "}
+                <span className="font-bold">&ldquo;Bone&rdquo;</span>.
+              </p>
+            </div>
+            <div className="flex items-center justify-center py-6">
               <Image
                 alt="somethings never change"
-                src={image13}
+                src={image14}
                 width={500}
                 height={450}
               />
-            <p className="mt-4 text-center">
-              Once in the segment editor module, click on the{" "}
-              <span className="font-bold">Add</span> button to add the segment
-              we will be working with.
-            </p>
             </div>
-          </div>
-          <div className="w-full md:w-1/2">
-            <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-                <Image
-                  alt="somethings never change"
-                  src={image14}
-                  width={500}
-                  height={450}
-                />
-                <p className="mt-4 text-center">
-                  With a segment added, clicking the{" "}
-                  <span className="font-bold">Color Selection Button</span> will
-                  bring up a menu that will allow the user to select and assign
-                  different colors for different structures if so desired. For this
-                  activity, let us select{" "}
-                  <span className="font-bold">&ldquo;Bone&rdquo;</span>.
-                </p>
-              </div>
-            </div>
-</div>
+        </div>
       </div>
-      <div className="flex space-x-4 mt-8">
-        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-          <Link href="/mandiweb/3dslicer/frame3-1">Back</Link>
-        </div>
-        <div className="w-16 h-16 bg-primary flex items-center justify-center text-white font-bold rounded-full shadow-lg mt-8">
-          <Link href="/mandiweb/3dslicer/frame3-3">Next</Link>
-        </div>
+      <div className="flex justify-between mt-8 space-x-4">
+        <Link href="/mandiweb/3dslicer/frame3-3">
+          <div className="w-16 h-16 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
+            <ChevronRightIcon className="w-8 h-8" />
+          </div>
+        </Link>
       </div>
     </main>
   );

@@ -2,6 +2,11 @@ import Image from "next/image";
 import Image1 from "./assets/image1.png";
 import Link from "next/link";
 
+const grayLink = {
+  textDecoration: "underline",
+  color: "gray",
+
+};
 export default function Page() {
   return (
     <div className="space-y-4">
@@ -23,7 +28,7 @@ export default function Page() {
               <span className="font-semibold">
                 Install Meshmixer for Windows:{" "}
               </span>
-              <Link href="https://download.slicer.org">
+              <Link href="https://download.slicer.org" style={grayLink} target="_blank">
                 https://download.slicer.org
               </Link>
             </li>
@@ -31,7 +36,7 @@ export default function Page() {
               <span className="font-semibold">
                 Install Meshmixer for MacOS:{" "}
               </span>
-              <Link href="https://www.meshmixer.com/download.html">
+              <Link href="https://www.meshmixer.com/download.html" style={grayLink} target="_blank">
                 https://www.meshmixer.com/download.html
               </Link>
             </li>
@@ -39,21 +44,17 @@ export default function Page() {
               <span className="font-semibold">
                 Install Meshmixer for MacOS:{" "}
               </span>
-              <Link href="https://macdownload.informer.com/meshmixer/">
+              <Link href="https://macdownload.informer.com/meshmixer/" style={grayLink} target="_blank">
                 https://macdownload.informer.com/meshmixer/
-              </Link>
-            </li>
-            <li>
-              <span className="font-semibold">Install Ultimaker Cura: </span>
-              <Link href=" https://ultimaker.com/software/ultimaker-cura">
-                https://ultimaker.com/software/ultimaker-cura
               </Link>
             </li>
             <li>
               <span className="font-semibold">
                 Download these DICOM Files:{" "}
               </span>
-              <Link href="https://bit.ly/3i7wsTb">https://bit.ly/3i7wsTb</Link>
+              <Link href="https://bit.ly/3i7wsTb" style={grayLink} target="_blank">
+                https://bit.ly/3i7wsTb
+              </Link>
             </li>
           </ul>
           <p className="text-xl font-semibold text-primary">

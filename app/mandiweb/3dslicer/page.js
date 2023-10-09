@@ -24,15 +24,12 @@ export default function Page() {
             Conversion of DICOM to STL
           </h2>
           <div className="h-1 bg-gray-300"></div>
-          <ul className="mt-4 space-y-2">
-            <ListItem text="Discover how to navigate the 3D slicer's user interface." />
-            <ListItem text="Export DICOM file to .STL" />
-            <ListItem text="Perform threshold-based segmentation to separate the bones" />
-            <ListItem text="Apply cropping to narrow down the region of interest" />
-          </ul>
-        </div>
-      </div>
-
+          <li className="mt-4 space-y-2">Familiarise oneself with the user interface of <span className="font-bold text-primary">3D slicer</span>.</li>
+          <li className="mt-4 space-y-2">Narrow down regions of interest by <span className="font-bold text-primary">cropping</span>.</li>
+          <li className="mt-4 space-y-2">Separate bone using <span className="font-bold text-primary">threshold</span> based <span className="font-bold text-primary">segmentation</span>.</li>
+          <li className="mt-4 space-y-2">Export file as <span className="font-bold text-primary">.STL.</span></li>
+</div>
+</div>
       <div className="flex justify-end mt-4">
         <div className="w-32 h-12 bg-primary flex items-center justify-center text-white font-bold rounded-lg shadow-md cursor-pointer">
           <Link href="/mandiweb/3dslicer/frame1">Continue!</Link>

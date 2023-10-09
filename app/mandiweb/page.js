@@ -51,9 +51,11 @@ export default function Home() {
       </div>
 
       <div className="flex items-center justify-center space-y-4 py-4">
+      <Link href="mandiweb/thingstodownload">
         <div className="text-primary flex items-center cursor-pointer pr-4 transform transition duration-300 hover:scale-105">
           <p className="mr-2">Click here to start →</p>
         </div>
+        </Link>
         <div className="flex flex-row space-x-16 items-center">
           <Link href="mandiweb/thingstodownload">
             <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">
