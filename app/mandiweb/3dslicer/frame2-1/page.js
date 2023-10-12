@@ -14,7 +14,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="space-y-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
+      <div className="space-y-4  border-2 border-primary bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
         <div>
         <div className="flex flex-col space-y-2 items-center">
         <p className="text-center mt-4">

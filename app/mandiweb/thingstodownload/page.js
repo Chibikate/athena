@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Image1 from "./assets/image1.png";
 import Link from "next/link";
-'animate.css';
 
 const grayLink = {
   textDecoration: "underline",
@@ -11,8 +10,8 @@ const grayLink = {
 export default function Page() {
   return (
     <div className="space-y-4">
-      <div className="flex flex-row space-x-4 pt-5">
-        <Image classsName="animate_animated animate_rotateInDownLeft"
+      <div className="flex flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
+        <Image
           alt="Somethings never change"
           src={Image1}
           width={450}

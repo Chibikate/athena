@@ -114,7 +114,7 @@ export default function QuizApp() {
   const score = calculateScore();
 
   return (
-    <div className="min-h-screen items-center  p-4 hover:bg-gray-200">
+    <div className="min-h-screen items-center p-4 hover:bg-gray-200">
       <div className="quiz-container" style={quizContainerStyle}>
         <h1 className="text-primary py-4 text-center text-lg font-bold">3D Quiz</h1>
         {!showResults ? (
@@ -137,7 +137,7 @@ export default function QuizApp() {
                   </li>
                 ))}
               </ul>
-            <div className="button-container space-y-2 p-2 font-bold text-primary">
+            <div className="button-container space-y-2 p-2  font-bold text-primary">
               {currentQuestion > 0 && (
                 <button onClick={goToPreviousQuestion} style={prevButtonStyle}>
                   Previous
@@ -160,7 +160,8 @@ export default function QuizApp() {
           <div className="font-semibold">
             <p>Your Score: {score} out of {quizQuestions.length}</p>
             {score === quizQuestions.length ? (
-              <Link href="/mandiweb/meshmixer">Click here to proceed <span className="underline font-bold">Meshmixer</span></Link>
+              <Link href="/mandiweb/meshmixer"> <p className="text-green-900 font-bold">
+                Perfect! Now, Click here to proceed <span className="underline font-bold">Meshmixer</span></p></Link>
             ) : (
               <div className="text-red font-semibold">
                 <p className="text-red-600">Sorry, you didn't pass. You can retake the quiz to improve your score.</p>

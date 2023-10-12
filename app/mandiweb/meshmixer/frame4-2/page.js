@@ -13,7 +13,7 @@ export default function Page() {
           </div>
         </Link>
       </div>
-      <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
+      <div className="flex flex-col border-2 border-primary space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">
         <p className="text-center">
             To save as &ldquo;<span className="font-bold">.STL</span>&rdquo;,

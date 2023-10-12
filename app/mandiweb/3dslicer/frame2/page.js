@@ -15,7 +15,7 @@ export default function Page() {
       </div>
 
       
-      <div className="space-y-4b bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
+      <div className="space-y-4b border-2 border-primary bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
         <div>
           <div className="flex flex-col space-y-2 items-center">
           <h3 className="text-2xl font-extrabold mb-4 text-primary">3D Slicer Module</h3>

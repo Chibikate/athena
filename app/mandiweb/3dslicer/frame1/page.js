@@ -14,7 +14,7 @@ export default function Page() {
         </Link>
       </div>
       
-      <div className="space-y-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-lg items-center text-center">
+      <div className="space-y-4 bg-[rgba(191,213,247,0.3)] border-2 border-primary p-8 rounded-lg shadow-lg items-center text-center">
         <div className="flex flex-col items-center justify-betweenspace-y-4">
           <div>
             <p className="text-2xl font-extrabold mb-4 text-primary">LOAD DICOM TO 3D SLICER</p>

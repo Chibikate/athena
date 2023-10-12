@@ -18,7 +18,7 @@ export default function Page() {
 
 
 
-      <div className="flex flex-col space-x-4  bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
+      <div className="flex flex-col space-x-4 border-2 border-primary bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
         <div className="text-center mb-4">
             <p className="mt-4 text-justify">
               With the threshold effect applied, click on the show 3D button to

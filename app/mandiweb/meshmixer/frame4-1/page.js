@@ -15,15 +15,15 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-col space-x-4  bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
+      <div className="flex flex-col space-x-4 border-2 border-primary bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
         <div>
           <div className="flex flex-col space-y-2 items-center">
           </div>
           <div className="flex flex-row items-center justify-center y-2">
             <div className="flex flex-col items-center">
-            <p className="text-justify">
-                Since the mandible is still a mesh, we have to<br/> make the model
-                into a solid that could be 3D printed.<br/> To do this, click on
+            <p className="text-center">
+                Since the mandible is still a mesh, we have to make the <br/> model
+                into a solid that could be 3D printed. To do this,<br/> click on
                 “Edit” on the left toolbar and click on &ldquo;Make Solid&rdquo;.
               </p>
               <Image
@@ -33,8 +33,8 @@ export default function Page() {
                 height={550}
               />   
             </div>
-            <div className="flex-col items-center mx-2 y-2">
-            <p className="text-center">
+            <div className="flex flex-col items-center mx-2 y-2">
+          <p className="text-center">
                 Apply the &ldquo;<span className="font-bold">Make Solid</span>
                 &rdquo; function by clicking on &ldquo;
                 <span className="font-bold">Accept</span>

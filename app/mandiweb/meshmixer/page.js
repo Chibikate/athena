@@ -12,18 +12,25 @@ export default function Page() {
     <div className="bg-white rounded-lg shadow-md p-6">
       <div className="flex items-center space-x-4">
         <div className="w-1/2">
-          <Image src={Image1} width={450} height={300} alt="Image Description" />
+          <Image
+            src={Image1}
+            width={450}
+            height={300}
+            alt="Image Description"
+          />
         </div>
         <div className="w-1/2">
-          <h2 className="text-3xl font-bold mb-2">Conversion of DICOM to STL</h2>
+          <h2 className="text-3xl font-bold mb-2">
+            Conversion of DICOM to STL
+          </h2>
           <div className="h-1 bg-gray-300"></div>
           <ul className="mt-4 space-y-2">
             <ListItem text="Familiarize oneself with the user interface of Meshmixer." />
             <ListItem text="Navigate the 3D environment in meshmixer." />
             <ListItem text="Separate the mandible using face groups and paint selection." />
             <ListItem text="Perform 3D file manipulation." />
-            <ListItem text="a. Plane cut function" />
-            <ListItem text="b. Mirroring function" />
+            <p className="sub-item">a. Plane cut function</p>
+            <p className="sub-item">b. Mirroring function</p>
           </ul>
         </div>
       </div>

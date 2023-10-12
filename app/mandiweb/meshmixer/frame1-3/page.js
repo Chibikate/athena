@@ -15,7 +15,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-col space-x-4b bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
+      <div className="flex flex-col space-x-4b border-2 border-primary bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">
             <p className="mt-4 text-justify">
             Meshmixer will automatically create face groups based on the angle
