@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from "react";
+import Link from "next/link";
 
 const quizQuestions = [
   {
@@ -76,9 +77,9 @@ export default function QuizApp() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showResults, setShowResults] = useState(false);
 
-  const handleAnswerChange = (event) => {
+  const handleAnswerChange = (event, questionIndex) => {
     const updatedAnswers = [...userAnswers];
-    updatedAnswers[currentQuestion] = event.target.value.trim();
+    updatedAnswers[questionIndex] = event.target.value.trim();
     setUserAnswers(updatedAnswers);
   };
 
@@ -97,7 +98,7 @@ export default function QuizApp() {
   const calculateScore = () => {
     let score = 0;
     userAnswers.forEach((answer, index) => {
-      if (answer === quizQuestions[index].correctAnswer) {
+      if (answer.trim() === quizQuestions[index].correctAnswer.trim()) {
         score++;
       }
     });
@@ -113,9 +114,9 @@ export default function QuizApp() {
   const score = calculateScore();
 
   return (
-    <div className="items-center p-24">
+    <div className="min-h-screen items-center  p-4 hover:bg-gray-200">
       <div className="quiz-container" style={quizContainerStyle}>
-        <h1 className="text-primary py-4 text-center text-lg font-bold">3D Slicer Quiz</h1>
+        <h1 className="text-primary py-4 text-center text-lg font-bold">3D Quiz</h1>
         {!showResults ? (
           <div>
             <div className="question" style={questionStyle}>
@@ -128,7 +129,7 @@ export default function QuizApp() {
                         type="radio"
                         name={`question-${currentQuestion}`}
                         value={option}
-                        onChange={handleAnswerChange}
+                        onChange={(e) => handleAnswerChange(e, currentQuestion)}
                         checked={userAnswers[currentQuestion] === option.trim()}
                       />
                       {option}
@@ -136,19 +137,17 @@ export default function QuizApp() {
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className="button-container text-primary font-bold">        
+            <div className="button-container space-y-2 p-2 font-bold text-primary">
               {currentQuestion > 0 && (
-                <button onClick={goToPreviousQuestion} style={navigationButtonStyle}>
+                <button onClick={goToPreviousQuestion} style={prevButtonStyle}>
                   Previous
                 </button>
               )}
               {currentQuestion < quizQuestions.length - 1 && (
-                <button onClick={goToNextQuestion} style={navigationButtonStyle}>
+                <button onClick={goToNextQuestion} style={nextButtonStyle}>
                   Next
                 </button>
               )}
-          
               {currentQuestion === quizQuestions.length - 1 && (
                 <button onClick={() => setShowResults(true)} style={submitButtonStyle}>
                   Submit
@@ -156,17 +155,16 @@ export default function QuizApp() {
               )}
             </div>
           </div>
+              </div>
         ) : (
-          <div className="justify-center items-center">
+          <div className="font-semibold">
             <p>Your Score: {score} out of {quizQuestions.length}</p>
             {score === quizQuestions.length ? (
-              <a href="/mandiweb/meshmixer">Click here to proceed <span className="underline font-bold">Meshmixer</span></a>
+              <Link href="/mandiweb/meshmixer">Click here to proceed <span className="underline font-bold">Meshmixer</span></Link>
             ) : (
-              <div>
-                <p>Sorry, you didn't pass. You can retake the quiz to get a perfect score and for you to proceed.</p>
-                <button onClick={retakeQuiz} style={retakeButtonStyle}>
-                  Retake Quiz
-                </button>
+              <div className="text-red font-semibold">
+                <p className="text-red-600">Sorry, you didn't pass. You can retake the quiz to improve your score.</p>
+                <button onClick={retakeQuiz} style={retakeButtonStyle}>Retake Quiz</button>
               </div>
             )}
           </div>
@@ -202,9 +200,14 @@ const retakeButtonStyle = {
   marginRight: "auto",
 };
 
-const navigationButtonStyle = {
+const prevButtonStyle = {
   marginTop: "20px",
   display: "block",
-  marginLeft: "auto",
-  marginRight: "auto",
+  float: "left",
+};
+
+const nextButtonStyle = {
+  marginTop: "20px",
+  display: "block",
+  float: "right",
 };

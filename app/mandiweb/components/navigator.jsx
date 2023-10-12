@@ -11,7 +11,7 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export default function Navigator() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="flex flex-rows space-x-4 justify-between items-center bg-primary">
+    <div className="flex flex-rows space-x-4 justify-between items-center bg-primary ">
       <div className="flex flex-rows items-center space-x-4">
         <Link href={"/mandiweb"}>
           <Image
@@ -34,19 +34,19 @@ export default function Navigator() {
           <div className="flex items-center justify-between h-16">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link href="/mandiweb">
-                <p className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <p className="text-white hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </p>
               </Link>
 
               <Link href="/mandiweb/aboutus">
-                <p className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <p className="text-white hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   About us
                 </p>
               </Link>
 
               <Link href="/mandiweb/thingstodownload">
-                <p className="text-white hover:text-white px-5 py-2 rounded-md text-sm font-medium bg-[#0091AD]">
+                <p className="text-white hover hover:text-white hover-border hover:border-white-400 hover:border-2 px-5 py-2 rounded-md text-sm font-medium bg-[#0091AD]">
                   Start
                 </p>
               </Link>

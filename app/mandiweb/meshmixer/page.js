@@ -29,7 +29,7 @@ export default function Page() {
       </div>
 
       <div className="flex justify-end mt-4">
-        <div className="w-32 h-12 bg-primary flex items-center justify-center text-white font-bold rounded-lg shadow-md cursor-pointer">
+        <div className="w-32 h-12 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center text-white font-bold rounded-lg shadow-md cursor-pointer">
           <Link href="/mandiweb/meshmixer/frame1">Continue!</Link>
         </div>
       </div>

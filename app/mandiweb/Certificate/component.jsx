@@ -9,11 +9,11 @@ const inter = EB_Garamond({ subsets: ["latin"] });
 const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
   return (
     <div
-      className="container mx-auto mt-10 text-center min-h-screen flex flex-col items-center justify-center"
+      className="container mx-auto text-center flex flex-col items-center justify-center"
       ref={ref}
     >
       <div
-        className={`w-[845px] mx-auto p-5 border rounded-md shadow-md ${inter.className} border-primary flex flex-col items-center`}
+        className={`w-[845px] mx-auto bg-[#DCE8F2] p-5 border-x-8 border-y-8 rounded-md shadow-md ${inter.className} border-primary flex flex-col items-center`}
       >
         <div className="rounded-full">
           <Image

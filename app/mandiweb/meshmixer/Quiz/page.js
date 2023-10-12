@@ -43,12 +43,25 @@ const quizQuestions = [
 
   export default function QuizApp() {
     const [userAnswers, setUserAnswers] = useState(Array(quizQuestions.length).fill(""));
+    const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showResults, setShowResults] = useState(false);
   
     const handleAnswerChange = (event, questionIndex) => {
       const updatedAnswers = [...userAnswers];
       updatedAnswers[questionIndex] = event.target.value.trim();
       setUserAnswers(updatedAnswers);
+    };
+  
+    const goToNextQuestion = () => {
+      if (currentQuestion < quizQuestions.length - 1) {
+        setCurrentQuestion(currentQuestion + 1);
+      }
+    };
+  
+    const goToPreviousQuestion = () => {
+      if (currentQuestion > 0) {
+        setCurrentQuestion(currentQuestion - 1);
+      }
     };
   
     const calculateScore = () => {
@@ -63,63 +76,68 @@ const quizQuestions = [
   
     const retakeQuiz = () => {
       setUserAnswers(Array(quizQuestions.length).fill(""));
+      setCurrentQuestion(0);
       setShowResults(false);
     };
   
     const score = calculateScore();
   
     return (
-      <div className="min-h-screen items-center">
-
-      <div className="quiz-container" style={quizContainerStyle}>
-        <h1 className="text-primary py-4 text-center text-lg font-bold">Meshmixer Quiz</h1>
-        {!showResults ? (
-          <div>
-            {quizQuestions.map((question, index) => (
-              <div key={index} className="question" style={questionStyle}>
-                <h3>{question.question}</h3>
+      <div className="min-h-screen items-center  p-4 hover:bg-gray-200">
+        <div className="quiz-container" style={quizContainerStyle}>
+          <h1 className="text-primary py-4 text-center text-lg font-bold">Meshmixer Quiz</h1>
+          {!showResults ? (
+            <div>
+              <div className="question" style={questionStyle}>
+                <h3>{quizQuestions[currentQuestion].question}</h3>
                 <ul className="pl-4">
-                  {question.options.map((option, optionIndex) => (
+                  {quizQuestions[currentQuestion].options.map((option, optionIndex) => (
                     <li key={optionIndex}>
                       <label>
                         <input
                           type="radio"
-                          name={`question-${index}`}
+                          name={`question-${currentQuestion}`}
                           value={option}
-                          onChange={(e) => handleAnswerChange(e, index)}
-                          checked={userAnswers[index] === option.trim()}
-                          />
+                          onChange={(e) => handleAnswerChange(e, currentQuestion)}
+                          checked={userAnswers[currentQuestion] === option.trim()}
+                        />
                         {option}
                       </label>
                     </li>
                   ))}
                 </ul>
+              <div className="button-container space-y-2 p-2 font-bold text-primary">
+                {currentQuestion > 0 && (
+                  <button onClick={goToPreviousQuestion} style={prevButtonStyle}>
+                    Previous
+                  </button>
+                )}
+                {currentQuestion < quizQuestions.length - 1 && (
+                  <button onClick={goToNextQuestion} style={nextButtonStyle}>
+                    Next
+                  </button>
+                )}
+                {currentQuestion === quizQuestions.length - 1 && (
+                  <button onClick={() => setShowResults(true)} style={submitButtonStyle}>
+                    Submit
+                  </button>
+                )}
               </div>
-            ))}
-            {score === quizQuestions.length ? (
-              <div>
-                <p>Your Score: {score} out of {quizQuestions.length}</p>
-                <p>Congratulations! You passed the quiz.</p>
+            </div>
+                </div>
+          ) : (
+            <div>
+              <p>Your Score: {score} out of {quizQuestions.length}</p>
+              {score === quizQuestions.length ? (
                 <Link href="/mandiweb/Fillup">Click here to get your <span className="underline font-bold">certificate</span></Link>
-              </div>
-            ) : (
-              <button onClick={() => setShowResults(true)} style={submitButtonStyle}>Submit</button>
-            )}
-          </div>
-        ) : (
-    
-          <div>
-            <p>Your Score: {score} out of {quizQuestions.length}</p>
-            {score === quizQuestions.length ? (
-              <Link href="/mandiweb/Fillup"> Click here to get your <span className="underline font-bold"> Certificate</span></Link>
-            ) : (
-              <div>
-                <p>Sorry, you didn't pass. You can retake the quiz to improve your score.</p>
-                <button onClick={retakeQuiz} style={retakeButtonStyle}>Retake Quiz</button>
-              </div>
-            )}
-          </div>
-        )}
+              ) : (
+                <div className="font-semibold">
+                  <p className="text-red-600">Sorry, you didn't pass. You can retake the quiz to improve your score.</p>
+                  <button onClick={retakeQuiz} style={retakeButtonStyle}>Retake Quiz</button>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
     );
@@ -149,4 +167,16 @@ const quizQuestions = [
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
+  };
+  
+  const prevButtonStyle = {
+    marginTop: "20px",
+    display: "block",
+    float: "left",
+  };
+  
+  const nextButtonStyle = {
+    marginTop: "20px",
+    display: "block",
+    float: "right",
   };
