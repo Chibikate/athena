@@ -18,12 +18,12 @@ export default function Page() {
           <h2 className="text-3xl font-bold mb-2">Conversion of DICOM to STL</h2>
           <div className="h-1 bg-gray-300"></div>
           <ul className="mt-4 space-y-2">
-            <ListItem text="Discover how to navigate Meshmixer's user interface." />
-            <ListItem text="Familiarize with navigating the 3D environment in Meshmixer." />
-            <ListItem text="Learn how to use face groups and paint selection in separation of the mandible." />
-            <ListItem text="Perform 3D file manipulation in Meshmixer." />
-            <ListItem text="Utilize the plane cut function for editing." />
-            <ListItem text="Apply the mirroring function in Meshmixer." />
+            <ListItem text="Familiarize oneself with the user interface of Meshmixer." />
+            <ListItem text="Navigate the 3D environment in meshmixer." />
+            <ListItem text="Separate the mandible using face groups and paint selection." />
+            <ListItem text="Perform 3D file manipulation." />
+            <ListItem text="a. Plane cut function" />
+            <ListItem text="b. Mirroring function" />
           </ul>
         </div>
       </div>

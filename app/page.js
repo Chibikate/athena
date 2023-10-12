@@ -47,9 +47,9 @@ function VirtualSurgicalPlanning() {
   return (
     <Card
       title={"Virtual Surgical Planning"}
-      subtitle={"For Reconstruction of Simple Mandibular Fractures"}
+      subtitle={"for Mandibular Reconstruction"}
       desc={
-        "Learn and discover the interactive learning activities, and practical insights into the reconstruction of simple mandibular fractures, ultimately enhancing knowledge acquisition and advancing healthcare practices."
+        "Learn and discover the interactive learning activities, and practical insights into  Virtual Surgical Planning for Mandibular Reconstruction, ultimately enhancing knowledge acquisition and advancing healthcare practices."
       }
       logo={page}
       color={"bg-primary"}

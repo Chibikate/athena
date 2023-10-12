@@ -20,21 +20,19 @@ export default function Page() {
           <div className="flex flex-col space-y-4 items-center">
             <p className="text-justify mb-4">
               The CT scan files should show up once the DICOM files are done
-              loading. <br /> To zoom in and out, hold "
+              loading. To zoom in and out, hold "
               <span className="font-bold">Right Click</span>" and "
               <span className="font-bold">Drag</span>"until the desired view is
-              acquired. <br /> To scroll through the CT scan, use the middle
+              acquired. To scroll through the CT scan, use the middle
               mouse scroll-wheel or dragging the
               <br /> slider above the boxes will both work equally well. <br />{" "}
               The current view we are using is called "
               <span className="font-bold">Four Up</span>”. The empty window on{" "}
-              the upper right <br /> is where the 3D image will be shown once
-              activated. Clicking on the arrow on the <br /> toolbar as
+              the upper right is where the 3D image will be shown once
+              activated. Clicking on the arrow on the toolbar as
               indicated above will activate a drop-down selection box which
-              contains
-              <br /> different views the user can utilize according to
-              preference. For purposes of the activity,
-              <br /> we will use the default four-up view.
+              contains different views the user can utilize according to
+              preference. For purposes of the activity, we will use the default four-up view.
             </p>
           </div>
           <div className="flex items-center justify-center">

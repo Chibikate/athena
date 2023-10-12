@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Image1 from "./assets/image1.png";
 import Link from "next/link";
+'animate.css';
 
 const grayLink = {
   textDecoration: "underline",
@@ -11,7 +12,7 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <div className="flex flex-row space-x-4 pt-5">
-        <Image
+        <Image classsName="animate_animated animate_rotateInDownLeft"
           alt="Somethings never change"
           src={Image1}
           width={450}
@@ -62,7 +63,7 @@ export default function Page() {
             now proceed to 3D Slicer.
           </p>
           <div className="flex justify-end">
-            <div className="w-32 h-12 bg-primary flex items-center justify-center hover-border hover:border-white-400 hover:border-2 hover:text-white  text-white font-bold rounded-full shadow-lg mt-8 cursor-pointer">
+            <div className="w-32 h-12 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center hover-border hover:border-white-400 hover:border-2 hover:text-white  text-white font-bold rounded-full shadow-lg mt-8 cursor-pointer">
               <Link href="/mandiweb/3dslicer">Let&lsquo;s start!</Link>
             </div>
           </div>

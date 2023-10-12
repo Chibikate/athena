@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Anton } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
 import Logo from "../assets/Logo.svg";
 
-const anton = Anton({ weight: "400", subsets: ["latin"] });
+const openSans = Open_Sans({ weight: "400", subsets: ["latin"] });
 
 export default function Navigator() {
   const [isHovered, setIsHovered] = useState(false);
