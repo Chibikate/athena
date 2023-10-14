@@ -14,7 +14,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-row border-2 border-primary space-x-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
+      <div className="flex flex-row space-x-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
         <div>
           <div className="flex flex-col space-y-2 items-center">
             <p className="text-center mt-4">
@@ -28,7 +28,7 @@ export default function Page() {
             </p>
           </div>
           <div className="flex items-center justify-center py-4">
-            <Image
+            <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="somethings never change"
               src={image12}
               width={550}
@@ -38,7 +38,7 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/3dslicer/frame3-2">
+        <Link href="/mandiweb/3dslicer/frame3-1-1">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronRightIcon className="w-8 h-8" />
           </div>

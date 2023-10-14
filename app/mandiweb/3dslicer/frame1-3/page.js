@@ -17,7 +17,7 @@ export default function Page() {
         </Link>
         </div>
 
-      <div className="space-y-4 border-2 border-primary bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
+      <div className="space-y-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
         <div>
 
         <div className="flex flex-col space-y-4 items-center">
@@ -29,7 +29,7 @@ export default function Page() {
           click <span className="font-bold">&ldquo;Load&rdquo;</span>
         </p>
 
-        <Image
+        <Image className=" transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
           alt="somethings never change"
           src={image5}
           width={550}

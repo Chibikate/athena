@@ -15,7 +15,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-col space-x-4b border-2 border-primary bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
+      <div className="flex flex-col space-x-4b bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">
             <p className="mt-4 text-justify">
             Meshmixer will automatically create face groups based on the angle
@@ -29,7 +29,7 @@ export default function Page() {
           </p>
         </div>
         <div className="flex items-center justify-center py-2">
-        <Image
+        <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
             alt="Somethings never change"
             src={Image6}
             width={550}

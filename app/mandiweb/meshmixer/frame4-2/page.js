@@ -13,9 +13,9 @@ export default function Page() {
           </div>
         </Link>
       </div>
-      <div className="flex flex-col border-2 border-primary space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
+      <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">
-        <p className="text-center">
+        <p className="text-center ml-16 mr-16">
             To save as &ldquo;<span className="font-bold">.STL</span>&rdquo;,
             click on &ldquo;<span className="font-bold">File</span>&rdquo; in
             the top toolbar and select &ldquo;
@@ -24,7 +24,7 @@ export default function Page() {
             &rdquo;.
           </p>
           <div className="flex items-center justify-center py-2">
-          <Image
+          <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
             alt="Somethings never change"
             src={Image21}
             width={550}

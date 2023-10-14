@@ -13,18 +13,18 @@ export default function Page() {
           </div>
         </Link>
       </div>
-      <div className="flex flex-col space-x-4 border-2 border-primary bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
+      <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">
-          <p className="mt-4 text-center">
+          <p className="mt-4 text-center mr-16 ml-16">
             For the exercise, we will make a plane cut in the middle of the
             mandible cutting out the diseased side.<br/>To change the side to keep,
             click the small arrow as shown above. Should there be a need to keep<br/>
             both halves, the cut type could be set to &ldquo;slice (Keep
             Both)&rdquo; in the drop-down menu as shown above.<br/> To finalize the
-            cut, click accept.
+            cut, click <span className="font-bold">accept</span>.
           </p>
           <div className="flex items-center justify-center py-2">
-            <Image
+            <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
               src={Image15}
               width={550}

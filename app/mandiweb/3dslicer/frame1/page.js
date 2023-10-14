@@ -14,12 +14,12 @@ export default function Page() {
         </Link>
       </div>
       
-      <div className="space-y-4 bg-[rgba(191,213,247,0.3)] border-2 border-primary p-8 rounded-lg shadow-lg items-center text-center">
+      <div className="space-y-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-lg items-center text-center">
         <div className="flex flex-col items-center justify-betweenspace-y-4">
           <div>
             <p className="text-2xl font-extrabold mb-4 text-primary">LOAD DICOM TO 3D SLICER</p>
           </div>
-          <p className="py-4">
+          <p className="py-4 ml-16 mr-16">
             Load the data by clicking on the{" "}
             <span className="font-bold">&ldquo;Load DICOM Data&ldquo;</span>{" "}
             button shown in the picture.
@@ -27,7 +27,7 @@ export default function Page() {
         </div>
 
         <div className="flex justify-center">
-          <Image
+          <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
             alt="somethings never change"
             src={image1}
             width={550}

@@ -12,7 +12,7 @@ export default function Page() {
         </Link>
       </div>
       <div className="space-y-4 bg-primary rounded-lg shadow-lg p-8 text-white text-xl">
-        <div className="text-center">
+        <div className="text-justify">
           <h2 className="text-3xl font-bold mb-4 animate-bounce">🎉 Congratulations!</h2>
           <p>
             You're now a master of creating Anatomic Facsimile Models from scratch! 🌟 Give yourself a well-deserved pat on the back for your remarkable achievement.

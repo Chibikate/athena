@@ -15,7 +15,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="space-y-4  border-2 border-primary bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
+      <div className="space-y-4  bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
         <div>
           <div className="flex flex-col space-y-4 items-center">
             <p className="text-justify mb-4">
@@ -24,8 +24,7 @@ export default function Page() {
               <span className="font-bold">Right Click</span>" and "
               <span className="font-bold">Drag</span>"until the desired view is
               acquired. To scroll through the CT scan, use the middle
-              mouse scroll-wheel or dragging the
-              <br /> slider above the boxes will both work equally well. <br />{" "}
+              mouse scroll-wheel or dragging the slider above the boxes will both work equally well. <br />{" "}
               The current view we are using is called "
               <span className="font-bold">Four Up</span>”. The empty window on{" "}
               the upper right is where the 3D image will be shown once
@@ -36,7 +35,7 @@ export default function Page() {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <Image
+            <Image className="  ml-16 mr-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="somethings never change"
               src={image6}
               width={550}

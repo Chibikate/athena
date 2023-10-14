@@ -15,7 +15,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-col space-x-4 border-2 border-primary bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
+      <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
         <div>
           <div className="flex flex-col space-y-2 items-center">
           </div>
@@ -25,7 +25,7 @@ export default function Page() {
               window will pop up. We can hide<br/> and unhide the structures by
               clicking on the &ldquo;
               <span className="font-bold">Eye</span>&rdquo; icon <br/>as shown above.</p>
-              <Image
+              <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
                 alt="Somethings never change"
                 src={Image11}
                 width={450}
@@ -37,7 +37,7 @@ export default function Page() {
               part. For the activity, we shall rename<br/> the part into mandible. We
               can also hide the rest of the<br/> parts we are not working with to make
               the program run smoother.</p>
-              <Image
+              <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
                 alt="Somethings never change"
                 src={Image12}
                 width={450}

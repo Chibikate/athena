@@ -14,20 +14,15 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-col space-x-4 border-2 border-primary bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
+      <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">         
-          <p className="mt-4 text-justify">
-            Once the mandible has been separated, we can now &ldquo;
-            <span className="font-bold">cut off</span>&rdquo; the diseased
-            side by<br/> using the plane cut function. This can be accessed by
-            clicking on &ldquo;<span className="font-bold">Edit</span>&rdquo;
-            in the left<br/> toolbar and selecting &ldquo;
-            <span className="font-bold">Plane Cut</span>&rdquo;.
+          <p className="mt-4 font-bold text-xl text-primary">
+          Removing diseased side and reconstruction via mirroring method
           </p>
         </div>
         <div className="flex items-center justify-center py-2">
           <div className="flex items-center justify-center">
-            <Image
+            <Image className="mr-16 ml-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
               src={Image13}
               width={550}
@@ -38,7 +33,7 @@ export default function Page() {
       </div>
 
       <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/meshmixer/frame3-1">
+        <Link href="/mandiweb/meshmixer/frame3-1-1">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronRightIcon className="w-8 h-8" />
           </div>

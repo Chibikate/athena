@@ -3,6 +3,7 @@ import Image from "next/image";
 import Image1 from "./assets/Image1.png";
 import Link from "next/link";
 
+
 function ListItem({ text }) {
   return <li className="list-disc ml-6">{text}</li>;
 }
@@ -11,10 +12,11 @@ export default function Page() {
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
       <div className="flex items-center space-x-4">
-        <div className="w-1/2">
+        <div className="w-1/2 py-4">
           <Image
+            className="animate-spin-slow mx-20"
             src={Image1}
-            width={450}
+            width={400}
             height={300}
             alt="Image Description"
           />
@@ -29,8 +31,8 @@ export default function Page() {
             <ListItem text="Navigate the 3D environment in meshmixer." />
             <ListItem text="Separate the mandible using face groups and paint selection." />
             <ListItem text="Perform 3D file manipulation." />
-            <p className="sub-item">a. Plane cut function</p>
-            <p className="sub-item">b. Mirroring function</p>
+            <p className="pl-6">a. Plane cut function</p>
+            <p className="pl-6">b. Mirroring function</p>
           </ul>
         </div>
       </div>

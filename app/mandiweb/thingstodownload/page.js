@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <div className="flex flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
-        <Image
+        <Image 
           alt="Somethings never change"
           src={Image1}
           width={450}

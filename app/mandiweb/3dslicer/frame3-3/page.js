@@ -15,16 +15,16 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-row space-x-4 border-2 border-primary  bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
+      <div className="flex flex-row space-x-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
         <div>
           <div className="flex flex-col space-y-2 items-center">
-            <p className="text-center mt-4">
+            <p className="text-center mt-4 mr-16 ml-16">
               To perform threshold-based segmentation, click on the{" "}
               <span className="font-bold">Threshold</span> effect.
             </p>
           </div>
           <div className="flex items-center justify-center py-6">
-          <Image
+          <Image className="mr-16 ml-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="somethings never change"
               src={image15}
               width={550}

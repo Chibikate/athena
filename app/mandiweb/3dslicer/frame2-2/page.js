@@ -15,7 +15,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-row border-2 border-primary space-x-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
+      <div className="flex flex-row space-x-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
         <div>
           <div className="flex flex-col space-y-2 items-center">
             <p className="text-center mt-4">
@@ -26,7 +26,7 @@ export default function Page() {
             </p>
           </div>
           <div className="flex items-center justify-center py-4">
-            <Image
+            <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="something never"
               src={image7}
               width={500}
@@ -45,7 +45,7 @@ export default function Page() {
             </p>
           </div>
           <div className="flex items-center justify-center py-4">
-            <Image
+            <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="something never"
               src={image8}
               width={500}

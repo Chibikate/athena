@@ -18,11 +18,11 @@ export default function Page() {
             {" "}
             🎉 Congratulations!
           </h2>
-          <p>
-            You've achieved a remarkable feat by converting a CT scan into a 3D
-            model. 🚀
+          <p className="text-justify">
+          You have successfully converted a CT scan of a patient into a 3D file. 🚀  Further manipulation of this file is needed depending on the need. If no other modifications are required, feel free to print the file as is. Take note though, that the file may be too large or may contain errors depending on how well the segmentation was performed.
+
           </p>
-          <p>
+          <p className="text-justify">
             But the journey doesn't end here! 🌟 Continue your adventure in the
             world of developing mandibular reconstruction by taking our 3D Quiz
             before proceeding to meshmixer.

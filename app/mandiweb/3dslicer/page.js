@@ -9,13 +9,13 @@ function ListItem({ text }) {
 
 export default function Page() {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
-      <div className="flex items-center space-x-4">
-        <div className="w-1/2">
-          <Image
+    <div className="bg-white rounded-lg shadow-md p-8">
+      <div className="flex items-center ">
+        <div className="w-1/2 my-6">
+          <Image className="animate-bounce mx-32" 
             src={Image1}
-            width={800}
-            height={300}
+            width={300}
+            height={200}
             alt="Image Description"
           />
         </div>

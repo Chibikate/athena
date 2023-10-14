@@ -15,7 +15,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-col space-x-4 border-2 border-primary bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
+      <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
         <div>
           <div className="flex flex-col space-y-2 items-center">
           </div>
@@ -27,7 +27,7 @@ export default function Page() {
               and select &ldquo;<span className="font-bold">Mirror</span>
               &rdquo;.
             </p>
-            <Image
+            <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
               src={Image16}
               width={550}
@@ -41,7 +41,7 @@ export default function Page() {
               mandible together, click and drag the <br/> arrow as shown above or
               click on the desired area.
             </p>
-          <Image
+          <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
               src={Image17}
               width={550}

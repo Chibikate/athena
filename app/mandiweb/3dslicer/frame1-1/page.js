@@ -14,14 +14,14 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="space-y-4 border-2 border-primary bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center">
+      <div className="space-y-4  bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center">
         <div className="flex flex-col items-center space-y-4">
           <div>
           <p className="text-2xl font-extrabold mb-4 text-primary">ADD DICOM DATA</p>
           </div>
           </div>
 
-          <Image
+          <Image className="  ml-16 mr-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
             alt="somethings never change"
             src={image2}
             width={550}

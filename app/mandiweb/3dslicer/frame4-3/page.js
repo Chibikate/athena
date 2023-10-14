@@ -15,27 +15,20 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-col space-x-4 border-2 border-primary bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
+      <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
         <div className="text-center mb-4">
-            <p className="mt-4 text-justify">
+            <p className="mt-4 text-center mr-16 ml-16">
               Once we are satisfied with our 3D image, we may now save our file.
-              We can choose to rename the file by clicking on the segmentation
-              drop-down menu and select{" "}
+              We can choose to <br/> rename the file by clicking on the segmentation
+              drop-down menu and select{" "} <br/>
               <span className="font-bold">
                 &ldquo;Rename Current Segmentation&rdquo;.
               </span>{" "}
-              For the purpose of the exercise, let us rename it to{" "}
-              <span className="font-bold">&ldquo;Skull&rdquo;.</span> We can now
-              save our file as{" "}
-              <span className="font-bold">&ldquo;.STL&rdquo;</span> by clicking
-              on the small down arrow on the right side of the segmentation
-              button as indicated above to access the drop-down menu. Select
-              export to files.
-            </p>
+               </p>
           </div>
           <div className="flex items-center justify-center py-2">
 
-          <Image
+          <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
               src={image19}
               width={550}
@@ -44,7 +37,7 @@ export default function Page() {
               </div>
         </div>
         <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/3dslicer/frame4-4">
+        <Link href="/mandiweb/3dslicer/frame4-3-1">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronRightIcon className="w-8 h-8" />
           </div>
