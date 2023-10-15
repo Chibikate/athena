@@ -26,7 +26,7 @@ export default function Page() {
           src={hero}
           layout="fill"
           objectFit="cover"
-          alt="Virtual Surgical Planning"
+          alt="Virtual Surgical Planning Hero Image"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary" />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -35,44 +35,36 @@ export default function Page() {
               Empowering Surgical Excellence
             </h1>
             <p className="text-xl text-white">
-              Mastering Mandibular Fracture Reconstruction
+              Mastering Mandibular reconstructions
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-row space-x-4 my-6">
-        <Image
-          alt="Somethings never change"
-          src={Image1}
-          width={450}
-          height={300}
-        />
-        <div className="space-y-4 px-16">
-          <p className="text-justify font-semibold text-primary">
-            The Web-based Tutorial on Virtual Surgical Planning for
-            Reconstruction of Simple Mandibular Fractures is an innovative
-            platform designed to empower surgeons and medical professionals in
-            mastering the art of mandibular fracture reconstruction. This
-            comprehensive tutorial leverages cutting-edge virtual surgical
-            planning techniques, providing step-by-step guidance and in-depth
-            knowledge to ensure precise and successful procedures.
+      <div className="flex flex-col sm:flex-row space-x-4 my-6">
+        <div className="w-full">
+          <Image className="mt-14"
+            alt="Somethings never change"
+            src={Image1}
+            width={550}
+            height={300}
+          />
+        </div>
+        <div className="space-y-4">
+          <p className="text-justify text-primary">
+          <span className="font-bold">Virtual surgical planning (VSP)</span> is a new technology that uses computers to help surgeons plan and perform mandibular reconstructions with greater precision and accuracy. Mandibular reconstruction is a complex surgery that is often needed after trauma, cancer treatment, or congenital deformities. The goal is to restore both the function and appearance of the lower jaw.
+VSP allows surgeons to create a digital model of the patient's jaw and plan the surgery in detail before it is performed. This helps to reduce the risk of complications and improve the outcome of the surgery.
+This tutorial will teach students the basics of VSP for mandibular reconstruction. Students will learn how to use the VSP software - 3D slicer and Meshmixer to create a digital model of the patient's jaw.
+
           </p>
-          <p className="text-justify font-semibold text-primary">
-            With interactive modules, immersive visuals, and interactive
-            simulations, this tutorial equips learners with the necessary skills
-            to navigate the complexities of simple mandibular fracture
-            reconstruction. From pre-operative analysis to surgical execution,
-            this web-based tutorial serves as a trusted resource, enabling
-            surgeons to enhance their expertise and deliver optimal patient
-            outcomes. Discover a transformative learning experience that
-            revolutionizes mandibular fracture reconstruction and unlocks new
-            dimensions of surgical proficiency.
+          <p className="text-justify text-primary">
+          <span className="font-bold">Computed Tomography (CT)</span> scans and <span className="font-bold">Magnetic Resonance Imaging (MRI)</span> scans are medical imaging techniques that produce detailed images of the inside of the body. These images can be used to create a <span className="font-bold">three-dimensional (3D)</span> model of the patient's jaw.
+<span className="font-bold">Digital Imaging and Communications in Medicine (DICOM)</span> is the international standard for storing, transmitting, and managing medical imaging information and data. 3D printing in medicine uses DICOM files to create custom anatomical parts, such as surgical planning guides.
           </p>
         </div>
       </div>
 
-      <div className={`space-y-5`}>
+      <div className="space-y-5">
         <div className="bg-primary text-center font-bold text-3xl text-white p-10 space-y-4 rounded-lg shadow-md">
           <p className="uppercase">Meet the Team</p>
         </div>
@@ -85,7 +77,7 @@ export default function Page() {
             >
               <div className="bg-white p-2 rounded-lg">
                 <Image
-                  alt="Somethings never change"
+                  alt={`${member.name}'s Photo`}
                   src={member.image}
                   width={120}
                   height={120}
