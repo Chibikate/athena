@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Image23 from "./assets/Image23.png";
+import Image23 from "./assets/image23.png";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
