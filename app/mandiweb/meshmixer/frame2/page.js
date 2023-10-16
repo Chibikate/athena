@@ -18,7 +18,7 @@ export default function Page() {
         <div className="text-center mb-4">
             <p className="mt-4 text-justify">
               Once the face groups have been assigned, we can now select the
-              areas by face group. To do this, first, click on “Select” on the
+              areas by face group. To do this, first, click on <span className="font-bold">"select"</span> on the
               left toolbar. This will create a selection area (shadow) over
               your pointer. The size can be adjusted using the slider or by
               inputting a number on the size option as shown above.

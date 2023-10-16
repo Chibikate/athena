@@ -18,8 +18,9 @@ export default function Page() {
 
         <div className="space-y-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
           <div>
-        <div className="flex flex-col space-y-4 items-center">
-        <p className="text-2xl font-extrabold mb-4 text-primary">IMPORT FILES</p>
+        <div className="flex flex-col space-y-2 items-center">
+        <p className="text-2xl font-extrabold mb-2 text-primary">IMPORT FILES</p>
+        <p className="text-center mb-4">Select the downloaded folder and click <span className="font-bold">"Import"</span></p>
           </div>
 
         <Image className="  ml-16 mr-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"

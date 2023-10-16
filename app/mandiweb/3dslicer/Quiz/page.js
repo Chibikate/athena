@@ -160,7 +160,7 @@ export default function QuizApp() {
           <div className="font-semibold">
             <p>Your Score: {score} out of {quizQuestions.length}</p>
             {score === quizQuestions.length ? (
-              <Link href="/mandiweb/meshmixer"> <p className="text-green-900 font-bold">
+              <Link href="/mandiweb/meshmixer/frame"> <p className="text-green-900 font-bold">
                 Perfect! Now, Click here to proceed <span className="underline font-bold">Meshmixer</span></p></Link>
             ) : (
               <div className="text-red font-semibold">

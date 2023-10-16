@@ -21,7 +21,7 @@ export default function Page() {
               the selected area. Holding the left mouse button and dragging it
               will align the plane to the direction in the line was made. It is
               the author&lsquo;s preference to align the orientation of the
-              model by<br/> first clicking on the view cube.
+              model by<br/> first clicking on the viewcube.
             </p>
           </div>
           <div className="flex items-center justify-center py-2">

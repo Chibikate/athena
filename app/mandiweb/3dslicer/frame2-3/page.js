@@ -26,6 +26,7 @@ export default function Page() {
             Click the <span className="font-bold">&ldquo;eye&rdquo;</span> icon
             once again to remove the bounding box.
           </p>
+          <p>You will know your crop is applied when the image is zoomed in.</p>
         </div>
         <div className="flex items-center justify-center py-4">
         <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"

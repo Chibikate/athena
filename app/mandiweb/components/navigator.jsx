@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Open_Sans } from "next/font/google";
 
-import Logo from "../assets/Logo.svg";
+import Logo from "../assets/Logo.png";
 
 const openSans = Open_Sans({ weight: "400", subsets: ["latin"] });
 
@@ -17,14 +17,15 @@ export default function Navigator() {
           <Image
             src={Logo}
             alt="mandiweb logo"
-            className="transform transition duration-300 hover:scale-105"
+            width={60}
+            height={60}
+            className="ml-4 color-white transform transition duration-300 hover:scale-105"
           />
         </Link>
 
         <div>
         <p style={{ fontSize: '12px', color: 'white' }}>
-        Web-based Tutorial System in the Standardized Process <br/>of Virtual
-          Surgical Planning for Mandibular Reconstruction
+         Virtual Surgical Planning Tutorial for<br/> Mandibular Reconstruction
           </p>
         </div>
       </div>
@@ -36,6 +37,12 @@ export default function Navigator() {
               <Link href="/mandiweb">
                 <p className="text-white hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   Home
+                </p>
+              </Link>
+
+              <Link href="/">
+                <p className="text-white hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  Dashboard
                 </p>
               </Link>
 

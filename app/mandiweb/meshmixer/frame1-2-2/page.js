@@ -19,7 +19,7 @@ export default function Page() {
           <p className="text-center justify-center items-center mt-4">
             Separating the mandible begins with generating face groups. This
             will allow us to select most of the mandible with the least amount
-            of time. Click on the edit button on the left toolbar to bring up
+            of time. Click on the <span className="font-bold">edit</span> button on the left toolbar to bring up
             the selection menu. Click on &ldquo;
             <span className="font-bold">Generate Face Groups</span>&rdquo;.
           </p>

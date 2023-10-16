@@ -20,10 +20,12 @@ export default function Page() {
           />
         </div>
         <div className="w-1/2">
-          <h2 className="text-3xl font-bold mb-2">
-            Conversion of DICOM to STL
+          <h2 className="text-3xl font-bold">
+            Objectives:
           </h2>
-          <div className="h-1 bg-gray-300"></div>
+          <p>by the end of the lesson, students will be able to:</p>
+          <div className="h-1 bg-gray-300 mt-3"></div>
+          
           <li className="mt-4 space-y-2">Familiarise oneself with the user interface of <span className="font-bold text-primary">3D slicer</span>.</li>
           <li className="mt-4 space-y-2">Narrow down regions of interest by <span className="font-bold text-primary">cropping</span>.</li>
           <li className="mt-4 space-y-2">Separate bone using <span className="font-bold text-primary">threshold</span> based <span className="font-bold text-primary">segmentation</span>.</li>

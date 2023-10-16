@@ -11,50 +11,36 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <div className="flex flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
-        <Image 
+        <Image className="ml-16"
           alt="Somethings never change"
           src={Image1}
           width={450}
           height={300}
         />
-        <div className="space-y-4">
+        <div className="space-y-4 py-4">
           <div classs className="w-full h-2 bg-gray-400"></div>
-          <h3 span className="font-bold  text-primary text-5xl ">
-            Conversion of DICOM to STL
+          <h3 span className="font-bold  text-primary text-4xl py-2">
+            Creating a 3D file from DICOM images
           </h3>
-          <div classs className="w-full h-2 bg-gray-400"></div>
+          <div classs className="w-full h-2 mt-4 bg-gray-400"></div>
           <ul className="list-disc list-inside space-y-2">
             <li>
               <span className="font-semibold">
-                Install Meshmixer for Windows:{" "}
+              Download 3D slicer (Stable version 5.2.2):{" "}
               </span>
-              <Link href="https://download.slicer.org" style={grayLink} target="_blank">
-                https://download.slicer.org
+              <Link href=" https://download.slicer.org/" style={grayLink} target="_blank">
+              https://download.slicer.org/
               </Link>
+              <p className="ml-6">Available in Windows, macOS and Linux </p>
             </li>
             <li>
               <span className="font-semibold">
-                Install Meshmixer for MacOS:{" "}
+              Download files:{" "}
               </span>
-              <Link href="https://www.meshmixer.com/download.html" style={grayLink} target="_blank">
-                https://www.meshmixer.com/download.html
+              <Link href="https://drive.google.com/drive/folders/1742qADzEkJDJ-FBMINb89dR9A7L0fbc6" style={grayLink} target="_blank"> 
+              https://drive.google.com/drive/folders/1742qADzEkJDJ-FBMINb89dR9A7L0fbc6
               </Link>
-            </li>
-            <li>
-              <span className="font-semibold">
-                Install Meshmixer for MacOS:{" "}
-              </span>
-              <Link href="https://macdownload.informer.com/meshmixer/" style={grayLink} target="_blank">
-                https://macdownload.informer.com/meshmixer/
-              </Link>
-            </li>
-            <li>
-              <span className="font-semibold">
-                Download these DICOM Files:{" "}
-              </span>
-              <Link href="https://bit.ly/3i7wsTb" style={grayLink} target="_blank">
-                https://bit.ly/3i7wsTb
-              </Link>
+              <p className="ml-6">(in zipped folder contains dicom files)</p>
             </li>
           </ul>
           <p className="text-xl font-semibold text-primary">
@@ -62,7 +48,7 @@ export default function Page() {
             now proceed to 3D Slicer.
           </p>
           <div className="flex justify-end">
-            <div className="w-32 h-12 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center hover-border hover:border-white-400 hover:border-2 hover:text-white  text-white font-bold rounded-full shadow-lg mt-8 cursor-pointer">
+            <div className="w-32 h-12 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center hover-border hover:border-white-400 hover:text-white  text-white font-bold rounded-full shadow-lg mt-8 cursor-pointer">
               <Link href="/mandiweb/3dslicer">Let&lsquo;s start!</Link>
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function Page() {
             <p className="text-center mt-4">
               Select{" "}
               <span className="font-bold">No series description cropped</span>{" "}
-              then choose{" "}
+              then select{" "}
               <span className="font-bold">
                 &ldquo;CT bone window level&rdquo;
               </span>{" "}

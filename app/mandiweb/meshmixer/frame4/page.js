@@ -20,8 +20,7 @@ export default function Page() {
               anatomy, we can unhide the remaining part by clicking on “
               <span className="font-bold">View</span>” on the top toolbar and
               selecting “<span className="font-bold">Show Objects Browser</span>
-              ”. Once satisfied with the position of the mirrored mandible,
-              click accept.
+              ”.
             </p>
             <div className="flex items-center justify-center py-2">
             <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"

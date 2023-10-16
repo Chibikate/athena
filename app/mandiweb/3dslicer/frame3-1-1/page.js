@@ -18,7 +18,7 @@ export default function Page() {
         <div>
           <div className="flex flex-col space-y-2 items-center">
             <p className="text-center mt-4">
-            Once again, click on the module drop down menu from the toolbar and select the <span className="font-bold"></span>segment editor module.
+            Once again, click on the module drop down menu from the toolbar and select the <span className="font-bold">segment editor</span> module.
             </p>
           </div>
           <div className="flex items-center justify-center py-4">

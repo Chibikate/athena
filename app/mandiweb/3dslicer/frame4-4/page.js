@@ -20,7 +20,7 @@ export default function Page() {
               Selecting export to files will prompt a small window to appear
               where the user can then select the destination folder by clicking
               on the file path as indicated above. Once the desired file
-              destination is set, click export to save the file.
+              destination is set, click <span className="font-bold">export</span> to save the file.
             </p>
           </div>
           <div className="flex items-center justify-center py-2">

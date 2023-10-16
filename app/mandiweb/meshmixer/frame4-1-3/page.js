@@ -17,7 +17,7 @@ export default function Page() {
         <div className="text-center mb-4">
           <p className="mt-4 text-center mr-16 ml-16">
             Once satisfied with the position of the mirrored mandible, click
-            accept.Click again the eye icon to hide the remaining anatomy.
+            <span classNamep="font-bold">accept</span> .Click again the eye icon to hide the remaining anatomy.
           </p>
           <div className="flex items-center justify-center py-2">
             <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"

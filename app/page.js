@@ -31,7 +31,7 @@ export default function Home() {
           <VirtualSurgicalPlanning />
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-8">
           <p className="text-3xl font-bold text-[#073148]">Topics Overview</p>
 
           <div className="flex flex-row space-x-4">

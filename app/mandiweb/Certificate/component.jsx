@@ -1,7 +1,7 @@
 // CertificatePage.js
 import React from "react";
 import Image from "next/image";
-import Image1 from "./assets/image1.svg";
+import Image1 from "./assets/image1.png";
 import { EB_Garamond } from "next/font/google";
 
 const inter = EB_Garamond({ subsets: ["latin"] });
@@ -19,11 +19,11 @@ const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
           <Image
             alt="somethings never change"
             src={Image1}
-            width={50}
-            height={40}
+            width={60}
+            height={60}
           />
         </div>
-        <p className="py-6 text-primary font-semibold font-md">Mandiweb</p>
+        <p className="py-4 text-primary font-semibold font-md">MandiWeb</p>
         <p className="py-4 px-44">
           Web-based Tutorial System in the Standardized Process of Virtual
           Surgical Planning for Mandibular Reconstruction

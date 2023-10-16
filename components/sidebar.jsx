@@ -2,15 +2,15 @@ import React from "react";
 import Image from "next/image";
 import {
   HomeIcon,
-  CalendarIcon,
   EnvelopeIcon,
   ComputerDesktopIcon,
 } from "@heroicons/react/24/solid";
 import logo from "../app/assets/logo.svg";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <div className=" p-4 w-64 bg-[#073148] text-white space-y-4 justify-center">
+    <div className=" p-4 w-64 bg-primary text-white space-y-4 justify-center">
       <Image
         alt="Somethings never change"
         src={logo}
@@ -18,34 +18,39 @@ export default function Sidebar() {
         height={1080}
       />
       <div className="space-y-4">
-        <p className="text-3xl">OVERVIEW</p>
-        <div className="flex flex-row items-center space-x-2 justify-center">
-          <div className="w-4">
-            <HomeIcon />
-          </div>
-          <p>Home</p>
-        </div>
+  <p className="text-3xl py-4">OVERVIEW</p>
+
+  <Link href="/">
+    <div className="flex flex-row items-center space-x-2 justify-center">
+      <div className="w-4">
+        <HomeIcon />
+      </div>
+      <p>Home</p>
+    </div>
+  </Link>
+</div>
+
 
         <div className="flex flex-row items-center space-x-2 justify-center">
-          <div className="w-4">
-            <ComputerDesktopIcon />
-          </div>
-          <p>Practice</p>
-        </div>
+  <Link href="/mandiweb">
+    <div className="flex flex-row items-center space-x-2">
+      <div className="w-4">
+        <ComputerDesktopIcon />
+      </div>
+      <p>Practice</p>
+    </div>
+  </Link>
+</div>
 
         <div className="flex flex-row items-center space-x-2 justify-center">
-          <div className="w-4">
-            <CalendarIcon />
-          </div>
-          <p>Calendar</p>
-        </div>
-
-        <div className="flex flex-row items-center space-x-2 justify-center">
+        <Link href="/contactus">
+        <div className="flex flex-row items-center space-x-2">
           <div className="w-4">
             <EnvelopeIcon />
           </div>
           <p>Contact Us</p>
         </div>
+        </Link>
       </div>
     </div>
   );

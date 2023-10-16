@@ -19,7 +19,7 @@ export default function Page() {
           <div className="flex flex-col space-y-2 items-center">
             <p className="text-center mt-4">
               Once in the segment editor module, click on the{" "}
-              <span className="font-bold">Add</span> button to add the segment
+              <span className="font-bold">add</span> button to add the segment
               we will be working with.
             </p>
           </div>
