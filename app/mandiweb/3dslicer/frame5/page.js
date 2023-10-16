@@ -23,7 +23,7 @@ export default function Page() {
 
           </p>
           <p className="text-justify">
-            But the journey doesn't end here! 🌟 Continue your adventure in the
+            But the journey doesn&#34;t end here! 🌟 Continue your adventure in the
             world of developing mandibular reconstruction by taking our 3D Quiz
             before proceeding to meshmixer.
           </p>

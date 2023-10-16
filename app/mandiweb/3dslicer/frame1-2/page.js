@@ -20,11 +20,15 @@ export default function Page() {
           <div>
         <div className="flex flex-col space-y-2 items-center">
         <p className="text-2xl font-extrabold mb-2 text-primary">IMPORT FILES</p>
-        <p className="text-center mb-4">Select the downloaded folder and click <span className="font-bold">"Import"</span></p>
+        <p className="text-center mb-4">Select the downloaded folder and click <span className="font-bold">&#34;Import&#34;</span></p>
           </div>
 
-        <Image className="  ml-16 mr-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
-        src={image3} width={550} height={550} />
+        <Image className="ml-16 mr-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
+        src={image3}
+        alt="something" 
+        width={550}
+        height={550}
+      />
         </div>
         </div>
       

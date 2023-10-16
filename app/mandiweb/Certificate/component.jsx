@@ -47,4 +47,6 @@ const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
   );
 });
 
+CertificateComponent.displayName = 'CertificateComponent'; // Set the display name
+
 export default CertificateComponent;

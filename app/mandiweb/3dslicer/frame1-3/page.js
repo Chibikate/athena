@@ -23,10 +23,10 @@ export default function Page() {
         <div className="flex flex-col space-y-4 items-center">
         <p>
           After loading, your dataset should show in the list as shown above.
-          Click the <span className="font-bold">"Patient Name" </span> then click <span className="font-bold">"Load"</span>
+          Click the <span className="font-bold">&#34;Patient Name&#34; </span> then click <span className="font-bold">&#34;Load&#34;</span>
           Click the{" "}
-          <span className="font-bold">&ldquo;Patient Name&rdquo; </span> then
-          click <span className="font-bold">&ldquo;Load&rdquo;</span>
+          <span className="font-bold">&#34;Patient Name&#34; </span> then
+          click <span className="font-bold">&#34;Load&#34;</span>
         </p>
 
         <Image className=" transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"

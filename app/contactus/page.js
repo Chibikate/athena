@@ -11,7 +11,7 @@ export default function Page() {
 
       <div className="pt-4 border-2 text-center x-4 border-white shadow-sm">
         <p className="py-2 text-primary">
-          If you have any questions, concerns, or feedback, please feel free to reach out to our dedicated team.<br/> We're here to assist you, and your input is valuable to us.
+          If you have any questions, concerns, or feedback, please feel free to reach out to our dedicated team.<br/> We&apos;re here to assist you, and your input is valuable to us.
         </p>
       </div>
 

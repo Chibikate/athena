@@ -23,7 +23,7 @@ export default function Page() {
             <p className="text-center">
                 Since the mandible is still a mesh, we have to make the model
                 into a solid that could be 3D printed. To do this, click on 
-                <span className="font-bold">“Edit”</span> on the left toolbar and click on <span className="font-bold">"Make Solid"</span>
+                <span className="font-bold">“Edit”</span> on the left toolbar and click on <span className="font-bold">&#34;Make Solid&#34;</span>
               </p>
               <Image className="py-2 mr-16 ml-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
                 alt="Somethings never change"

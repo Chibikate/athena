@@ -164,7 +164,7 @@ export default function QuizApp() {
                 Perfect! Now, Click here to proceed <span className="underline font-bold">Meshmixer</span></p></Link>
             ) : (
               <div className="text-red font-semibold">
-                <p className="text-red-600">Sorry, you didn't pass. You can retake the quiz to improve your score.</p>
+                <p className="text-red-600">Sorry, you didn&apos;t pass. You can retake the quiz to improve your score.</p>
                 <button onClick={retakeQuiz} style={retakeButtonStyle}>Retake Quiz</button>
               </div>
             )}

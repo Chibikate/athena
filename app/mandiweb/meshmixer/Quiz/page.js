@@ -132,7 +132,7 @@ const quizQuestions = [
                 <Link href="/mandiweb/Fillup"> <p className="text-green-900 font-bold">Click here to get your <span className="underline font-bold">certificate</span> </p> </Link>
               ) : (
                 <div className="font-semibold">
-                  <p className="text-red-600">Sorry, you didn't pass. You can retake the quiz to improve your score.</p>
+                  <p className="text-red-600">Sorry, you didn&apos;t pass. You can retake the quiz to improve your score.</p>
                   <button onClick={retakeQuiz} style={retakeButtonStyle}>Retake Quiz</button>
                 </div>
               )}

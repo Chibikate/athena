@@ -53,12 +53,12 @@ export default function Page() {
         <div className="space-y-4">
           <p className="text-justify text-primary">
           <span className="font-bold">Virtual surgical planning (VSP)</span> is a new technology that uses computers to help surgeons plan and perform mandibular reconstructions with greater precision and accuracy. Mandibular reconstruction is a complex surgery that is often needed after trauma, cancer treatment, or congenital deformities. The goal is to restore both the function and appearance of the lower jaw.
-VSP allows surgeons to create a digital model of the patient's jaw and plan the surgery in detail before it is performed. This helps to reduce the risk of complications and improve the outcome of the surgery.
-This tutorial will teach students the basics of VSP for mandibular reconstruction. Students will learn how to use the VSP software - 3D slicer and Meshmixer to create a digital model of the patient's jaw.
+VSP allows surgeons to create a digital model of the patient&apos;s jaw and plan the surgery in detail before it is performed. This helps to reduce the risk of complications and improve the outcome of the surgery.
+This tutorial will teach students the basics of VSP for mandibular reconstruction. Students will learn how to use the VSP software - 3D slicer and Meshmixer to create a digital model of the patient&apos;s jaw.
 
           </p>
           <p className="text-justify text-primary">
-          <span className="font-bold">Computed Tomography (CT)</span> scans and <span className="font-bold">Magnetic Resonance Imaging (MRI)</span> scans are medical imaging techniques that produce detailed images of the inside of the body. These images can be used to create a <span className="font-bold">three-dimensional (3D)</span> model of the patient's jaw.
+          <span className="font-bold">Computed Tomography (CT)</span> scans and <span className="font-bold">Magnetic Resonance Imaging (MRI)</span> scans are medical imaging techniques that produce detailed images of the inside of the body. These images can be used to create a <span className="font-bold">three-dimensional (3D)</span> model of the patient&apos;s jaw.
 <span className="font-bold">Digital Imaging and Communications in Medicine (DICOM)</span> is the international standard for storing, transmitting, and managing medical imaging information and data. 3D printing in medicine uses DICOM files to create custom anatomical parts, such as surgical planning guides.
           </p>
         </div>

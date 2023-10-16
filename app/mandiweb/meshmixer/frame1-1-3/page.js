@@ -17,7 +17,7 @@ export default function Page() {
       <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">
           <p>
-            Then uncheck <span className="font-bold">"Show Grid"</span> and <span className="font-bold">“Show Printer Bed”</span>.
+            Then uncheck <span className="font-bold">&#34;Show Grid&#34;</span> and <span className="font-bold">&#34;Show Printer Bed&#34;</span>.
           </p>
         </div>
         <div className="flex items-center justify-center py-2">

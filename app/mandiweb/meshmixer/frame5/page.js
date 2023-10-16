@@ -15,10 +15,10 @@ export default function Page() {
         <div className="text-justify">
           <h2 className="text-3xl font-bold mb-4 text-center animate-bounce">🎉 Congratulations!</h2>
           <p>
-            You're now a master of creating Anatomic Facsimile Models from scratch! 🌟 Give yourself a well-deserved pat on the back for your remarkable achievement.
+            You&apos;re now a master of creating Anatomic Facsimile Models from scratch! 🌟 Give yourself a well-deserved pat on the back for your remarkable achievement.
           </p>
           <p>
-            But hold on, the journey isn't complete yet! 🚀 Before you claim your certificate, test your knowledge and take our exciting Quiz. Don't forget to download and share your stunning final output!
+            But hold on, the journey isn&apos;t complete yet! 🚀 Before you claim your certificate, test your knowledge and take our exciting Quiz. Don&apos;t forget to download and share your stunning final output!
           </p>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function Page() {
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">
             <p className="mr-16 ml-16">
-            If after you import the file, the 3D printer bed is shown as well as the gridlines, you can remove <br/>this from the view by navigating at the upper left corner and click <span className="font-bold">"view"</span>.
+            If after you import the file, the 3D printer bed is shown as well as the gridlines, you can remove <br/>this from the view by navigating at the upper left corner and click <span className="font-bold">&#34;view&#34;</span>.
             </p>
           </div>
           <div className="flex items-center justify-center py-2">

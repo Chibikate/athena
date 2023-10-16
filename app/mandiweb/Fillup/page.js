@@ -31,7 +31,7 @@ function App() {
             htmlFor="date"
             className="block text-sm font-medium text-gray-600"
           >
-            Enter Today's Date:
+            Enter Today&apos;s Date:
           </label>
           <input
             type="date"
