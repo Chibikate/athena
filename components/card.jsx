@@ -14,13 +14,13 @@ export default function Card({
   authorName2,
 }) {
   return (
-    <div className="w-96 border rounded-lg shadow-2xl space-y-2">
+    <div className="w-96 border rounded-lg shadow-3xl space-y-2 hover:border-white-400 hover:border-2">
       <div className={`${color} py-2 rounded-t-lg`}>
         <Image alt="Somethings never change" src={logo} />
       </div>
 
-      <div className={`p-4 space-y-4 ${textColor}`}>
-        <p className={`${textColor} font-bold text-2xl`}>{title}</p>
+      <div className={`p-4 space-y-2 ${textColor}`}>
+        <p className={`${textColor} font-bold text-xl`}>{title}</p>
 
         <p>{subtitle}</p>
         <p className="text-justify">{desc}</p>
@@ -30,8 +30,8 @@ export default function Card({
             <Image
               alt="Somethings never change"
               src={author}
-              width={40}
-              height={25}
+              width={20}
+              height={20}
             />
             <p>{authorName}</p>
           </div>
@@ -39,17 +39,17 @@ export default function Card({
             <Image
               alt="Somethings never change"
               src={author2}
-              width={40}
-              height={25}
+              width={20}
+              height={20}
             />
             <p>{authorName2}</p>
           </div>
         </div>
 
         <div className="justify-end flex">
-          <div className={`${color} p-2 cursor-pointer rounded-md `}>
+          <div className={`${color} p-2 cursor-pointer rounded-md hover:border-white-400 hover:border-2`}>
             <Link href="/mandiweb">
-              <p className="text-white">Practice now</p>
+              <p className="text-white hover-border">Practice now</p>
             </Link>
           </div>
         </div>

@@ -23,16 +23,16 @@ export default function Home() {
           alt="Somethings never change"
           src={hero}
           width={1920}
-          height={1080}
+          height={1000}
         />
 
         <div className="space-y-6 ">
-          <p className="text-3xl font-bold text-[#073148]">Recently Accessed</p>
+          <p className="text-2xl font-bold text-[#130e2b]">Recently Accessed</p>
           <VirtualSurgicalPlanning />
         </div>
 
         <div className="space-y-8">
-          <p className="text-3xl font-bold text-[#073148]">Topics Overview</p>
+          <p className="text-2xl font-bold text-[#130e2b] mt-20">Topics Overview</p>
 
           <div className="flex flex-row space-x-4">
             <VirtualSurgicalPlanning />
@@ -49,7 +49,7 @@ function VirtualSurgicalPlanning() {
       title={"Virtual Surgical Planning"}
       subtitle={"for Mandibular Reconstruction"}
       desc={
-        "Learn and discover the interactive learning activities, and practical insights into  Virtual Surgical Planning for Mandibular Reconstruction, ultimately enhancing knowledge acquisition and advancing healthcare practices."
+        ""
       }
       logo={page}
       color={"bg-primary"}
