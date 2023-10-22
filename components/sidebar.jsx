@@ -52,6 +52,9 @@ export default function Sidebar() {
         </div>
         </Link>
       </div>
+
+      <button id="dark-mode-toggle">Toggle Dark Mode</button>
+      
     </div>
   );
 }

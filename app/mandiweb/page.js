@@ -1,13 +1,21 @@
-import Image from "next/image";
-import hero from "./assets/hero.png";
-import Image2 from "./assets/image2.jpg";
-import Image3 from "./assets/image3.jpg";
-import Image4 from "./assets/image4.png";
-import Link from "next/link";
+"use client"
+import React, { useEffect } from 'react';
+import Image from 'next/image';
+import hero from './assets/hero.png';
+import Image2 from './assets/image2.jpg';
+import Image3 from './assets/image3.jpg';
+import Image4 from './assets/image4.png';
+import Link from 'next/link';
 
 export default function Home() {
+  useEffect(() => {
+    document.querySelector('#dark-mode-toggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center space-y-4">
+    <main className=" dark:bg-[#204047] flex min-h-screen flex-col items-center justify-center space-y-4">
       <div className="relative rounded-lg shadow-lg overflow-hidden">
         <Image 
           alt="Somethings never change"
@@ -15,7 +23,7 @@ export default function Home() {
           width={1920}
           height={800}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
+        <div className="dark:bg-[#204047] absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
         <div className="absolute bottom-0 left-0 p-8 text-white">
           <p className="text-2xl font-bold mb-4">
             Welcome to the Virtual Surgical Planning Tutorial!
@@ -29,7 +37,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-12">
+      <div className="py-12 ">
         <p className="text-center font-bold text-3xl text-primary">
           Enhancing Surgical Proficiency, One Fracture at a Time
         </p>
@@ -51,11 +59,11 @@ export default function Home() {
       </div>
 
       <div className="flex items-center justify-center space-y-4 py-4">
-  <Link href="mandiweb/thingstodownload">
-    <div className="text-primary flex items-center cursor-pointer pr-4 transform transition duration-300 hover:scale-105">
-      <p className="mr-2">Click here to start →</p>
-    </div>
-  </Link>
+        <Link href="mandiweb/thingstodownload">
+          <div className="text-primary flex items-center cursor-pointer pr-4 transform transition duration-300 hover:scale-105">
+            <p className="mr-2">Click here to start →</p>
+          </div>
+        </Link>
         <div className="flex flex-row space-x-16 items-center">
           <Link href="mandiweb/thingstodownload">
             <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">

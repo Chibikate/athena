@@ -4,10 +4,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'media', // Enable dark mode utilities
   theme: {
     extend: {
       colors: {
         primary: "#001524",
+        dark: "#333", // Define dark mode background color
+      },
+      textColor: {
+        dark: "#fff", // Define dark mode text color
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -19,6 +24,14 @@ module.exports = {
         'bounce-in-left': 'bounce-in-left 1s ease-out',
       },
     },
+  },
+  darkMode: 'class', 
+  variants: {
+    extend: {
+      backgroundColor: ['dark'],
+      textColor: ['dark'],
+    },
+
   },
   plugins: [],
 };

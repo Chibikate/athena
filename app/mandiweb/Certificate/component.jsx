@@ -13,8 +13,9 @@ const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
       ref={ref}
     >
       <div
-        className={`w-[845px] mx-auto bg-[#DCE8F2] p-5 border-x-8 border-y-8 rounded-md shadow-md ${inter.className} border-primary flex flex-col items-center`}
+  className={`w-[845px] mx-auto bg-[#DCE8F2] p-5 border-x-8 border-y-8 rounded-md shadow-md ${inter.className} border-primary flex flex-col items-center`}
       >
+
         <div className="rounded-full">
           <Image
             alt="somethings never change"
@@ -23,7 +24,7 @@ const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
             height={60}
           />
         </div>
-        <p className="py-4 text-primary font-semibold font-md">MandiWeb</p>
+        <p className="py-4 text-primary font-semibold font-md">VSP Tutorial</p>
         <p className="py-4 px-44">
           Web-based Tutorial System in the Standardized Process of Virtual
           Surgical Planning for Mandibular Reconstruction

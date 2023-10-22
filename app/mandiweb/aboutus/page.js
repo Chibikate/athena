@@ -19,7 +19,7 @@ const TeamMembers = [
 
 export default function Page() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4  dark:bg-[#204047]">
       {/* Enhanced Full-width Hero Image */}
       <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden rounded-lg shadow-md">
         <Image
@@ -43,7 +43,7 @@ export default function Page() {
 
       <div className="flex flex-col sm:flex-row space-x-4 my-6">
         <div className="w-full">
-          <Image className="mt-14"
+          <Image className="mt-14  dark:bg-[#204047]"
             alt="Somethings never change"
             src={Image1}
             width={550}

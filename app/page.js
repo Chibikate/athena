@@ -1,22 +1,35 @@
+"use client"
+import {useEffect} from 'react'
 import Image from "next/image";
 import hero from "./assets/hero.svg";
 import kaye from "./assets/kaye.jpg";
 import kate from "./assets/kate.jpg";
 import page from "./assets/page.png";
 
+
+
 import Card from "@/components/card";
 import Sidebar from "@/components/sidebar";
 
 export default function Home() {
+  useEffect(() => {
+    document.querySelector('#dark-mode-toggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  }, []);
+
+
+  
   return (
-    <main className="flex flex-row ">
+    
+    <main className="flex flex-row bg-white dark:bg-black text-black dark:text-white">
       <Sidebar />
 
       <div className="space-y-6 p-2">
-        <p className="py-6 my-4 bg-[#B2E3FF] rounded-sm text-center">
+        <p className="py-6 my-4 bg-[rgb(169,192,255)] rounded-sm text-center">
           Step into a world of boundless possibilities as you embark on a
           remarkable journey through our website, where knowledge meets
-          innovation.
+          innovation
         </p>
 
         <Image
@@ -39,6 +52,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
     </main>
   );
 }

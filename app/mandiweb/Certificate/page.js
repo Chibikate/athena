@@ -12,9 +12,13 @@ function CertificatePage() {
   const date = searchParams.get("date");
 
   const downloadCertificate = () => {
-    html2canvas(certRef.current, {
-      windowWidth: certRef.current.scrollWidth,
-      windowHeight: certRef.current.scrollHeight,
+    const certificateElement = certRef.current;
+
+    html2canvas(certificateElement, {
+      x: 0, 
+      y: 0,
+      width: certificateElement.offsetWidth, 
+      height: certificateElement.offsetHeight, 
     }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF("l", "mm", "a4"); // set PDF to A4 size in landscape orientation
@@ -23,7 +27,9 @@ function CertificatePage() {
       const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
       pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
       pdf.save("certificate.pdf");
-    });
+    });    
+      
+    
   };
 
   const certRef = useRef();

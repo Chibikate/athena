@@ -102,7 +102,7 @@ export default function Page() {
                 d="M12 5l9 4-9 4-9-4 9-4zm0 0v6"
               />
             </svg>
-            kate.velarde@g.msuiit.edu.ph
+            kaye.velarde@g.msuiit.edu.ph
           </p>
         </div>
       </div>

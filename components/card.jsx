@@ -14,7 +14,7 @@ export default function Card({
   authorName2,
 }) {
   return (
-    <div className="w-96 border rounded-lg shadow-3xl space-y-2 hover:border-white-400 hover:border-2">
+    <div className="w-96 border-2 rounded-lg shadow-3xl space-y-2 hover:border-white-400 hover:border-2">
       <div className={`${color} py-2 rounded-t-lg`}>
         <Image alt="Somethings never change" src={logo} />
       </div>
