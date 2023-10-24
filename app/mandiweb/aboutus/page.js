@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Image1 from "./assets/image1.png";
 import hero from "./assets/hero.png";
-import Image2 from "./assets/image2.jpg";
-import Image3 from "./assets/image3.jpg";
+import Image2 from "./assets/image2.png";
+import Image3 from "./assets/image3.png";
 
 const TeamMembers = [
   {
@@ -79,8 +79,8 @@ This tutorial will teach students the basics of VSP for mandibular reconstructio
                 <Image
                   alt={`${member.name}'s Photo`}
                   src={member.image}
-                  width={120}
-                  height={120}
+                  width={100}
+                  height={150}
                   className="rounded-full border-4 border-white"
                 />
               </div>

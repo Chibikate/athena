@@ -1,3 +1,7 @@
+'use client';
+
+import { Progress } from 'flowbite-react';
+
 import Image from "next/image";
 import image5 from "./assets/image-5.png";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
@@ -7,6 +11,8 @@ import Link from "next/link";
 
 export default function Page() {
   return (
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <Progress progress={16.64} size="md"/>
     <main className="flex flex-row items-center justify-between p-8 space-y-4">
 
 <div className="flex justify-between mt-8 space-x-4">
@@ -17,7 +23,7 @@ export default function Page() {
         </Link>
         </div>
 
-      <div className="space-y-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md text-center flex items-center">
+      <div className="space-y-4 bg-[rgba(191,213,247,0.3)] p-14 rounded-lg shadow-md text-center flex items-center">
         <div>
 
         <div className="flex flex-col space-y-4 items-center">
@@ -46,5 +52,6 @@ export default function Page() {
         </Link>
       </div>
     </main>
+    </div>
   );
 }

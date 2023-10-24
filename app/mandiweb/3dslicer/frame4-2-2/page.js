@@ -1,3 +1,7 @@
+'use client';
+
+import { Progress } from 'flowbite-react';
+
 import Image from "next/image";
 import image18 from "./assets/image-18.png";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
@@ -7,7 +11,9 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="flex flex-row items-center justify-between p-8 space-y-4">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <Progress progress={79.04} size="md"/>
+    <main className="flex flex-row items-center justify-between p-14 space-y-4">
       <div className="flex justify-between mt-8 space-x-4">
         <Link href="/mandiweb/3dslicer/frame4-2">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
@@ -21,6 +27,7 @@ export default function Page() {
             <p className="mt-4 text-primary font-bold text-xl text-center">
             Saving and Exporting the File
             </p>
+            <p className="mt-2">Click next button to proceed</p>
           </div>
           <div className="flex items-center justify-center py-2">
 
@@ -40,6 +47,7 @@ export default function Page() {
         </Link>
       </div>
     </main>
+    </div>
   );
 }
 

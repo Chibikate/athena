@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
-import Navigator from "./components/navigator";
 import Footer from "./components/footer";
 import 'animate.css';
 
@@ -16,7 +15,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${openSans.className}`}>
-        <Navigator />
         {children}
         <Footer />
       </body>

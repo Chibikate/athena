@@ -3,8 +3,9 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
-  darkMode: 'media', // Enable dark mode utilities
+   // Enable dark mode utilities
   theme: {
     extend: {
       colors: {
@@ -23,6 +24,7 @@ module.exports = {
         'spin-slow': 'spin 10s linear infinite', // Adjust the duration (5s) for the desired speed
         'bounce-in-left': 'bounce-in-left 1s ease-out',
       },
+      
     },
   },
   darkMode: 'class', 
@@ -33,5 +35,5 @@ module.exports = {
     },
 
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };

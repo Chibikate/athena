@@ -1,7 +1,8 @@
 // CertificatePage.js
 import React from "react";
 import Image from "next/image";
-import Image1 from "./assets/image1.png";
+import Image1 from "./assets/Image1.svg";
+import Image2 from "./assets/Image2.png";
 import { EB_Garamond } from "next/font/google";
 
 const inter = EB_Garamond({ subsets: ["latin"] });
@@ -13,7 +14,7 @@ const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
       ref={ref}
     >
       <div
-  className={`w-[845px] mx-auto bg-[#DCE8F2] p-5 border-x-8 border-y-8 rounded-md shadow-md ${inter.className} border-primary flex flex-col items-center`}
+  className={`w-[845px] mx-auto bg-[#c7dfff] p-5 border-x-2 border-y-2 rounded-md shadow-md ${inter.className} border-primary flex flex-col items-center`}
       >
 
         <div className="rounded-full">
@@ -24,25 +25,31 @@ const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
             height={60}
           />
         </div>
-        <p className="py-4 text-primary font-semibold font-md">VSP Tutorial</p>
-        <p className="py-4 px-44">
-          Web-based Tutorial System in the Standardized Process of Virtual
-          Surgical Planning for Mandibular Reconstruction
-        </p>
+        
+
         <h2 className="text-3xl font-semibold mb-4 py-4 font-3xl text-primary">
           CERTIFICATE OF COMPLETION
         </h2>
-        <p className="pb-4">This certificate is presented to </p>
-        <p className="font-semibold text-3xl py-5 text-primary">{fullName}</p>
-        <p className="py-4 px-40">
-          This program covered essential topics in the field of surgical
-          planning for mandibular reconstruction, equipping the recipient with
-          valuable knowledge and skills in this specialized area of healthcare.{" "}
+        <p className="pb-4 text-black">This certificate is presented to </p>
+        <p className="font-semibold text-3xl py-5 underline italic text-primary">{fullName}</p>
+        <p className="py-4 text-black">
+          HAS SUCCESSFULLY COMPLETED THE VIRTUAL SURGICAL PLANNING FOR MANDIBULAR RECONSTRUCTION{" "}
         </p>
         <p className="font-bold">
           <br />
           {date}
         </p>
+
+<div>
+<Image className="pt-4"
+            alt="somethings never change"
+            src={Image2}
+            width={150}
+            height={150}
+          />
+</div>
+
+
       </div>
     </div>
   );

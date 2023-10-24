@@ -1,3 +1,7 @@
+'use client';
+
+import { Progress } from 'flowbite-react';
+
 import Image from "next/image";
 import image12 from "./assets/image-12.png";
 import Link from "next/link";
@@ -5,7 +9,9 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
   return (
-    <main className="flex flex-row items-center justify-between p-8 space-y-4">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <Progress progress={41.6} size="md"/>
+    <main className="flex flex-row items-center justify-between p-14 space-y-4">
       <div className="flex justify-between mt-8 space-x-4">
         <Link href="/mandiweb/3dslicer/frame3">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
@@ -19,7 +25,7 @@ export default function Page() {
           <div className="flex flex-col space-y-2 items-center">
             <p className="text-center mt-4">
               Select{" "}
-              <span className="font-bold">No series description cropped</span>{" "}
+              <span className="font-bold">&#34;no series description cropped&#34;</span>{" "}
               then select{" "}
               <span className="font-bold">
                 &ldquo;CT bone window level&rdquo;
@@ -45,5 +51,6 @@ export default function Page() {
         </Link>
       </div>
     </main>
+    </div>
   );
 }

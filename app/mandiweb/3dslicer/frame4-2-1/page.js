@@ -1,3 +1,7 @@
+'use client';
+
+import { Progress } from 'flowbite-react';
+
 import Image from "next/image";
 import image18 from "./assets/image-18.png";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
@@ -7,7 +11,9 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="flex flex-row items-center justify-between p-8 space-y-4">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <Progress progress={74.88} size="md"/>
+    <main className="flex flex-row items-center justify-between p-14 space-y-4">
       <div className="flex justify-between mt-8 space-x-4">
         <Link href="/mandiweb/3dslicer/frame4-2">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
@@ -22,7 +28,7 @@ export default function Page() {
              Depending on the computer used, a short lag
               period may happen. If the 3D image does not appear in the upper
               right corner, we can click on the{" "}
-              <span className="font-bold">&ldquo;Center View&rdquo;</span>{" "}
+              <span className="font-bold">&ldquo;centre view&rdquo;</span>{" "}
               button on the upper left of the blue window. Clicking on the 3D
               image with the left mouse button will allow the user to move the
               3D image. To zoom in and out, click and hold the right mouse
@@ -47,6 +53,7 @@ export default function Page() {
         </Link>
       </div>
     </main>
+    </div>
   );
 }
 

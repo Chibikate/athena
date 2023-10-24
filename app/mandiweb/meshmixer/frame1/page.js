@@ -1,3 +1,7 @@
+'use client';
+
+import { Progress } from 'flowbite-react';
+
 import Image from "next/image";
 import Image2 from "./assets/Image2.png";
 import Link from "next/link";
@@ -7,7 +11,9 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
   return (
-    <main className="flex flex-row items-center justify-between p-8 space-y-4">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
+    <Progress progress={3.6} size="md"/>
+    <main className="flex flex-row items-center justify-between p-14 space-y-4">
       <div className="flex justify-between mt-8 space-x-4">
         <Link href="/mandiweb/meshmixer">
           <div className="w-16 h-16 bg-primary hover-border hover:border-white-400 hover:border-2 flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
@@ -42,5 +48,6 @@ export default function Page() {
       </div>
 
     </main>
+    </div>
   );
 }

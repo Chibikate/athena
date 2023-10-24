@@ -6,6 +6,7 @@ import Image2 from './assets/image2.jpg';
 import Image3 from './assets/image3.jpg';
 import Image4 from './assets/image4.png';
 import Link from 'next/link';
+import Navigator from "./components/navigator";
 
 export default function Home() {
   useEffect(() => {
@@ -14,7 +15,11 @@ export default function Home() {
     });
   }, []);
 
+  
   return (
+    <>
+    
+    <Navigator />
     <main className=" dark:bg-[#204047] flex min-h-screen flex-col items-center justify-center space-y-4">
       <div className="relative rounded-lg shadow-lg overflow-hidden">
         <Image 
@@ -46,9 +51,9 @@ export default function Home() {
       <div className="bg-primary space-y-4 p-12 text-white text-center">
         <p>
           At Web-based Tutorial System, our goal is to educate you and become
-          knowledgeable on Virtual Surgical Planning for Reconstruction. We
+          knowledgeable on Virtual Surgical Planning for Mandibular Reconstruction. We
           created guidelines and resources that will accompany you in your
-          journey to creating a simple Mandibular Fractures.
+          journey to creating a Mandibular Reconstruction.
         </p>
 
         <p>
@@ -112,5 +117,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+    </>
   );
 }

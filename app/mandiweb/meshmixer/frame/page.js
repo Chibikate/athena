@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Image1 from "./assets/image1.png";
 import Link from "next/link";
@@ -9,7 +10,8 @@ const grayLink = {
 
 export default function Page() {
   return (
-    <div className="space-y-4">
+
+    <div className="space-y-4 p-10">
       <div className="flex flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
         <Image
           className="ml-16"
@@ -49,5 +51,6 @@ export default function Page() {
         </div>
       </div>
     </div>
+   
   );
 }

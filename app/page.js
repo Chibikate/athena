@@ -58,20 +58,19 @@ export default function Home() {
 }
 
 function VirtualSurgicalPlanning() {
+
   return (
+
     <Card
-      title={"Virtual Surgical Planning"}
-      subtitle={"for Mandibular Reconstruction"}
+      title={"Virtual Surgical Planning for Mandibular Reconstruction"}
+      subtitle={""}
       desc={
-        ""
+        "Learn how to use VSP software - 3D Slicer and Meshmixer"
       }
       logo={page}
       color={"bg-primary"}
       textColor={"text-primary"}
-      author={kaye}
-      author2={kate}
-      authorName={"Kaye"}
-      authorName2={"Kate"}
-    />
+      />
+    
   );
 }

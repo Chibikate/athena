@@ -9,7 +9,7 @@ const grayLink = {
 };
 export default function Page() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 p-14">
       <div className="flex flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
         <Image className="ml-16"
           alt="Somethings never change"
