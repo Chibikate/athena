@@ -11,7 +11,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
-      <Progress progress={24.96} size="md"/>
+      <Progress progress={27} size="md"/>
     <main className="flex flex-row items-center justify-between p-14 space-y-4">
 <div className="flex justify-between mt-8 space-x-4">
         <Link href="/mandiweb/3dslicer/frame2">
