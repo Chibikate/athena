@@ -1,27 +1,14 @@
-"use client"
-import {useEffect} from 'react'
 import Image from "next/image";
 import hero from "./assets/hero.svg";
 import kaye from "./assets/kaye.jpg";
 import kate from "./assets/kate.jpg";
 import page from "./assets/page.png";
 
-
-
 import Card from "@/components/card";
 import Sidebar from "@/components/sidebar";
 
 export default function Home() {
-  useEffect(() => {
-    document.querySelector('#dark-mode-toggle').addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-    });
-  }, []);
-
-
-  
   return (
-    
     <main className="flex flex-row bg-white dark:bg-black text-black dark:text-white">
       <Sidebar />
 
@@ -45,32 +32,28 @@ export default function Home() {
         </div>
 
         <div className="space-y-8">
-          <p className="text-2xl font-bold text-[#130e2b] mt-20">Topics Overview</p>
+          <p className="text-2xl font-bold text-[#130e2b] mt-20">
+            Topics Overview
+          </p>
 
           <div className="flex flex-row space-x-4">
             <VirtualSurgicalPlanning />
           </div>
         </div>
       </div>
-      
     </main>
   );
 }
 
 function VirtualSurgicalPlanning() {
-
   return (
-
     <Card
       title={"Virtual Surgical Planning for Mandibular Reconstruction"}
       subtitle={""}
-      desc={
-        "Learn how to use VSP software - 3D Slicer and Meshmixer"
-      }
+      desc={"Learn how to use VSP software - 3D Slicer and Meshmixer"}
       logo={page}
       color={"bg-primary"}
       textColor={"text-primary"}
-      />
-    
+    />
   );
 }

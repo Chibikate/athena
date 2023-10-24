@@ -1,5 +1,3 @@
-"use client"
-import React, { useEffect } from 'react';
 import Image from 'next/image';
 import hero from './assets/hero.png';
 import Image2 from './assets/image2.jpg';
@@ -9,12 +7,6 @@ import Link from 'next/link';
 import Navigator from "./components/navigator";
 
 export default function Home() {
-  useEffect(() => {
-    document.querySelector('#dark-mode-toggle').addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-    });
-  }, []);
-
   
   return (
     <>
