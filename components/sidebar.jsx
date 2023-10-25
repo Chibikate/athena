@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <div className=" p-4 w-64 bg-primary text-white space-y-4 justify-center">
+    <div className=" p-4 w-80 bg-primary text-white space-y-4 justify-center">
       <Image
         alt="Somethings never change"
         src={logo}

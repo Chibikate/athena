@@ -43,15 +43,11 @@ export default function Navigator() {
                 </span>
               </button>
 
-              <Link href="/mandiweb">
-                <p className="text-white hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                  Home
-                </p>
-              </Link>
+             
 
               <Link href="/">
                 <p className="text-white hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                  Dashboard
+                  Home
                 </p>
               </Link>
 

@@ -49,7 +49,8 @@ const quizQuestions = [
   },
   {
     question:
-      `5. Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized? 
+      `5. Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized?
+      ${<br/>}
       i.) Crop Volume  ii.) Volume Rendering   iii.)segment editor   iv) Volumes   v.)Threshold`,
     options: ["  A. i, iii, iv","  B. i, ii, iii", "  C. ii, iv, v", "  D. i, ii, iv"],
     correctAnswer: "A. i, iii, iv",
@@ -105,6 +106,16 @@ export default function QuizApp() {
     return score;
   };
 
+  const checkWrong = () => {
+    let wrong = [];
+    userAnswers.forEach((answer, index) => {
+      if (answer.trim() !== quizQuestions[index].correctAnswer.trim()) {
+        wrong.push(index+1);
+      }
+    });
+    return wrong;
+  };
+
   const retakeQuiz = () => {
     setUserAnswers(Array(quizQuestions.length).fill(""));
     setCurrentQuestion(0);
@@ -112,6 +123,7 @@ export default function QuizApp() {
   };
 
   const score = calculateScore();
+  const wrong = checkWrong();
 
   return (
     <div className="min-h-screen items-center p-6 hover:bg-gray-200">
@@ -158,15 +170,23 @@ export default function QuizApp() {
               </div>
         ) : (
           <div className="font-semibold">
-            <p>Your Score: {score} out of {quizQuestions.length}</p>
+            <p>Your Score: {score} out of {quizQuestions.length} <br/>
+            {wrong.length>0 && `You got a wrong answer on number ${wrong}`}
+            </p>
             {score === quizQuestions.length ? (
               <Link href="/mandiweb/meshmixer/frame"> <p className="text-green-900 font-bold">
                 Perfect! Now, Click here to proceed <span className="underline font-bold">Meshmixer</span></p></Link>
             ) : (
               <div className="text-red font-semibold">
-                <p className="text-red-600">Sorry, you didn&apos;t pass. You can retake the quiz to improve your score.</p>
-                <button onClick={retakeQuiz} style={retakeButtonStyle}>Retake Quiz</button>
+                <p className="text-red-600 text-center pt-4 pb-2">Sorry, you didn&apos;t pass. You can retake the quiz to improve your score.</p>
+                <button onClick={retakeQuiz} style={retakeButtonStyle} className="text-right">Retake Quiz</button>
+                <Link href = "/mandiweb/3dslicer">
+                <button>
+                  Retake the Leson
+                </button>
+                </Link>
               </div>
+
             )}
           </div>
         )}
@@ -195,10 +215,9 @@ const submitButtonStyle = {
 };
 
 const retakeButtonStyle = {
-  marginTop: "20px",
+  marginTop: "",
   display: "block",
-  marginLeft: "auto",
-  marginRight: "auto",
+  float: "right",
 };
 
 const prevButtonStyle = {
