@@ -63,7 +63,7 @@ export default function Card({
 
         <div className="justify-end flex">
           <div className={`${color} p-2 cursor-pointer rounded-md hover:border-white-400 hover:border-2`}>
-            <Link href="./app/mandiweb">
+            <Link href="/mandiweb">
               <p className="text-white hover-border">Start now</p>
             </Link>
           </div>
