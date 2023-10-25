@@ -18,8 +18,8 @@ export default function Page() {
               Virtual Surgical Panning
             </p>
         <Link href="/app">
-            <div className="bg-black p-1 text-white rounded-lg hover:border-white hover:border-2">
-              <p className="m-2 text-sm">Click to Start</p>
+            <div className="bg-black p-1 text-white rounded-lg hover-border hover:border-white-400 hover:border-2 cursor-pointer">
+              <p className="m-2 text-sm ">Click to Start</p>
             </div>
             </Link>
           </div>
