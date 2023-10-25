@@ -173,7 +173,7 @@ export default function QuizApp() {
                 <button onClick={retakeQuiz} style={retakeButtonStyle} className="text-right">
                   Retake Quiz
                 </button>
-                <Link href = "/mandiweb/meshmixer">
+                <Link href = "/mandiweb/mesh-mixer">
                 <button className="text-left">
                   Retake the Leson
                 </button>

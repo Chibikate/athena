@@ -30,7 +30,7 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/meshmixer/Quiz">
+        <Link href="/mandiweb/mesh-mixer/Quiz">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronRightIcon className="w-8 h-8" />
           </div>

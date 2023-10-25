@@ -13,7 +13,7 @@ export default function Page() {
     <Progress progress={100} size="md"/>
     <main className="flex flex-row items-center text-center justify-between p-14 space-y-4">
       <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/meshmixer/frame4-1">
+        <Link href="/mandiweb/mesh-mixer/frame4-1">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronLeftIcon className="w-8 h-8" />
           </div>
@@ -40,7 +40,7 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/meshmixer/frame5">
+        <Link href="/mandiweb/mesh-mixer/frame5">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronRightIcon className="w-8 h-8" />
           </div>

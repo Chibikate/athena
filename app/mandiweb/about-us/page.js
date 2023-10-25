@@ -1,8 +1,10 @@
 import Image from "next/image";
-import Image1 from "@/public/athena/about-us/image1.png";
+import Image1 from "@/public/athena/about-us/Image1.gif";
 import hero from "@/public/athena/about-us/hero.png";
 import Image2 from "@/public/athena/about-us/image2.png";
 import Image3 from "@/public/athena/about-us/image3.png";
+import GIF from "@/public/athena/about-us/Image1.gif";
+import Link from "next/link";
 
 const TeamMembers = [
   {
@@ -19,6 +21,7 @@ const TeamMembers = [
 
 export default function AboutUs() {
   return (
+    <div>
     <div className="space-y-4  dark:bg-[#204047]">
       <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden rounded-lg shadow-md">
         <Image
@@ -45,7 +48,7 @@ export default function AboutUs() {
           <Image
             className="mt-14  dark:bg-[#204047]"
             alt="Somethings never change"
-            src={Image1}
+            src={GIF}
             width={550}
             height={300}
           />
@@ -115,7 +118,16 @@ export default function AboutUs() {
             </div>
           ))}
         </div>
+       
       </div>
+      <div className="text-center justify-between ">
+    <Link href = "/mandiweb">
+       <p className="rounded-lg px-4 py-2 text-primary text-md underline text-md font-bold p-4 cursor-pointer">
+         Cick here to go back  </p>
+        </Link>
+        </div> 
     </div>
+    
+    </div>  
   );
 }

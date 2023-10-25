@@ -1,9 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import hero from "@/public/mandiweb/hero.png";
-import Image2 from "@/public/mandiweb/image2.jpg";
-import Image3 from "@/public/mandiweb/image3.jpg";
-import Image4 from "@/public/mandiweb/image4.png";
+import Image2 from "@/public/mandiweb/image2.png";
+import Image3 from "@/public/mandiweb/image3.png";
 import Navigator from "@/components/navigator";
 
 export default function Home() {
@@ -55,56 +54,26 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-center space-y-4 py-4">
-          <Link href="/mandiweb/things-to-download">
-            <div className="text-primary flex items-center cursor-pointer pr-4 transform transition duration-300 hover:scale-105">
-              <p className="mr-2">Click here to start →</p>
-            </div>
-          </Link>
           <div className="flex flex-row space-x-16 items-center">
-            <Link href="/mandiweb/things-to-download">
-              <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">
-                <Image
-                  alt="Somethings never change"
-                  src={Image2}
-                  width={200}
-                  height={150}
-                  className="rounded-md"
-                />
-                <p className="text-center font-bold text-primary hover:text-secondary">
-                  Things to download
-                </p>
-              </div>
-            </Link>
+            <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">
+              <Image
+                alt="Somethings never change"
+                src={Image2}
+                width={200}
+                height={150}
+                className="rounded-md"
+              />
+            </div>
 
-            <Link href="/mandiweb/3d-slicer">
-              <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">
-                <Image
-                  alt="Somethings never change"
-                  src={Image4}
-                  width={200}
-                  height={150}
-                  className="rounded-md"
-                />
-                <p className="text-center font-bold text-primary hover:text-secondary">
-                  3D slicer
-                </p>
-              </div>
-            </Link>
-
-            <Link href="/mandiweb/mesh-mixer">
-              <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">
-                <Image
-                  alt="Somethings never change"
-                  src={Image3}
-                  width={200}
-                  height={150}
-                  className="rounded-md"
-                />
-                <p className="text-center font-bold text-primary hover:text-secondary">
-                  Meshmixer
-                </p>
-              </div>
-            </Link>
+            <div className="aspect-square cursor-pointer transform transition duration-300 hover:scale-105">
+              <Image
+                alt="Somethings never change"
+                src={Image3}
+                width={200}
+                height={180}
+                className="rounded-md"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -11,10 +11,8 @@ export default function AthenaHome() {
       <Sidebar />
 
       <div className="p-2">
-        <p className="py-6 my-4 bg-[#a8cfff] rounded-sm text-center">
-          Step into a world of boundless possibilities as you embark on a
-          remarkable journey through our website, where knowledge meets
-          innovation
+        <p className="py-6 my-4 bg-[#d4eaff] rounded-sm text-center">
+        Unlock the world of realistic Virtual Surgical Planning with our comprehensive web-based tutorial
         </p>
 
         <Image
@@ -25,7 +23,7 @@ export default function AthenaHome() {
         />
 
         <div className="space-y-6 ">
-          <p className="text-2xl font-bold text-[#130e2b]">Recently Accessed</p>
+          <p className="text-2xl font-bold text-[#130e2b] pt-4">Recently Accessed</p>
           <VirtualSurgicalPlanning />
         </div>
 

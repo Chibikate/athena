@@ -10,9 +10,9 @@ function ListItem({ text }) {
 export default function Page() {
   return (
     <div className="bg-white rounded-lg shadow-md p-14">
-      <div className="flex items-center">
-        <div className="w-1/2 my-6">
-          <Image
+      <div className="flex items-center ">
+        <div className="w-1/2 my-6 ">
+          <Image 
             className="animate-bounce mx-32"
             src={Image1}
             width={300}
