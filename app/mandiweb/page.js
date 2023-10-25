@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import hero from "@/public/mandiweb/hero.png";
 import Image2 from "@/public/mandiweb/image2.png";
-import Image3 from "@/public/mandiweb/image3.png";
+import Image3 from "@/public/mandiweb/Image3.png";
 import Navigator from "@/components/navigator";
 
 export default function Home() {
