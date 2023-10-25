@@ -12,7 +12,7 @@ export default function AthenaHome() {
 
       <div className="p-2">
         <p className="py-6 my-4 bg-[#d4eaff] rounded-sm text-center">
-        Unlock the world of realistic Virtual Surgical Planning with our comprehensive web-based tutorial
+        Mastery is the product of unyielding practice, the alchemical process that transforms raw potential into refined excellence
         </p>
 
         <Image
