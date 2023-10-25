@@ -5,7 +5,7 @@ import page from "@/app/assets/page.png";
 import Card from "@/components/card";
 import Sidebar from "@/components/sidebar";
 
-export default function Home() {
+export default function AthenaHome() {
   return (
     <main className="flex flex-row bg-white dark:bg-black text-black dark:text-white">
       <Sidebar />
