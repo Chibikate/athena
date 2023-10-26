@@ -56,7 +56,7 @@ export default function Navigator() {
                 </p>
               </Link>
 
-              <Link href="/mandiweb/things-to-download">
+              <Link href="/mandiweb/introduction">
                 <p className="text-white hover hover:text-white hover-border hover:border-white-400 hover:border-2 px-5 py-2 rounded-md text-sm font-medium bg-[#0091AD]">
                   Start
                 </p>

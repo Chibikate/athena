@@ -157,7 +157,7 @@ export default function QuizApp() {
               {wrong.length>0 && `You got a wrong answer on number ${wrong}`}
             </p>
             {score === quizQuestions.length ? (
-              <Link href="/mandiweb/Fillup">
+              <Link href="/mandiweb/fill-up">
                 {" "}
                 <p className="text-green-900 font-bold">
                   Click here to get your{" "}

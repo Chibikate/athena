@@ -5,6 +5,7 @@ import CertificateComponent from "./component";
 import { useSearchParams } from "next/navigation";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import Link from "next/link";
 
 function CertificatePage() {
   const searchParams = useSearchParams();
@@ -41,11 +42,16 @@ function CertificatePage() {
 
         <button
           onClick={downloadCertificate}
-          className="bg-primary text-white px-4 py-2 rounded-md hover:bg-indigo-600 mt-4 inline-block"
+          className="bg-primary text-white px-4 py-2 cursor-pointer rounded-md hover:bg-indigo-600 mt-4 inline-block"
         >
           Download Certificate
         </button>
       </div>
+      <Link href="./trophy">
+      <div className="pt-4 ">
+        <p className="underline p-2 rounded-lg hover:border-2 cursor-pointer shadow-xl text-primary">Click here after downloading your certificate</p>
+      </div>
+      </Link>
     </div>
   );
 }

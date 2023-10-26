@@ -41,7 +41,7 @@ const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
         </p>
 
 <div>
-<Image className="pt-4"
+<Image className=" pt-4"
             alt="somethings never change"
             src={Image2}
             width={150}
