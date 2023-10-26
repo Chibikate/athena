@@ -49,7 +49,7 @@ const quizQuestions = [
   },
   {
     question: `5. Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized?
-      ${(<br />)}
+      
       i.) Crop Volume  ii.) Volume Rendering   iii.)segment editor   iv) Volumes   v.)Threshold`,
     options: [
       "  A. i, iii, iv",
@@ -216,7 +216,7 @@ export default function QuizApp() {
                   Retake Quiz
                 </button>
                 <Link href="/mandiweb/3d-slicer">
-                  <button>Retake the Leson</button>
+                  <button>Retake the Lesson</button>
                 </Link>
               </div>
             )}

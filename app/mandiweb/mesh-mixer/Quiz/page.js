@@ -175,7 +175,7 @@ export default function QuizApp() {
                 </button>
                 <Link href = "/mandiweb/mesh-mixer">
                 <button className="text-left">
-                  Retake the Leson
+                  Retake the Lesson
                 </button>
                 </Link>
               </div>
