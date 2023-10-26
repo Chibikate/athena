@@ -27,7 +27,7 @@ export default function Page() {
           You did a great job! You can now submit in the submission bin provided
           below your final output
         </p>
-        <p>After submitting, we're encouraging you to <span className="underline cursor-pointer font-bold">take our survey</span></p>
+        <p>After submitting, we&apos;re encouraging you to <span className="underline cursor-pointer font-bold">take our survey</span></p>
       </div>
       <div className="pt-6  cursor-pointer">
         <p className="bg-primary text-sm p-2 hover:border-2 rounded-lg shadow-xl text-white">Submission Bin</p>
