@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Image1 from "@/public/mandiweb/3dquiz.png";
 
 const quizQuestions = [
   {
@@ -39,18 +41,26 @@ const quizQuestions = [
   {
     question:
       "4. This current view in the 3D slicer is called “four up”. What is the empty window on the upper right intended for?",
+
     options: [
       "  A. It is where the 3D image will be shown once activated.",
       "  B. The space that will enable multi-user collaboration.",
       "  C. Nothing.",
       "  D. Provides a workspace for annotations.",
     ],
+    image: "3dquiz.png",
     correctAnswer: "A. It is where the 3D image will be shown once activated.",
   },
   {
-    question: `5. Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized?  
-    i.) Crop Volume  ii.) Volume Rendering   iii.)segment editor   iv) Volumes   v.)Threshold`,
-    options: [
+    question: (
+      <div className="mb-2"
+        dangerouslySetInnerHTML={{
+          __html: `5. Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized?<br/>
+          i.) Crop Volume <br/> ii.) Volume Rendering <br/>  iii.) segment editor <br/>  iv) Volumes <br/>  v.)Threshold `,
+        }}
+      />
+    ),
+    options: [ 
       "  A. i, iii, iv",
       "  B. i, ii, iii",
       "  C. ii, iv, v",
@@ -58,6 +68,7 @@ const quizQuestions = [
     ],
     correctAnswer: "A. i, iii, iv",
   },
+  
   {
     question:
       "6. What file format is often used in 3D printing to describe the surface geometry of objects, allowing them to be produced with precision using additive manufacturing?",
@@ -132,8 +143,8 @@ export default function QuizApp() {
   };
 
   const areAllQuestionsAnswered = () => {
-    return userAnswers.every(answer => answer !== "");
-  }; 
+    return userAnswers.every((answer) => answer !== "");
+  };
 
   const score = calculateScore();
   const wrong = checkWrong();
@@ -146,8 +157,13 @@ export default function QuizApp() {
         </h1>
         {!showResults ? (
           <div>
-            <div className="question" style={questionStyle}>
+            <div className="question" items-center style={questionStyle}>
               <p>{quizQuestions[currentQuestion].question}</p>
+              {quizQuestions[currentQuestion].image && (
+                <div className="flex justify-center items-center">
+                  <Image src={Image1} alt="" width={550} height={550} />
+                </div>
+              )}
               <ul className="pl-4">
                 {quizQuestions[currentQuestion].options.map(
                   (option, optionIndex) => (
