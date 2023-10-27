@@ -48,9 +48,8 @@ const quizQuestions = [
     correctAnswer: "A. It is where the 3D image will be shown once activated.",
   },
   {
-    question: `5. Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized?
-      
-      i.) Crop Volume  ii.) Volume Rendering   iii.)segment editor   iv) Volumes   v.)Threshold`,
+    question: `5. Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized?  
+    i.) Crop Volume  ii.) Volume Rendering   iii.)segment editor   iv) Volumes   v.)Threshold`,
     options: [
       "  A. i, iii, iv",
       "  B. i, ii, iii",
@@ -128,6 +127,14 @@ export default function QuizApp() {
     setShowResults(false);
   };
 
+  const isCurrentQuestionAnswered = () => {
+    return userAnswers[currentQuestion] !== "";
+  };
+
+  const areAllQuestionsAnswered = () => {
+    return userAnswers.every(answer => answer !== "");
+  }; 
+
   const score = calculateScore();
   const wrong = checkWrong();
 
@@ -140,7 +147,7 @@ export default function QuizApp() {
         {!showResults ? (
           <div>
             <div className="question" style={questionStyle}>
-              <h3>{quizQuestions[currentQuestion].question}</h3>
+              <p>{quizQuestions[currentQuestion].question}</p>
               <ul className="pl-4">
                 {quizQuestions[currentQuestion].options.map(
                   (option, optionIndex) => (
@@ -173,14 +180,19 @@ export default function QuizApp() {
                   </button>
                 )}
                 {currentQuestion < quizQuestions.length - 1 && (
-                  <button onClick={goToNextQuestion} style={nextButtonStyle}>
+                  <button
+                    onClick={goToNextQuestion}
+                    style={nextButtonStyle}
+                    disabled={!isCurrentQuestionAnswered()} // Disable if not answered
+                  >
                     Next
                   </button>
                 )}
                 {currentQuestion === quizQuestions.length - 1 && (
                   <button
-                    onClick={() => setShowResults(true)}
+                    onClick={() => setShowResults(areAllQuestionsAnswered())}
                     style={submitButtonStyle}
+                    disabled={!areAllQuestionsAnswered()} // Disable if not all questions are answered
                   >
                     Submit
                   </button>

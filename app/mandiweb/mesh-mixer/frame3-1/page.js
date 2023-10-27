@@ -13,7 +13,7 @@ export default function Page() {
     <Progress progress={61.2} size="md"/>
     <main className="flex flex-row items-center text-center justify-between p-14 space-y-4">
       <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/mesh-mixer/frame3-1-1">
+        <Link href="/mandiweb/mesh-mixer/frame3-1">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronLeftIcon className="w-8 h-8"/>
           </div>
@@ -23,11 +23,11 @@ export default function Page() {
       <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">         
           <p className="mt-4 text-center">
-              Selecting a plane cut will bring up a plan that we can use to cut
+              Selecting a plane cut will bring up a plane that we can use to cut
               the selected area. Holding the left mouse button and dragging it
               will align the plane to the direction in the line was made. It is
               the author&lsquo;s preference to align the orientation of the
-              model by<br/> first clicking on the viewcube.
+              model by first clicking on the viewcube.
             </p>
           </div>
           <div className="flex items-center justify-center py-2">

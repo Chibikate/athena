@@ -63,7 +63,6 @@ export default function QuizApp() {
     }
   };
 
-
   const calculateScore = () => {
     let score = 0;
     userAnswers.forEach((answer, index) => {
@@ -78,7 +77,7 @@ export default function QuizApp() {
     let wrong = [];
     userAnswers.forEach((answer, index) => {
       if (answer.trim() !== quizQuestions[index].correctAnswer.trim()) {
-        wrong.push(index+1);
+        wrong.push(index + 1);
       }
     });
     return wrong;
@@ -88,6 +87,14 @@ export default function QuizApp() {
     setUserAnswers(Array(quizQuestions.length).fill(""));
     setCurrentQuestion(0);
     setShowResults(false);
+  };
+
+  const isCurrentQuestionAnswered = () => {
+    return userAnswers[currentQuestion] !== "";
+  };
+
+  const areAllQuestionsAnswered = () => {
+    return userAnswers.every(answer => answer !== "");
   };
 
   const score = calculateScore();
@@ -135,14 +142,19 @@ export default function QuizApp() {
                   </button>
                 )}
                 {currentQuestion < quizQuestions.length - 1 && (
-                  <button onClick={goToNextQuestion} style={nextButtonStyle}>
+                  <button
+                    onClick={goToNextQuestion}
+                    style={nextButtonStyle}
+                    disabled={!isCurrentQuestionAnswered()} // Disable if not answered
+                  >
                     Next
                   </button>
                 )}
                 {currentQuestion === quizQuestions.length - 1 && (
                   <button
-                    onClick={() => setShowResults(true)}
+                    onClick={() => setShowResults(areAllQuestionsAnswered())}
                     style={submitButtonStyle}
+                    disabled={!areAllQuestionsAnswered()} // Disable if not all questions are answered
                   >
                     Submit
                   </button>
@@ -153,16 +165,16 @@ export default function QuizApp() {
         ) : (
           <div>
             <p>
-              Your Score: {score} out of {quizQuestions.length} <br/>
-              {wrong.length>0 && `You got a wrong answer on number ${wrong}`}
+              Your Score: {score} out of {quizQuestions.length} <br />
+              {wrong.length > 0 && `You got a wrong answer on number ${wrong}`}
             </p>
             {score === quizQuestions.length ? (
-              <Link href="/mandiweb/fill-up">
-                {" "}
+              <Link href="/mandiweb/survey">
                 <p className="text-green-900 font-bold">
-                  Click here to get your{" "}
-                  <span className="underline font-bold">certificate</span>{" "}
-                </p>{" "}
+                  You got a perfect score!! <br/> 
+                  Take our
+                  <span className="underline font-bold"> survey</span> and get your certificate
+                </p>
               </Link>
             ) : (
               <div className="font-semibold pt-4">
@@ -170,13 +182,15 @@ export default function QuizApp() {
                   Sorry, you didn&apos;t pass. You can retake the quiz to
                   improve your score.
                 </p>
-                <button onClick={retakeQuiz} style={retakeButtonStyle} className="text-right">
+                <button
+                  onClick={retakeQuiz}
+                  style={retakeButtonStyle}
+                  className="text-right"
+                >
                   Retake Quiz
                 </button>
-                <Link href = "/mandiweb/mesh-mixer">
-                <button className="text-left">
-                  Retake the Lesson
-                </button>
+                <Link href="/mandiweb/mesh-mixer">
+                  <button className="text-left">Retake the Lesson</button>
                 </Link>
               </div>
             )}

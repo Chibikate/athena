@@ -49,7 +49,7 @@ function CertificatePage() {
       </div>
       <Link href="./trophy">
       <div className="pt-4 ">
-        <p className="underline p-2 rounded-lg hover:border-2 cursor-pointer shadow-xl text-primary">Click here after downloading your certificate</p>
+        <p className="underline p-2 cursor-pointer text-primary">Click here after downloading your certificate</p>
       </div>
       </Link>
     </div>

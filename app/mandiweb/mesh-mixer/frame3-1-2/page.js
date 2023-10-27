@@ -21,19 +21,19 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="flex flex-row space-x-4 bg-[rgba(191,213,247,0.3)] p-14 rounded-lg shadow-md text-center">
-        <div className="mb-4 flex items-center"> {/* Flex container for the images */}
+      <div className="flex flex-row space-x-4 bg-[rgba(191,213,247,0.3)] p-14 rounded-lg shadow-md items-center text-center">
+        <div className="mb-4 flex items-center">
           <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
             alt="Somethings never change"
             src={Image17}
-            width={450}
+            width={400}
             height={450}
           />
           <Image
             className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
             alt="Somethings never change"
             src={Image18}
-            width={450}
+            width={400}
             height={450}
           />
         </div>
