@@ -3,7 +3,7 @@
 import { Progress } from "flowbite-react";
 
 import Image from "next/image";
-import image15 from "./assets/image-15.png";
+import image15 from "./assets/image-15.jpg";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 import Link from "next/link";
@@ -25,7 +25,7 @@ export default function Page() {
           <div>
             <div className="flex flex-col space-y-2 items-center">
               <p className="text-center mt-4 pb-4 mr-16 ml-16">
-                To perform threshold-based segmentation, click on the{" "}
+                To perform threshold-based segmentation, click on the 
                 <span className="font-bold">&#34;Threshold&#34;</span> effect.
               </p>
             </div>

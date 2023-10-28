@@ -20,7 +20,8 @@ export default function Home() {
             of the lower jaw. VSP allows surgeons to create a digital model of
             the patient&apos;s jaw and plan the surgery in detail before it is
             performed. This helps to reduce the risk of complications and
-            improve the outcome of the surgery. This tutorial will teach
+            improve the outcome of the surgery. </p>
+            <p className="pt-4">This tutorial will teach
             students the basics of VSP for mandibular reconstruction. Students
             will learn how to use the VSP software - 3D slicer and Meshmixer to
             create a digital model of the patient&apos;s jaw.

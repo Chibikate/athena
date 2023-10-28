@@ -3,7 +3,7 @@
 import { Progress } from "flowbite-react";
 
 import Image from "next/image";
-import image6 from "./assets/image-6.png";
+import image6 from "./assets/image-6.jpg";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 import Link from "next/link";
@@ -23,7 +23,7 @@ export default function Page() {
 
         <div className="space-y-4  bg-[rgba(191,213,247,0.3)] p-14 rounded-lg shadow-md text-center flex items-center">
           <div>
-            <div className="flex flex-col space-y-4 text-justify items-center">
+            <div className="flex flex-col space-y-4 p-2 text-justify items-center">
               <p>
                 The CT scan files should show up once the DICOM files are done
                 loading. To zoom in and out, hold &#34;

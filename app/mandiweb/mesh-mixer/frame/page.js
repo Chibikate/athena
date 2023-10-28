@@ -22,7 +22,7 @@ export default function Page() {
         />
         <div className="space-y-4 py-4 ml-4">
           <div className="w-full h-2 bg-gray-400"></div>
-          <h3 className="font-bold text-primary text-2xl py-2">
+          <h3 className="font-bold dark:text-white text-primary text-2xl py-2">
             3D file manipulation and separating the mandible in Meshmixer (Autodesk, San Rafael, California)
           </h3>
           <div className="w-full h-2 mt-4 bg-gray-400"></div>
@@ -40,7 +40,7 @@ export default function Page() {
               </Link>
             </li>
           </ul>
-          <p className="text-xl font-semibold text-primary">
+          <p className="text-xl dark:text-white font-semibold text-primary">
             After you have downloaded the following software and files, you can now proceed to Meshmixer.
           </p>
           <div className="flex justify-center md:flex md:justify-end">

@@ -3,7 +3,7 @@
 import { Progress } from "flowbite-react";
 
 import Image from "next/image";
-import image18 from "./assets/image-18.png";
+import image18 from "./assets/image-18.jpg";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 import Link from "next/link";
@@ -50,7 +50,7 @@ export default function Page() {
               <ChevronLeftIcon className="w-8 h-8" />
             </div>
           </Link>
-          <Link href="/mandiweb/3d-slicer/frame4-2-2">
+          <Link href="/mandiweb/3d-slicer/frame4-3">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronRightIcon className="w-8 h-8" />
             </div>

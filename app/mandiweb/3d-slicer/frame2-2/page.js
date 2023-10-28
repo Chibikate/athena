@@ -3,8 +3,8 @@
 import { Progress } from "flowbite-react";
 
 import Image from "next/image";
-import image7 from "./assets/image-7.png";
-import image8 from "./assets/image-8.png";
+import image7 from "./assets/image-7.jpg";
+import image8 from "./assets/image-8.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 

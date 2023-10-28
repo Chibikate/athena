@@ -3,7 +3,7 @@
 import { Progress } from "flowbite-react";
 
 import Image from "next/image";
-import image5 from "./assets/image-5.png";
+import image5 from "./assets/image-5.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -26,7 +26,7 @@ export default function Page() {
               <h3 className="text-2xl font-extrabold mb-4 text-primary">
                 3D Slicer Module
               </h3>
-              <p className="text-justify ml-16 mr-16">
+              <p className="text-justify pb-2 ml-16 mr-16">
                 Modules in 3D Slicer allow us to perform actions that affect the
                 DICOM files in various ways.
                 <br /> The drop-down menu can be accessed from the upper left of

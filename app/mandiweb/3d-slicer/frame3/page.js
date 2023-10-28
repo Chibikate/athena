@@ -3,7 +3,7 @@
 import { Progress } from "flowbite-react";
 
 import Image from "next/image";
-import image10 from "./assets/image-10.png";
+import image10 from "./assets/image-10.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -13,7 +13,7 @@ export default function Page() {
       <Progress progress={37.44} size="md" />
       <main className="flex flex-col md:flex md:flex-row items-center justify-between p-14 space-y-4">
         <div className="md:flex justify-between mt-8 space-x-4 hidden">
-          <Link href="/mandiweb/3d-slicer/frame2-3">
+          <Link href="/mandiweb/3d-slicer/frame2-4">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>
@@ -40,7 +40,7 @@ export default function Page() {
           </div>
         </div>
         <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/3d-slicer/frame2-3" className="md:hidden flex">
+        <Link href="/mandiweb/3d-slicer/frame2-4" className="md:hidden flex">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>

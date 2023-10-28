@@ -3,7 +3,7 @@
 import { Progress } from "flowbite-react";
 
 import Image from "next/image";
-import image5 from "./assets/image-5.png";
+import image5 from "./assets/image-5.jpg";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 import Link from "next/link";
@@ -28,10 +28,7 @@ export default function Page() {
                 After loading, your dataset should show in the list as shown
                 above. Click the{" "}
                 <span className="font-bold">&#34;Patient Name&#34; </span> then
-                click <span className="font-bold">&#34;Load&#34;</span>
-                Click the{" "}
-                <span className="font-bold">&#34;Patient Name&#34; </span> then
-                click <span className="font-bold">&#34;Load&#34;</span>
+                click <span className="font-bold">&#34;Load&#34;</span>.
               </p>
               <div className="flex justify-center">
                 <Image

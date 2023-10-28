@@ -19,7 +19,7 @@ export default function Page() {
         />
         <div className="space-y-4 py-4">
           <div classs className="w-full h-2 bg-gray-400"></div>
-          <h3 span className="font-bold  text-primary text-4xl py-2">
+          <h3 span className="font-bold dark:text-white text-primary text-4xl py-2">
             Creating a 3D file from DICOM images
           </h3>
           <div classs className="w-full h-2 mt-4 bg-gray-400"></div>
@@ -49,7 +49,7 @@ export default function Page() {
               <p className="ml-6">(in zipped folder contains dicom files)</p>
             </li>
           </ul>
-          <p className="text-xl font-semibold text-primary">
+          <p className="text-xl dark:text-white font-semibold text-primary">
             After you have downloaded the following software and files. You can
             now proceed to 3D Slicer.
           </p>

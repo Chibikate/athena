@@ -3,7 +3,7 @@
 import { Progress } from "flowbite-react";
 
 import Image from "next/image";
-import image6 from "./assets/image-6.png";
+import image6 from "./assets/image-6.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -28,7 +28,7 @@ export default function Page() {
                 <span className="font-bold">
                   &ldquo;Magnifying Glass&rdquo;
                 </span>
-                icon on the toolbar, just left from the module drop-down box to
+                 icon on the toolbar, just left from the module drop-down box to
                 bring up the search function and type in &ldquo;
                 <span className="font-bold">Crop</span>&rdquo;. Select{" "}
                 <span className="font-bold">Crop Volume</span> and click on{" "}
