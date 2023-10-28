@@ -21,7 +21,7 @@ export default function Navigator() {
           />
         </Link>
 
-        <div className="sm:hidden">
+        <div className="hidden md:block">
           <p style={{ fontSize: "12px", color: "white" }}>
             Virtual Surgical Planning for
             <br /> Mandibular Reconstruction
@@ -47,7 +47,7 @@ export default function Navigator() {
               </Link>
 
               <Link href="/mandiweb/introduction">
-                <p className="text-white hover hover:text-white hover-border hover:border-white-400 hover:border-2 px-5 py-2 rounded-md text-sm font-medium bg-[#0091AD]">
+                <p className="text-white hover:text-white hover-border hover:border-white-400 hover:border-2 px-5 py-2 rounded-md text-sm font-medium bg-[#0091AD]">
                   Start
                 </p>
               </Link>

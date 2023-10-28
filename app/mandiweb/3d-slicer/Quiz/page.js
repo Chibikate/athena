@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Image1 from "@/public/mandiweb/3dquiz.png";
+import Image1 from "@/public/mandiweb/image2-2.png";
 
 const quizQuestions = [
   {
@@ -48,7 +48,7 @@ const quizQuestions = [
       "  C. Nothing.",
       "  D. Provides a workspace for annotations.",
     ],
-    image: "3dquiz.png",
+    image: "image2-2.png",
     correctAnswer: "A. It is where the 3D image will be shown once activated.",
   },
   {

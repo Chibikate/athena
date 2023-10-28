@@ -10,10 +10,10 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden">
+    <div className="flex flex-col min-h-screen overflow-x-hidden  dark:text-white">
       <Progress progress={12.48} size="md" />
-      <main className="flex flex-row items-center justify-between p-14 space-y-4">
-        <div className="flex justify-between mt-8 space-x-4">
+      <main className="flex flex-col md:flex md:flex-row items-center justify-between p-14 space-y-4">
+        <div className="md:flex justify-between mt-8 space-x-4  hidden">
           <Link href="/mandiweb/3d-slicer/frame1-1">
             <div className="w-16 h-16 hover:border-white-400 hover:border-2 hover:text-white bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
@@ -32,18 +32,26 @@ export default function Page() {
                 <span className="font-bold">&#34;Import&#34;</span>
               </p>
             </div>
+<div className="flex justify-center">
 
             <Image
-              className="ml-16 mr-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
+              className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               src={image3}
               alt="something"
               width={550}
               height={550}
             />
           </div>
+              </div>
         </div>
 
         <div className="flex justify-between mt-8 space-x-4">
+        <Link href="/mandiweb/3d-slicer/frame1-1" className="md:hidden flex">
+            <div className="w-16 h-16 hover:border-white-400 hover:border-2 hover:text-white bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
+              <ChevronLeftIcon className="w-8 h-8" />
+            </div>
+          </Link>
+
           <Link href="/mandiweb/3d-slicer/frame1-3">
             <div className="w-16 h-16 bg-primary hover:border-white-400 hover:border-2 hover:text-white flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronRightIcon className="w-8 h-8" />

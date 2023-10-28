@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen flow-x-hidden items-center justify-center bg-white py-4 ml-16 mr-16">
-      <div className=" space-between rounded-lg shadow-xl h-[30rem]">
+    <div className="flex flex-col min-h-screen flow-x-hidden items-center justify-center py-4 ml-16 mr-16">
+      <div className="flex flex-col space-between rounded-lg shadow-xl p-4 dark:bg-white">
         <div className="items-center text-center justify-between ">
           <p className="p-4 font-bold text-3xl text-white bg-primary">INTRODUCTION</p>
         </div>
-        <div className="text-justify space-y-4 mx-2 pt-4">
-          <p>
+        <div className="text-justify space-y-4 mx-2 pt-4 flex flex-col">
+          <p className="block">
             <spand className="font-bold">
               Virtual surgical planning (VSP){" "}
             </spand>
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
       <div className="flex justify-end">
             <div className="w-32 h-12 hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center hover-border hover:border-white-400 hover:text-white text-white font-bold rounded-full shadow-lg mt-8 cursor-pointer">
-              <Link href="/mandiweb/3d-slicer">Proceed</Link>
+              <Link href="/mandiweb/things-to-download">Proceed</Link>
             </div>
           </div>
     </div>

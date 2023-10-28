@@ -8,18 +8,18 @@ function ListItem({ text }) {
 
 export default function YourComponentName() {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
-      <div className="flex items-center space-x-4">
+    <div className="dark:text-white rounded-lg shadow-md p-14">
+      <div className="flex flex-col sm:flex-row items-center">
         <div className="w-1/2 py-4">
           <Image
-            className="animate-spin-slow mx-20"
+            className="animate-spin-slow mx-20  hidden md:block"
             src={Image1}
             width={450}
             height={300}
             alt="Image Description"
           />
             </div>
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           <h2 className="text-3xl font-bold mb-2">
             Objectives:
             
@@ -36,7 +36,7 @@ export default function YourComponentName() {
           </ul>
         </div>
       </div>
-        <div className="flex justify-end mt-4">
+        <div className="flex justify-center sm:flex sm:justify-end mt-4">
           <div className="w-32 h-12 hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center text-white font-bold rounded-lg shadow-md cursor-pointer">
             <Link href="/mandiweb/mesh-mixer/frame1">Continue!</Link>
           </div>

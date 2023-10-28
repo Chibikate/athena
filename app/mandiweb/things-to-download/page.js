@@ -8,10 +8,10 @@ const grayLink = {
 };
 export default function Page() {
   return (
-    <div className="space-y-4 p-14">
-      <div className="flex flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
+    <div className="space-y-4 p-14 dark:text-white">
+      <div className="flex flex-col sm:flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
         <Image
-          className="ml-16"
+          className="ml-16 hidden md:block"
           alt="Somethings never change"
           src={ThingsToDownloadImage}
           width={450}
@@ -53,7 +53,7 @@ export default function Page() {
             After you have downloaded the following software and files. You can
             now proceed to 3D Slicer.
           </p>
-          <div className="flex justify-end">
+          <div className="flex justify-center md:flex md:justify-end">
             <div className="w-32 h-12 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center hover-border hover:border-white-400 hover:text-white  text-white font-bold rounded-full shadow-lg mt-8 cursor-pointer">
               <Link href="/mandiweb/3d-slicer">Let&lsquo;s start!</Link>
             </div>

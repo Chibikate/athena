@@ -9,10 +9,10 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden">
+    <div className="flex flex-col min-h-screen overflow-x-hidden  dark:text-white">
       <Progress progress={33.28} size="md"/>
-    <main className="flex flex-row items-center justify-between p-14 space-y-4">
-      <div className="flex justify-between mt-8 space-x-4">
+    <main className="flex flex-col md:flex md:flex-row items-center justify-between p-14 space-y-4">
+      <div className="md:flex justify-between mt-8 space-x-4 hidden">
         <Link href="/mandiweb/3d-slicer/frame2-2">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronLeftIcon className="w-8 h-8" />
@@ -34,13 +34,18 @@ export default function Page() {
           </p>
           <p>You will know your crop is applied when the image is zoomed in.</p>
         </div>
-        <div className="flex items-center justify-center py-4">
+        <div className="flex justify-center">
         <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
          alt="something never " src={image9} width={550} height={550} />
         </div>
         </div>
       </div>
       <div className="flex justify-between mt-8 space-x-4">
+      <Link href="/mandiweb/3d-slicer/frame2-2" className="md:hidden flex">
+          <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
+            <ChevronLeftIcon className="w-8 h-8" />
+          </div>
+        </Link>
         <Link href="/mandiweb/3d-slicer/frame3">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronRightIcon className="w-8 h-8" />
