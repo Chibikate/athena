@@ -35,7 +35,8 @@ export default function Page() {
         </div>
         <div className="flex justify-center">
         <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
-         alt="something never " src={image9} width={550} height={550} />
+         alt="something never " src={image9} width="100%"
+         height="auto" />
         </div>
         </div>
       </div>

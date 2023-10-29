@@ -34,8 +34,8 @@ export default function Page() {
                 className="mr-16 ml-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
                 alt="somethings never change"
                 src={image13}
-                width={500}
-                height={450}
+                width="100%"
+            height="auto"
               />
             </div>
           </div>

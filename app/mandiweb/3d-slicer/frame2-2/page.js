@@ -28,7 +28,7 @@ export default function Page() {
                 Once in the Crop Volume module, click on the input{" "}
                 <span className="font-bold">Region of Interest (ROI)</span> drop
                 down box and select{" "}
-                <span className="font-bold">Create New Annotation ROI</span>.
+                <span className="font-bold">Create New ROI</span>.
               </p>
             </div>
             <div className="flex justify-center">
@@ -36,8 +36,8 @@ export default function Page() {
                 className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
                 alt="something never"
                 src={image7}
-                width={500}
-                height={450}
+                width="100%"
+            height="auto"
               />
             </div>
           </div>
@@ -56,8 +56,8 @@ export default function Page() {
                 className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
                 alt="something never"
                 src={image8}
-                width={500}
-                height={450}
+                width="100%"
+            height="auto"
               />
             </div>
           </div>

@@ -40,7 +40,7 @@ export default function Page() {
         </Link>
         <Link href="/mandiweb/mesh-mixer/Quiz">
           <div className="p-4 px-6  bg-[#74a5ff] hover:text-white hover:bg-sky-600 text-primary font-bold rounded-md shadow-lg">
-            <p className="text-sm ">Take the Quiz</p>
+            <p className="text-lg ">Take the Quiz</p>
           </div>
         </Link>
       </div>
