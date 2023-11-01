@@ -14,6 +14,8 @@ export default function Page() {
         <p>Courses</p>
       </div>
 
+      
+
       <div className="flex flex-row sm:flex-col items-center">
         <div className="text-center justify-between ">
           <p className="text-5xl font-bold text-primary pt-16 p-4">
@@ -26,6 +28,13 @@ export default function Page() {
         </div>
 
         <Image className="absolute top-44" alt="Somethings never change" src={bg} width={1920} height={900} />
+      </div>
+
+      <div className="flex flex-col p-4">
+        <p className="text-3xl font-bold text-primary pt-28 pb-4">Explore Courses</p>
+        <div className="flex flex-row space-x-4">
+          <VirtualSurgicalPlanning />
+        </div>
       </div>
 
       <div flex items-center justify-center space-y-4 py-4>
@@ -42,13 +51,6 @@ export default function Page() {
           <div className="text-center">
             <p>Realistic</p>
           </div>
-        </div>
-      </div>
-
-      <div className="flex flex-col p-4">
-        <p className="text-3xl font-bold text-primary pt-28 pb-4">Explore Courses</p>
-        <div className="flex flex-row space-x-4">
-          <VirtualSurgicalPlanning />
         </div>
       </div>
     </div>
