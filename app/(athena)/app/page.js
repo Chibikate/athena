@@ -14,7 +14,7 @@ import Card from "@/components/card";
 export default function AthenaHome() {
   return (
     <div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between text-sm sm:text-xl">
         <Image
           className="justify-items-start dark:invert"
           alt="Somethings never change"
@@ -42,20 +42,22 @@ export default function AthenaHome() {
         </div>
       </div>
 
-      <div className="min-h-screen justify-center items-center">
+      <div className="min-h-screen justify-center items-center overflow-hidden text-sm sm:text-xl">
         <div className="flex- flex-col ">
           <div className="text-center items-center text-5xl font-bold text-primary space-y-4 pt-6">
-            <p className="dark:text-white">
+            <p className="dark:text-white text-sm sm:text-5xl">
               Develop Your Skills with Our Tutorial Website
             </p>
-            <p className="text-[#FF5C00] rounded-md">Your Journey Begins Now</p>
+            <p className="text-[#FF5C00] rounded-md text-sm sm:text-5xl">
+              Your Journey Begins Now
+            </p>
           </div>
           <div className="text-center justify-between p-2">
             <p className="text-gray-400">Explore free courses to learn</p>
           </div>
         </div>
         <Image
-          className="absolute top-48 dark:invert"
+          className="absolute top-48 dark:invert hidden md:block"
           alt="Somethings never change"
           src={bg}
           width={1800}
@@ -63,7 +65,7 @@ export default function AthenaHome() {
         />
       </div>
 
-      <div className=" text-white">
+      <div className=" text-white ">
         <Image
           className="dark:invert"
           alt="Somethings never change"
@@ -71,40 +73,42 @@ export default function AthenaHome() {
           width={1800}
           height={100}
         />
-        <div className="flex items-center justify-center justfy-center dark:text-white">
-          <p className="flex-col  justify-center font-bold pb-10 text-[#000000] text-2xl text-center dark:text-[#FFFFFF]">
+        <div className="flex items-center justify-center justfy-center dark:text-white ">
+          <p className="flex-col justify-center font-bold pb-10 text-[#000000] text-2xl text-center dark:text-[#FFFFFF]">
             LEARNING EXPERIENCE
           </p>
         </div>
-        <div className="flex flex-row items-center text-primary pb-8 dark:text-white justify-center space-x-96 mt-2 mr-4">
-          <p className="font-bold rounded-full text-white text-md p-2 dark:bg-sky-600 bg-[#000000]">
+        <div className="flex flex-row md:justify-center md:space-x-96 items-center text-primary pb-8 dark:text-white justify-center space-x-16 mt-2 mr-4">
+          <p className="font-bold  rounded-full text-white text-md p-2 dark:bg-sky-600 bg-[#000000]">
             Interactive
           </p>
-          <p className="font-bold rounded-full text-white text-md p-2 dark:bg-sky-600 bg-[#000000]">
+          <p className="font-bold  rounded-full text-white text-md p-2 dark:bg-sky-600 bg-[#000000]">
             Self-direct
           </p>
-          <p className="font-bold rounded-full text-white text-md p-2 dark:bg-sky-600 bg-[#000000]">
+          <p className="font-bold  rounded-full text-white text-md p-2 dark:bg-sky-600 bg-[#000000]">
             Realistc
           </p>
         </div>
 
-        <div className="flex flex-row items-center p-4 text-primary pb-8 dark:text-white justify-center space-x-36 mt-2 mr-4">
-          <p className="text-center border p-2 border-primary shadow-md dark:bg-sky-600 rounded-md bg-[#FF8E4E]">
-            You can manipulate and visualize,<br/> providing a hands-on approach to
-            learning.
+        <div className="flex flex-row items-center p-4 text-primary pb-8 dark:text-white justify-center md:space-x-36 space-x-2 mt-2 mr-4">
+          <p className="text-center  border p-2 border-primary shadow-md dark:bg-sky-600 rounded-md bg-[#FF8E4E]">
+            You can manipulate and visualize,
+            <br /> providing a hands-on approach to learning.
           </p>
-          <p className="text-center border p-2 border-primary dark:bg-sky-600 shadow-md rounded-md bg-[#FF8E4E]">
-            You can set your own pace, choose<br/> the specific topics you want to
-            explore,<br/> and navigate through the content<br/> independently, fostering
-            self-directed learning.
+          <p className="text-center  border p-2 border-primary dark:bg-sky-600 shadow-md rounded-md bg-[#FF8E4E]">
+            You can set your own pace, choose
+            <br /> the specific topics you want to explore,
+            <br /> and navigate through the content
+            <br /> independently, fostering self-directed learning.
           </p>
           <p className="text-center border dark:bg-sky-600 p-2 border-primary shadow-md rounded-md bg-[#FF8E4E]">
-            Engage with scenarios that closely<br/> mirror the real surgical
-            environment,<br/> ensuring a true-to-life learning experience.
+            Engage with scenarios that closely
+            <br /> mirror the real surgical environment,
+            <br /> ensuring a true-to-life learning experience.
           </p>
         </div>
 
-        <div className="flex flex-col pt-8 border shadow-lg pb-8">
+        <div className="flex flex-col pt-8 shadow-lg pb-8">
           <p className="text-3xl font-bold dark:text-white text-primary p-2 text-shadow-[0_4px_8px_#000000] dark:text-shadow-[0_4px_8px_#FFFFFF]">
             Explore Courses
           </p>
@@ -113,7 +117,7 @@ export default function AthenaHome() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
