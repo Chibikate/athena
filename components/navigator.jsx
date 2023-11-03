@@ -22,7 +22,7 @@ export default function Navigator() {
         </Link>
 
         <div className="hidden md:block">
-          <p style={{ fontSize: "12px", color: "white" }}>
+          <p style={{ fontSize: "12px", color: "white"  }}>
             Virtual Surgical Planning for
             <br /> Mandibular Reconstruction
           </p>

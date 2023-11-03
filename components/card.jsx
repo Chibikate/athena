@@ -14,7 +14,7 @@ export default function Card({
   authorName2,
 }) {
   return (
-    <div className="w-96 border-2 rounded-lg shadow-3xl space-y-2 text-sm hover:border-white-400 hover:border-2">
+    <div className="w-96 border-2 rounded-lg shadow-3xl space-y-2 text-sm dark:bg-white hover:border-white-400 hover:border-2">
       <Link href="/mandiweb">
 
       <div className={`${color} py-2 rounded-t-lg`}>
