@@ -3,7 +3,7 @@
 import { Progress } from "flowbite-react";
 
 import Image from "next/image";
-import Image14 from "./assets/Image14.png";
+import Image14 from "./assets/Image14.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -35,18 +35,18 @@ export default function Page() {
               className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
               src={Image14}
-              width={550}
-              height={550}
+              width="100%"
+              height="auto"
             />
           </div>
         </div>
         <div className="flex justify-between mt-8 space-x-4">
-          <Link href="/mandiweb/mesh-mixer/frame3-1" className="md:hidden flex">
+          <Link href="/mandiweb/mesh-mixer/frame3-1-1" className="md:hidden flex">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>
           </Link>
-          <Link href="/mandiweb/mesh-mixer/frame3-1-2">
+          <Link href="/mandiweb/mesh-mixer/frame3-2">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronRightIcon className="w-8 h-8" />
             </div>

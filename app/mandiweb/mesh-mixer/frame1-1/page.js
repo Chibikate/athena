@@ -3,7 +3,7 @@
 import { Progress } from 'flowbite-react';
 
 import Image from "next/image";
-import Image3 from "./assets/Image3.png";
+import Image3 from "./assets/Image3.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -23,15 +23,19 @@ export default function Page() {
       <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center pb-4 mb-4">
           <p className="font-bold text-xl text-primary text-center">Navigating the 3D space in Meshmixer</p>
-          <p className="mt-2">After loading the file, take time to navigate the 3D space. </p>
+          <p className="mt-2">After loading the file, take time to navigate the 3D space. Click,
+              hold, and drag the right mouse button to turn the 3D image. To pan
+              the 3D image, click and hold the middle mouse button and drag
+              toward the  desired direction. Use the mouse scroll to zoom in or
+              out. </p>
         </div>
         <div className="flex justify-center">
           <div className=" flex items-center justify-center">
             <Image className="mr-16 ml-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
               src={Image3}
-              width={550}
-              height={550}
+              width="100%"
+            height="auto"
             />
           </div>
         </div>
@@ -42,7 +46,7 @@ export default function Page() {
             <ChevronLeftIcon className="w-8 h-8" />
           </div>
         </Link>
-        <Link href="/mandiweb/mesh-mixer/frame1-1-1">
+        <Link href="/mandiweb/mesh-mixer/frame1-1-2">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronRightIcon className="w-8 h-8" />
           </div>

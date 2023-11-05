@@ -3,7 +3,7 @@
 import { Progress } from 'flowbite-react';
 
 import Image from "next/image";
-import Image28 from "./assets/Image28.png";
+import Image21 from "./assets/Image21.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -23,14 +23,14 @@ export default function Page() {
         <div className="text-center  mb-4">
           <p className="mt-4 text-center pb-4 mr-16 ml-16">
             Once satisfied with the position of the mirrored mandible, click
-            <span classNamep="font-bold"> accept</span>. Click again the eye icon to hide the remaining anatomy.
+            <span className="font-bold"> accept</span>. Click again the eye icon to hide the remaining anatomy.
           </p>
           <div className="flex  justify-center">
             <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
-              src={Image28}
-              width={550}
-              height={550}
+              src={Image21}
+              width="100%"
+              height="auto"
             />
           </div>
         </div>

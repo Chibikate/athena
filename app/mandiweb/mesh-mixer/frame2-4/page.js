@@ -3,8 +3,8 @@
 import { Progress } from 'flowbite-react';
 
 import Image from "next/image";
-import Image11 from "./assets/Image11.png";
-import Image12 from "./assets/Image12.png";
+import Image11 from "./assets/Image11.jpg";
+import Image12 from "./assets/Image12.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -34,20 +34,20 @@ export default function Page() {
               <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
                 alt="Somethings never change"
                 src={Image11}
-                width={450}
-                height={500}
+                width="100%"
+              height="auto"
               />
             </div>
             <div className="flex flex-col items-center">
               <p className="text-center"> We can also rename each part by double-clicking<br/> the name of the
-              part. For the activity, we shall rename<br/> the part into mandible. We
+              part. For the activity, we shall rename<br/> the part into &#34;mandible&#34;. We
               can also hide the rest of the<br/> parts we are not working with to make
               the program run smoother.</p>
               <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
                 alt="Somethings never change"
                 src={Image12}
-                width={450}
-                height={500}
+               width="100%"
+              height="auto"
               />
             </div>
           </div>

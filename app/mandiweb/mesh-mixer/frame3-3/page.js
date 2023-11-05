@@ -3,8 +3,8 @@
 import { Progress } from 'flowbite-react';
 
 import Image from "next/image";
-import Image16 from "./assets/Image16.png";
-import Image17 from "./assets/Image17.png";
+import Image16 from "./assets/Image16.jpg";
+import Image17 from "./assets/Image17.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -36,8 +36,8 @@ export default function Page() {
             <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
               src={Image16}
-              width={550}
-              height={550}
+              width="100%"
+              height="auto"
             />
           </div>
           <div className="flex flex-col items-center mx-2 y-2">
@@ -50,8 +50,8 @@ export default function Page() {
           <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               alt="Somethings never change"
               src={Image17}
-              width={550}
-              height={550}
+              width="100%"
+              height="auto"
             />
             
           </div>

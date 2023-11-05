@@ -4,7 +4,7 @@ import { Progress } from 'flowbite-react';
 
 
 import Image from "next/image";
-import Image19 from "./assets/Image19.png";
+import Image22 from "./assets/Image22.jpg";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -34,9 +34,9 @@ export default function Page() {
               </p>
               <Image className="py-2 mr-16 ml-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
                 alt="Somethings never change"
-                src={Image19}
-                width={550}
-                height={550}
+                src={Image22}
+                width="100%"
+                height="auto"
               />   
             </div>
            </div>
