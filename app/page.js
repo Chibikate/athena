@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden items-center justify-center bg-white context"><div class="area" >
-    <div className="area -z-10">
-            <ul class="circles">
+    <div className="area ">
+            <ul class="circles ">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -21,7 +21,7 @@ export default function Page() {
             </ul>
     </div >
 </div >
-      <div className="flex flex-row border-2 space-between border-black rounded-lg shadow-xl h-[30rem] ">
+      <div className="flex flex-row border-2 space-between z-10 border-black rounded-lg shadow-xl h-[30rem] ">
         <div className="flex flex-col mr-4 w-96">
           <Image className="m-4" src={Image1} width={60} height={60} />
           <div className="flex flex-col flex-grow items-center space-y-4 justify-center">
@@ -34,7 +34,7 @@ export default function Page() {
             </p>
         <Link href="/app">
             <div className="bg-black p-1 text-white rounded-lg hover-border hover:border-white-400 hover:border-2 cursor-pointer">
-              <p className="m-2 text-sm ">Click to Start</p>
+              <p className="m-2 text-sm">Click to Start</p>
             </div>
             </Link>
           </div>
