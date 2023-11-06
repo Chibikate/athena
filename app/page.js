@@ -5,7 +5,22 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden items-center justify-center bg-white ">
+    <div className="flex flex-col min-h-screen overflow-x-hidden items-center justify-center bg-white context"><div class="area" >
+    <div className="area -z-10">
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+</div >
       <div className="flex flex-row border-2 space-between border-black rounded-lg shadow-xl h-[30rem] ">
         <div className="flex flex-col mr-4 w-96">
           <Image className="m-4" src={Image1} width={60} height={60} />

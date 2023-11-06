@@ -33,7 +33,7 @@ export default function Page() {
               and select &ldquo;<span className="font-bold">Mirror</span>
               &rdquo;.
             </p>
-            <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
+            <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out hover:z-10"
               alt="Somethings never change"
               src={Image16}
               width="100%"
@@ -47,7 +47,7 @@ export default function Page() {
               mandible together, click and drag the <br/> arrow as shown above or
               click on the desired area.
             </p>
-          <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
+          <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out hover:z-10"
               alt="Somethings never change"
               src={Image17}
               width="100%"

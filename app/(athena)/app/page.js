@@ -4,6 +4,7 @@ import Image from "next/image";
 import page from "@/app/assets/page.png";
 import bg from "@/app/assets/bg.png";
 import two from "@/app/assets/two.svg";
+import three from "@/app/assets/three.svg";
 import athena from "@/app/assets/athena.svg";
 import { DarkThemeToggle } from "flowbite-react";
 import Link from "next/link";
@@ -35,7 +36,7 @@ export default function AthenaHome() {
                 Contact Us
               </p>
             </Link>
-            <p className="p-2 rounded-md cursor-pointer font-semibold hover:ring-2 ring-zinc-800 bg-[#FF5C00]">
+            <p className="p-2 rounded-md cursor-pointer font-semibold hover:ring-2 text-white ring-zinc-800 bg-[#001524]">
               Courses
             </p>
           </div>
@@ -65,48 +66,58 @@ export default function AthenaHome() {
         />
       </div>
 
-      <div className=" text-white ">
+      <div className=" text-white pt-24 ">
         <Image
-          className="dark:invert"
           alt="Somethings never change"
           src={two}
-          width= {1920}
-          height={100}
+          width={1920}
+          height={25}
         />
-        <div className="flex items-center justify-center justfy-center dark:text-white ">
-          <p className="flex-col justify-center font-bold pb-10 text-[#000000] text-2xl text-center dark:text-[#FFFFFF]">
-            LEARNING EXPERIENCE
-          </p>
+        <div className="bg-primary">
+          <div className="flex items-center justify-center justfy-center dark:text-white ">
+            <p className="flex-col justify-center font-bold text-yellow-300 pb-4 text-2xl text-center pt-4 dark:text-[#FFFFFF]">
+              LEARNING EXPERIENCE
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row p-6 text-white justify-center text-center ">
+            <div className="flex flex-col md:justify-center items-center text-primary pb-8 dark:text-white justify-center  mt-2 mr-4">
+              <p className="font-bold  rounded-full text-white text-md p-2 dark:bg-sky-600 bg-sky-600">
+                Interactive
+              </p>
+              <p className="pt-4 text-white">
+                You can manipulate and visualize, providing a hands-on approach
+                to learning.
+              </p>
+            </div>
+            <div className="flex flex-col md:justify-center  items-center text-primary pb-8 dark:text-white justify-center  mt-2 mr-4">
+              <p className="font-bold  rounded-full text-white text-md p-2 dark:bg-sky-600 bg-sky-600">
+                Self-direct
+              </p>
+              <p className="pt-4 text-white">
+                You can set your own pace, choose
+                <br /> the specific topics you want to explore, and
+                <br /> navigate through the content independently, fostering
+                self-directed learning.
+              </p>
+            </div>
+            <div className="flex flex-col md:justify-center  items-center text-primary pb-8 dark:text-white justify-center  mt-2 mr-4">
+              <p className="font-bold  rounded-full text-white text-md p-2 dark:bg-sky-600 bg-sky-600">
+                Realistc
+              </p>
+              <p className="pt-4 text-white">
+                Engage with scenarios that closely mirror
+                <br /> the real surgical environment, ensuring a true-to-life
+                learning experience.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-row md:justify-center md:space-x-96 items-center text-primary pb-8 dark:text-white justify-center space-x-16 mt-2 mr-4">
-          <p className="font-bold  rounded-full text-white text-md p-2 dark:bg-sky-600 bg-[#000000]">
-            Interactive
-          </p>
-          <p className="font-bold  rounded-full text-white text-md p-2 dark:bg-sky-600 bg-[#000000]">
-            Self-direct
-          </p>
-          <p className="font-bold  rounded-full text-white text-md p-2 dark:bg-sky-600 bg-[#000000]">
-            Realistc
-          </p>
-        </div>
-
-        <div className="flex flex-row items-center p-4 text-primary pb-8 dark:text-white justify-center md:space-x-36 space-x-2 mt-2 mr-4">
-          <p className="text-center  border p-2 border-primary shadow-md dark:bg-sky-600 rounded-md bg-[#FF8E4E]">
-            You can manipulate and visualize,
-            <br /> providing a hands-on approach to learning.
-          </p>
-          <p className="text-center  border p-2 border-primary dark:bg-sky-600 shadow-md rounded-md bg-[#FF8E4E]">
-            You can set your own pace, choose
-            <br /> the specific topics you want to explore,
-            <br /> and navigate through the content
-            <br /> independently, fostering self-directed learning.
-          </p>
-          <p className="text-center border dark:bg-sky-600 p-2 border-primary shadow-md rounded-md bg-[#FF8E4E]">
-            Engage with scenarios that closely
-            <br /> mirror the real surgical environment,
-            <br /> ensuring a true-to-life learning experience.
-          </p>
-        </div>
+          <Image
+            alt="Somethings never change"
+            src={three}
+            width={1920}
+            height={25}
+          />
 
         <div className="flex flex-col pt-8 shadow-lg pb-8">
           <p className="text-3xl font-bold dark:text-white text-primary p-2 text-shadow-[0_4px_8px_#000000] dark:text-shadow-[0_4px_8px_#FFFFFF]">
