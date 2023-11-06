@@ -70,7 +70,7 @@ export default function AthenaHome() {
           className="dark:invert"
           alt="Somethings never change"
           src={two}
-          width={full}
+          width= {1920}
           height={100}
         />
         <div className="flex items-center justify-center justfy-center dark:text-white ">
