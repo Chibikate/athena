@@ -169,11 +169,10 @@ export default function QuizApp() {
               {wrong.length > 0 && `You got a wrong answer on number ${wrong}`}
             </p>
             {score === quizQuestions.length ? (
-              <Link href="/mandiweb/survey">
+              <Link href="/mandiweb/mesh-mixer/Pre-test">
                 <p className="text-green-900 font-bold">
                   You got a perfect score!! <br/> 
-                  Take our
-                  <span className="underline font-bold"> survey</span> and get your certificate
+                  We are encouraging you to take our <span className="underline font-bold">pre-test and survey</span> and get your certificate
                 </p>
               </Link>
             ) : (
