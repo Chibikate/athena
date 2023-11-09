@@ -27,19 +27,19 @@ export default function Page() {
 
           <li className="mt-4 space-y-2">
             Familiarise oneself with the user interface of{" "}
-            <span className="font-bold text-primary">3D slicer</span>.
+            <span className="font-bold text-primary dark:text-amber-400">3D slicer</span>.
           </li>
           <li className="mt-4 space-y-2">
             Narrow down regions of interest by{" "}
-            <span className="font-bold text-primary">cropping</span>.
+            <span className="font-bold text-primary dark:text-amber-400">cropping</span>.
           </li>
           <li className="mt-4 space-y-2">
             Separate bone using{" "}
-            <span className="font-bold text-primary">threshold</span> based{" "}
-            <span className="font-bold text-primary">segmentation</span>.
+            <span className="font-bold text-primary dark:text-amber-400">threshold</span> based{" "}
+            <span className="font-bold text-primary dark:text-amber-400">segmentation</span>.
           </li>
           <li className="mt-4 space-y-2">
-            Export file as <span className="font-bold text-primary">.STL.</span>
+            Export file as <span className="font-bold text-primary dark:text-amber-400">.STL.</span>
           </li>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ThingsToDownloadImage from "@/public/mandiweb/things-to-download.png";
+import GIF from "@/public/mandiweb/teacher.gif";
 import Link from "next/link";
 
 const grayLink = {
@@ -11,9 +11,9 @@ export default function Page() {
     <div className="space-y-4 p-14 dark:text-white">
       <div className="flex flex-col sm:flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
         <Image
-          className="ml-16 hidden md:block"
+          className=" hidden md:block"
           alt="Somethings never change"
-          src={ThingsToDownloadImage}
+          src={GIF}
           width={450}
           height={300}
         />

@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import Image1 from "./assets/image1.png";
+import GIF from "@/public/mandiweb/teacher.gif";
 import Link from "next/link";
 
 const grayLink = {
@@ -14,13 +14,13 @@ export default function Page() {
     <div className="space-y-4 p-14 dark:text-white">
       <div className="flex flex-col sm:flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
         <Image
-          className="ml-16 hidden md:block"
+          className="hidden md:block"
           alt="Somethings never change"
-          src={Image1}
-          width={450}
+          src={GIF}
+          width={500}
           height={300}
         />
-        <div className="space-y-4 py-4 ml-4">
+        <div className="space-y-4 py-4">
           <div className="w-full h-2 bg-gray-400"></div>
           <h3 className="font-bold dark:text-white text-primary text-2xl py-2">
             3D file manipulation and separating the mandible in Meshmixer (Autodesk, San Rafael, California)
