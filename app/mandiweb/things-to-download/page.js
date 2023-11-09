@@ -2,6 +2,7 @@ import Image from "next/image";
 import GIF from "@/public/mandiweb/teacher.gif";
 import Link from "next/link";
 
+
 const grayLink = {
   textDecoration: "underline",
   color: "gray",
@@ -9,6 +10,7 @@ const grayLink = {
 export default function Page() {
   return (
     <div className="space-y-4 p-14 dark:text-white">
+  
       <div className="flex flex-col sm:flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
         <Image
           className=" hidden md:block"
