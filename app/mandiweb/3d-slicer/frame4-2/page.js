@@ -28,6 +28,16 @@ export default function Page() {
               <span className="font-bold">Show 3D</span> button to render the 3D
               image.
             </p>
+            <p className="mt-4 text-justify">
+              Depending on the computer used, a short lag period may happen. If
+              the 3D image does not appear in the upper right corner, we can
+              click on the{" "}
+              <span className="font-bold">&ldquo;centre view&rdquo;</span>{" "}
+              button on the upper left of the blue window. Clicking on the 3D
+              image with the left mouse button will allow the user to move the
+              3D image. To zoom in and out, click and hold the right mouse
+              button and drag until desired view is achieved.
+            </p>
           </div>
           <div className="flex justify-center">
             <Image
@@ -45,7 +55,7 @@ export default function Page() {
               <ChevronLeftIcon className="w-8 h-8" />
             </div>
           </Link>
-          <Link href="/mandiweb/3d-slicer/frame4-2-1">
+          <Link href="/mandiweb/3d-slicer/frame4-3">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronRightIcon className="w-8 h-8" />
             </div>
