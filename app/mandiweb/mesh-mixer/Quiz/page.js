@@ -101,7 +101,7 @@ export default function QuizApp() {
   const wrong = checkWrong();
 
   return (
-    <div className="min-h-screen items-center  p-4 hover:bg-gray-200">
+    <div className="min-h-screen items-center  p-4">
       <div className="quiz-container" style={quizContainerStyle}>
         <h1 className="text-primary py-4 text-center text-lg font-bold">
           Meshmixer Quiz
