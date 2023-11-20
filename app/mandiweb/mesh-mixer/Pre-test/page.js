@@ -10,9 +10,9 @@ export default function Page() {
         </p>
 
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfdYJZgVaYVPHhohlt-Hy_WxZwphgVEnx2S-uVARjZfusY_-A/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSelDmfvkkisu4gCXXInHc5m0KH2xqDoD4oVOaiwCPNi60vm-A/viewform?embedded=true"
           width="700"
-          height="700"
+          height="520"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
@@ -29,7 +29,6 @@ export default function Page() {
           </Link>
         </p>
       </div>
-      
     </main>
   );
 }

@@ -12,7 +12,7 @@ export default function Page() {
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfdYJZgVaYVPHhohlt-Hy_WxZwphgVEnx2S-uVARjZfusY_-A/viewform?embedded=true"
           width="700"
-          height="700"
+          height="520"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
