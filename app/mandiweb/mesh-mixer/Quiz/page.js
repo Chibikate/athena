@@ -172,7 +172,7 @@ export default function QuizApp() {
               <Link href="/mandiweb/mesh-mixer/Pre-test">
                 <p className="text-green-900 font-bold">
                   You got a perfect score!! <br/> 
-                  We are encouraging you to take our <span className="underline font-bold">pre-test and survey</span> and get your certificate
+                  We are encouraging you to take our <span className="underline font-bold">webite form and survey</span> and get your certificate
                 </p>
               </Link>
             ) : (
