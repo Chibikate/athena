@@ -25,7 +25,7 @@ export default function Page() {
           Click the <span className="font-bold">eye</span> to show/hide the remaining anatomy. 
           </p>
           <div className="flex justify-center">
-            <Image className="ml-16 mr-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
+            <Image className="ml-16 mr-16"
               alt="Somethings never change"
               src={Image19}
               width="100%"

@@ -31,7 +31,7 @@ export default function Page() {
               window will pop up. We can hide<br/> and unhide the structures by
               clicking on the &ldquo;
               <span className="font-bold">Eye</span>&rdquo; icon <br/>as shown above.</p>
-              <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out hover:z-10"
+              <Image 
                 alt="Somethings never change"
                 src={Image11}
                 width="100%"
@@ -43,7 +43,7 @@ export default function Page() {
               part. For the activity, we shall rename<br/> the part into &#34;mandible&#34;. We
               can also hide the rest of the<br/> parts we are not working with to make
               the program run smoother.</p>
-              <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out hover:z-10"
+              <Image 
                 alt="Somethings never change"
                 src={Image12}
                width="100%"

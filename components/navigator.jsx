@@ -47,7 +47,7 @@ export default function Navigator() {
               </Link>
 
               <Link href="/mandiweb/introduction">
-                <p className="text-white hover:text-white hover-border hover:border-white-400 hover:border-2 px-5 py-2 rounded-md text-sm font-medium bg-[#0091AD]">
+                <p className="text-white hover:text-emerald-900 ring-2 ring-offset-2 ring-offset-blue-300 hover:ring-offset-purple-950 hover-border px-5 py-2 rounded-md  text-md font-bold bg-[#0091AD]">
                   Start
                 </p>
               </Link>

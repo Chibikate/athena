@@ -32,7 +32,7 @@ export default function Page() {
                 into a solid that could be 3D printed. To do this, click on 
                 <span className="font-bold">“Edit”</span> on the left toolbar and click on <span className="font-bold">&#34;Make Solid&#34;</span>
               </p>
-              <Image className="py-2 mr-16 ml-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
+              <Image className="py-2 mr-16 ml-16"
                 alt="Somethings never change"
                 src={Image22}
                 width="100%"

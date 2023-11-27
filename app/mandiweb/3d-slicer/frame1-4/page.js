@@ -44,7 +44,7 @@ export default function Page() {
             </div>
             <div className="flex justify-center">
               <Image
-                className="  ml-16 mr-16 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
+                className="  ml-16 mr-16"
                 alt="somethings never change"
                 src={image6}
                 width="100%"

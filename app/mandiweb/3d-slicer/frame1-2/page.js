@@ -32,7 +32,6 @@ export default function Page() {
 <div className="flex justify-center">
 
             <Image
-              className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
               src={image3}
               alt="something"
               width="100%"

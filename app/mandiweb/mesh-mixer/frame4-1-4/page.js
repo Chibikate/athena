@@ -32,7 +32,7 @@ export default function Page() {
                 <span className="font-bold">Accept</span>
                 &rdquo;.
               </p>
-              <Image className="ml-16 mr-16 py-4 transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
+              <Image className="ml-16 mr-16 py-4"
                 alt="Somethings never change"
                 src={Image23}
                 width="100%"

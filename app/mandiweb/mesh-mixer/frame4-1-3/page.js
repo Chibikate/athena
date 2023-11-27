@@ -26,7 +26,7 @@ export default function Page() {
             <span className="font-bold"> accept</span>. Click again the eye icon to hide the remaining anatomy.
           </p>
           <div className="flex  justify-center">
-            <Image className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out"
+            <Image 
               alt="Somethings never change"
               src={Image21}
               width="100%"

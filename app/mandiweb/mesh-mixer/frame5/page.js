@@ -18,7 +18,7 @@ export default function Page() {
               🎉 Congratulations!
             </h2>
             <p>
-              You&apos;re now a master of creating Anatomic Facsimile Models
+              You were able to create an Anatomic Facsimile Models
               from scratch! 🌟 Give yourself a well-deserved pat on the back for
               your remarkable achievement.
             </p>

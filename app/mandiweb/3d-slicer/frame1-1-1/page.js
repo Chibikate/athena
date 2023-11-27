@@ -34,7 +34,7 @@ export default function Page() {
 
           <div className="flex justify-center">
             <Image
-              className="transform scale-100 hover:scale-150 transition-transform duration-500 ease-out items-center"
+              className="items-center"
               alt="somethings never change"
               src={image2}
               width="100%"
