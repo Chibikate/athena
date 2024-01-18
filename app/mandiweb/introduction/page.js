@@ -12,28 +12,26 @@ export default function Home() {
             <spand className="font-bold">
               Virtual surgical planning (VSP){" "}
             </spand>
-            is a new technology that uses computers to help surgeons plan and
-            perform mandibular reconstructions with greater precision and
-            accuracy. Mandibular reconstruction is a complex surgery that is
-            often needed after trauma, cancer treatment, or congenital
-            deformities. The goal is to restore both the function and appearance
-            of the lower jaw. VSP allows surgeons to create a digital model of
-            the patient&apos;s jaw and plan the surgery in detail before it is
-            performed. This helps to reduce the risk of complications and
-            improve the outcome of the surgery. </p>
-            <p className="pt-4">This tutorial will teach
-            students the basics of VSP for mandibular reconstruction. Students
-            will learn how to use the VSP software - 3D slicer and Meshmixer to
-            create a digital model of the patient&apos;s jaw.
+            is a planning technique that allows pre-surgical 
+planning in a virtual environment. This technology provides the surgeon with tools to 
+optimize the surgical plan in a risk-free environment. This plan can be transferred 
+into an actual physical template using 3D printing. This module provides a step-by step process 
+in the basic procedure of utilizing a CT scan for virtual surgical planning 
+of a mandibular defect. <br/>
+This tutorial on VSP for mandibular reconstruction will serve as a guide for individuals 
+in the medical field, including both students and professionals. Users will learn how to 
+utilize VSP software, such as 3D Slicer and Meshmixer, to create a digital model of 
+human anatomy, with a specific focus on mandibular reconstruction. This tutorial also 
+extends its applicability to individuals interested in the innovative approach to medical 
           </p>
-          <p className="pt-4">
-            <span className="font-bold ">Computed Tomography (CT)</span> scans
-            and{" "}
-            <span className="font-bold ">Magnetic Resonance Imaging (MRI)</span>
-            scans are medical imaging techniques that produce detailed images of
-            the inside of the body. These images can be used to create a
-            <span className="font-bold ">three-dimensional (3D) </span>model of
-            the patient&apos;s jaw.
+          <p className="pt-4"> In medical imaging,
+            <span className="font-bold "> Computed Tomography (CT)</span> is considered the gold standard for 
+evaluating bone pathologies, lesions, defects, and other skeletal abnormalities due to 
+its ability to produce detailed images of the inside of the body. CT scans are particularly 
+effective in providing precise assessments of bone-related conditions. On the other 
+hand, <span ClassName="font-bold"> Magnetic Resonance Imaging (MRI) </span> scans, while not ideal for visualizing bones, 
+are valuable for generating detailed images of soft tissues and can contribute to 
+creating a <span ClassName="font-bold">three-dimensional (3D) </span> model of the human anatomy.
           </p>
           <p className="pt-4">
             <span className="font-bold ">
@@ -43,6 +41,14 @@ export default function Home() {
             managing medical imaging information and data. 3D printing in
             medicine uses DICOM files to create custom anatomical parts, such as
             surgical planning guides.
+          </p>
+        </div>
+        <div className ="pt-4 ">
+          <p className="text-justify italic">
+          Disclaimer: The software used in this tutorial is not FDA approved and should only 
+be utilized for educational purposes. It is not intended for clinical use, diagnosis, 
+treatment, or prevention of any disease. Users should consult with qualified 
+professionals for guidance on FDA-approved medical software
           </p>
         </div>
       </div>

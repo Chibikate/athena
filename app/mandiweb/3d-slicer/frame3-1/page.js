@@ -28,11 +28,8 @@ export default function Page() {
                 <span className="font-bold">
                   &#34;no series description cropped&#34;
                 </span>{" "}
-                then select{" "}
-                <span className="font-bold">
-                  &ldquo;CT bone window level&rdquo;
-                </span>{" "}
-                as indicated above.
+                , then, select CT bone window level as indicated 
+above.
               </p>
             </div>
             <div className="flex justify-center">

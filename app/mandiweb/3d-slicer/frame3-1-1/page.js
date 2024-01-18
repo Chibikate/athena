@@ -24,9 +24,8 @@ export default function Page() {
           <div>
             <div className="flex flex-col pb-4 space-y-2 items-center">
               <p className="text-center mt-4">
-                Once again, click on the module drop down menu from the toolbar
-                and select the <span className="font-bold">segment editor</span>{" "}
-                module.
+              Once again, click on the module drop-down menu from the toolbar and select the segment 
+editor module.
               </p>
             </div>
             <div className="flex justify-center">

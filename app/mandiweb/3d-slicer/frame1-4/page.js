@@ -25,21 +25,13 @@ export default function Page() {
           <div>
             <div className="flex flex-col space-y-4 p-2 text-justify items-center">
               <p>
-                The CT scan files should show up once the DICOM files are done
-                loading. To zoom in and out, hold &#34;
-                <span className="font-bold">Right Click</span>&#34; and &#34;
-                <span className="font-bold">Drag</span>&#34;until the desired
-                view is acquired. To scroll through the CT scan, use the middle
-                mouse scroll-wheel or dragging the slider above the boxes will
-                both work equally well. <br /> The current view we are using is
-                called &#34;
-                <span className="font-bold">Four Up</span>&#34;. The empty
-                window on the upper right is where the 3D image will be shown
-                once activated. Clicking on the arrow on the toolbar as
-                indicated above will activate a drop-down selection box which
-                contains different views the user can utilize according to
-                preference. For purposes of the activity, we will use the
-                default four-up view.
+              The CT scan files appear once the DICOM files have finished loading. To zoom in and out, 
+users can hold the right mouse button and drag until the desired view is achieved. To scroll 
+through the CT scan, either using the middle mouse scroll or dragging the slider above the 
+boxes will work equally well. <br /> The current view is referred to as <span className="text-primary font-bold text-italic">&#34;four up&#34;</span>. The empty window on the upper right is where 
+the 3D image will be displayed once activated. Clicking on the arrow on the toolbar, as 
+indicated above, will activate a drop-down selection box containing different views that users 
+can utilize based on their preference. For this tutorial, the default four up view will be used.
               </p>
             </div>
             <div className="flex justify-center">

@@ -27,18 +27,10 @@ export default function Page() {
                 3D Slicer Module
               </h3>
               <p className="text-justify pb-2 ml-16 mr-16">
-                Modules in 3D Slicer allow us to perform actions that affect the
-                DICOM files in various ways.
-                <br /> The drop-down menu can be accessed from the upper left of
-                the toolbar as indicated above.
-                <br /> For the purpose of the activity, we will only be using{" "}
-                <span className="font-bold">Crop Volume</span>,{" "}
-                <span className="font-bold">
-                  Segment Editor,
-                  <br />
-                </span>
-                and <span className="font-bold">Volumes Module</span> in
-                preparation of the 3D file.
+              Modules in 3D Slicer allow users to perform actions that affect DICOM files in various ways. 
+The drop-down menu can be accessed from the upper left of the toolbar, as indicated below. 
+For the purpose of the tutorial, the modules that users will be using are <span className="font-bold text-primary">Crop Volume</span>, 
+<span className="font-bold text-primary"> Segment Editor, </span> and <span className="font-bold text-primary">Volumes Module</span>.
               </p>
             </div>
             <div className="flex justify-center">

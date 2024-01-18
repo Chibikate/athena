@@ -23,10 +23,10 @@ export default function Page() {
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
           <div className="text-center pb-4 mb-4">
             <p className="mt-4 text-center">
-              We can now save our file as .stl by clicking on the small down
-              arrow on the right side of the segmentation button as indicated
-              above to access the drop-down menu. Select{" "}
-              <span className="font-bold">Export to files</span>.
+            Then, the file can now be saved as the file as .stl by clicking on the small down arrow on the 
+right side of the segmentation button as indicated above to access the drop-down menu. 
+Select
+              <span className="font-bold"> Export to files</span>.
             </p>
           </div>
           <div className="flex justify-center">

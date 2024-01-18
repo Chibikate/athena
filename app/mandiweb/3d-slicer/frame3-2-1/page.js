@@ -13,7 +13,7 @@ export default function Page() {
       <Progress progress={54.08} size="md" />
       <main className="flex flex-col md:flex md:flex-row items-center justify-between p-14 space-y-4">
         <div className="md:flex justify-between mt-8 space-x-4 hidden">
-          <Link href="/mandiweb/3d-slicer/frame3">
+          <Link href="/mandiweb/3d-slicer/frame3-2">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>
@@ -24,13 +24,14 @@ export default function Page() {
           <div>
             <div className="flex flex-col pb-4 space-y-2 items-center">
               <p className="text-center mt-4 mr-16 ml-16">
-                With a segment added, clicking the{" "}
+              With a segment added, clicking the 
                 <span className="font-bold">
-                  &#34;color selection button&#34;
+                   &#34;color selection button&#34;
                 </span>{" "}
-                will bring up a menu that will allow the user to select and
-                assign different colors for different structures if so desired.
-                <br /> For this activity, let us select{" "}
+                will bring up a menu that will 
+allow the user to select and assign different colors for different structures if so desired. In this 
+context, tissue is represented by the color green, arteries by red, body fat by yellow, and 
+bone by a pale shade. For this tutorial, select
                 <span className="font-bold">&ldquo;bone&rdquo;</span>.
               </p>
             </div>
@@ -47,7 +48,7 @@ export default function Page() {
         </div>
 
         <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/3d-slicer/frame3" className="md:hidden flex">
+        <Link href="/mandiweb/3d-slicer/frame3-2" className="md:hidden flex">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>

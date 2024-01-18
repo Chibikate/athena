@@ -24,9 +24,9 @@ export default function Page() {
           <div>
             <div className="flex flex-col p-4 space-y-2 items-center">
               <p className="text-center mt-4">
-                Once in the segment editor module, click on the{" "}
-                <span className="font-bold">add</span> button to add the segment
-                we will be working with.
+              Once in the segment editor module, click on the
+                <span className="font-bold"> &#34;add&#34;</span>  button to add the segment that will be 
+used in this tutorial.
               </p>
             </div>
             <div className="flex justify-center">

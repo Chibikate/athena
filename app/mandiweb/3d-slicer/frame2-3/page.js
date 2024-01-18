@@ -25,12 +25,10 @@ export default function Page() {
           <div className="flex flex-col space-y-2 items-center">
          
           <p className="text-center pb-2 mt-4">
-            Drag the bounding box to focus on the areas needed. For this exercise,
-            focus must be on the midface and mandible cutting out the rest of the
-            skull but making sure the temporomandibular joint is included. Once
-            the region of interest is selected, click apply to apply the crop.
-            Click the <span className="font-bold">&ldquo;eye&rdquo;</span> icon
-            once again to remove the bounding box.
+          Drag the bounding box to focus on the areas needed. For this tutorial, focus must be on the 
+midface and mandible cutting out the rest of the skull but making sure the 
+temporomandibular joint is included. Once the region of interest is selected, click apply to 
+<span className="font-bold"> Apply</span> the crop. Click the <span className="font-bold">&ldquo;eye&rdquo;</span>  icon once again to remove the bounding box.
           </p>
         </div>
         <div className="flex justify-center">

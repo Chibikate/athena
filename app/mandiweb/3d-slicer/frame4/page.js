@@ -24,12 +24,10 @@ export default function Page() {
           <div>
             <div className="flex flex-col space-y-2 pb-4 items-center">
               <p className="text-center mt-4">
-                Once the threshold effect has been activated, we can adjust the
-                threshold range we desire to focus on. We can either input a
-                specific number or drag the slider from left to right until we
-                achieve our desired threshold. For the purpose of this activity,
-                we will input <span className="font-bold">450</span> in the
-                minimum threshold (left box) as indicated above.
+              Once the threshold effect has been activated, the user can proceed to adjust the threshold 
+range that the user desires to focus on. The can either input a specific number or drag the 
+slider from left to right until the desired threshold is achieved. For this tutorial, input <span className="font-bold">450</span>  in 
+the minimum threshold (left box) as indicated above.
               </p>
             </div>
             <div className="flex justify-center ">

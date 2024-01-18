@@ -23,9 +23,9 @@ export default function Page() {
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
           <div className="text-center pb-4 mb-4">
             <p className="mt-4 text-center mr-16 ml-16">
-              Once we are satisfied with our 3D image, we may now save our file.
-              We can choose to <br /> rename the file by clicking on the
-              segmentation drop-down menu and select <br />
+            Once the user is satisfied with the 3D image, the file may be saved.
+            The user can choose to 
+rename the file by clicking on the segmentation drop-down menu and selecting <br />
               <span className="font-bold">
                 &ldquo;Rename current Segmentation&rdquo;.
               </span>{" "}

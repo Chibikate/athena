@@ -25,10 +25,8 @@ export default function Page() {
           <div>
             <div className="flex flex-col space-y-2 items-center">
               <p className="text-center mt-4">
-                Once in the Crop Volume module, click on the input{" "}
-                <span className="font-bold">Region of Interest (ROI)</span> drop
-                down box and select{" "}
-                <span className="font-bold">Create New ROI</span>.
+              Once in the crop volume module, click on the input Region of Interest (ROI) drop down box 
+and select <span className="font-bold">Create New ROI</span>.
               </p>
             </div>
             <div className="flex justify-center">

@@ -26,8 +26,8 @@ export default function Page() {
           <div className="h-1 bg-gray-300 mt-3"></div>
 
           <li className="mt-4 space-y-2">
-            Familiarise oneself with the user interface of{" "}
-            <span className="font-bold text-primary dark:text-amber-400">3D slicer</span>.
+          Familiarise oneself with the user interface of a{" "}
+            <span className="font-bold text-primary dark:text-amber-400">3D editing app.</span>.
           </li>
           <li className="mt-4 space-y-2">
             Narrow down regions of interest by{" "}

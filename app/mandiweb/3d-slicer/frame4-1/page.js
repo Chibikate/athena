@@ -23,8 +23,8 @@ export default function Page() {
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-8 rounded-lg shadow-md">
           <div className="text-center pb-4 mb-4">
             <p>
-              With our minimum threshold as 450, we can observe that only the
-              bone has been selected.
+            With the minimum threshold set as 450, it can be observed that only the bone has been 
+selected.
               <br /> Click on apply to <span className="font-bold">
                 apply
               </span>{" "}
