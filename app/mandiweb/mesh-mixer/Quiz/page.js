@@ -55,9 +55,9 @@ const quizQuestions = [
       'A. Click on "Accept"',
       'B. Click on "Mirror"',
       'C. Click on "Edit"',
-      'D. Click on "Make Solid again"',
+      'D. Click on "Make Solid" again',
     ],
-    correctAnswer: "A. Click on Accept"
+    correctAnswer: 'A. Click on "Accept"'
   },
 ];
 
