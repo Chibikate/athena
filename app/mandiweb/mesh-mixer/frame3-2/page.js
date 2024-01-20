@@ -22,20 +22,19 @@ export default function Page() {
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
           <div className="text-center pb-4 mb-4">
             <p className="mt-4 text-center pb-4 mr-16 ml-16">
-              For the exercise, we will make a plane cut in the middle of the
-              mandible cutting out the diseased side.
+              In this tutorial, a plane cut will be performed in the middle of the mandible to remove the diseased
+              side.
               <br />
-              To change the side to keep, click the small arrow as shown above.
-              Should there be a need to keep
-              <br />
-              both halves, the cut type could be set to &ldquo;slice (Keep
-              Both)&rdquo; in the drop-down menu as shown above.
-              <br /> To finalize the cut, click{" "}
-              <span className="font-bold">accept</span>.
+              To switch the side to be kept, the user should click the small arrow, as indicated below. If
+              both halves need to be preserved,
+              the cut type can be set to &ldquo;slice (Keep
+              Both)&rdquo; " from the dropdown menu, as demonstrated below. To confirm and complete the cut, the user should click on
+              the
+              <span className="font-bold"> Accept</span> button.
             </p>
             <div className="flex justify-center">
               <Image
-                
+
                 alt="Somethings never change"
                 src={Image15}
                 width="100%"

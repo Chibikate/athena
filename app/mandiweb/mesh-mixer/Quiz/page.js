@@ -36,6 +36,29 @@ const quizQuestions = [
     ],
     correctAnswer: "D. Mirror and Plane Cut",
   },
+  {
+    question:
+    "4. What function is applied to convert the mandible model into a solid form suitable for 3D printing?",
+    options: [
+      "A. Apply",
+      "B. Edit",
+      "C. Mirror",
+      "D. Make Solid",
+    ],
+    correctAnswer: "D. Make Solid"
+  },
+  {
+    question:
+    `5. What should the user do after applying the "Make Solid" function to the mandible model?`,
+    options:
+    [
+      'A. Click on "Accept"',
+      'B. Click on "Mirror"',
+      'C. Click on "Edit"',
+      'D. Click on "Make Solid again"',
+    ],
+    correctAnswer: "A. Click on Accept"
+  },
 ];
 
 export default function QuizApp() {

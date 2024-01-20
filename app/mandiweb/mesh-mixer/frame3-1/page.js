@@ -23,16 +23,15 @@ export default function Page() {
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
           <div className="text-center pb-4 mb-4">
             <p className="mt-4 text-center">
-              Selecting a plane cut will bring up a plane that we can use to cut
-              the selected area. Holding the left mouse button and dragging it
-              will align the plane to the direction in the line was made. It is
-              the author&lsquo;s preference to align the orientation of the
-              model by first clicking on the viewcube.
+              Upon selecting <span className="font-bold text-primary">&#34;Plane Cut,&#34;</span> a plan will be displayed for the user to utilize in cutting the selected
+              area. Aligning the plane to the direction of the line can be achieved by holding the left mouse
+              button and dragging it accordingly. It is recommended to align the orientation of the model by first
+              clicking on the view cube.
             </p>
           </div>
           <div className="flex justify-center">
             <Image
-              
+
               alt="Somethings never change"
               src={Image14}
               width="100%"

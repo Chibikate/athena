@@ -23,23 +23,21 @@ export default function Page() {
         <div className="flex flex-col space-x-4b bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
           <div className="text-center pb-4 mb-4">
             <p className="mt-4 text-justify">
-              Meshmixer will automatically create face groups based on the angle
-              input threshold value. You can either drag the slider or input a
-              number (default is 10) until a satisfactory amount of the mandible
-              is selected as a different face group (different color) from the
-              rest of the structure. For a smoother experience, it&lsquo;s
-              recommended to input a number instead of dragging the slider. Once
-              the desired result is achieved, click accept. Depending on the
-              hardware, a lag period is expected.
+              Meshmixer will automatically create face groups based on the angle inputted threshold value. The
+              user can either drag the slider or input a number (default is 10) until a satisfactory amount of the
+              mandible is selected as a different face group (different color) from the rest of the structure. Due
+              to the inherent laggy nature of Meshmixer when computing, it is suggested to input a number
+              instead of dragging the slider. Once the desired result is achieved, click accept. Depending on
+              the hardware, a lag period is expected.
             </p>
           </div>
           <div className="flex justify-center">
             <Image
-              
+
               alt="Somethings never change"
               src={Image7}
               width="100%"
-            height="auto"
+              height="auto"
             />
           </div>
         </div>

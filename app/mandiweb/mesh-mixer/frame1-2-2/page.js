@@ -33,19 +33,22 @@ export default function Page() {
               on &ldquo;
               <span className="font-bold">Generate Face Groups</span>&rdquo;.
             </p>
+            <p className="pt-1"><span className="font-bold text-primary">Generate Face Groups</span> function serves the purpose of isolating the faces of a 3D mesh
+              simplifying the workflow and minimizing the risk of unintended modifications to other parts of the
+              mesh.</p>
             <div className="flex justify-center">
               <Image
-                
+
                 alt="Somethings never change"
                 src={Image6}
                 width="100%"
-            height="auto"
+                height="auto"
               />
             </div>
           </div>
         </div>
         <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/mesh-mixer/frame1-2" className="md:hidden flex">
+          <Link href="/mandiweb/mesh-mixer/frame1-2" className="md:hidden flex">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>

@@ -7,25 +7,25 @@ import Image1 from "@/public/mandiweb/image2-2.png";
 const quizQuestions = [
   {
     question:
-      "1. What does the abbreviation DICOM stand for in the context of medical imaging?",
+      "1. Which menu in 3D Slicer allows users to customize the appearance and behavior of the application, including the display of modules in the toolbar?",
     options: [
-      "  A. Diagnostic Imaging and Computer Operations Manual",
-      "  B. Digital Imaging and Computerized Optical Measurement",
-      "  C. Data Information Catalog for Optical Machines",
-      "  D. Digital Imaging and Communications in Medicine",
+      "  A. File",
+      "  B. Edit",
+      "  C. View",
+      "  D. Settings",
     ],
-    correctAnswer: "D. Digital Imaging and Communications in Medicine",
+    correctAnswer: "B. Edit",
   },
   {
     question:
-      "2. Which imaging method uses X-rays to create detailed cross-sectional pictures of the body, helping diagnose issues like bone fractures, tumors, and organ problems?",
+      "2. Where can users find options for showing/hiding toolbars and switching view layouts in 3D Slicer?",
     options: [
-      "  A. MRI (Magnetic Resonance Imaging)",
-      "  B. PET (Positron Emission Tomography)",
-      "  C. Ultrasound",
-      "  D. CT (Computed Tomography)",
+      "  A. Edit Menu",
+      "  B. View Menu",
+      "  C. File Menu",
+      "  D. Module Selection toolbar",
     ],
-    correctAnswer: "D. CT (Computed Tomography)",
+    correctAnswer: "B. View Menu",
   },
   {
     question:
@@ -40,22 +40,34 @@ const quizQuestions = [
   },
   {
     question:
-      "4. This current view in the 3D slicer is called “four up”. What is the empty window on the upper right intended for?",
+      "4. How can users customize views, including showing/hiding orientation markers and rulers in 3D Slicer?",
 
     options: [
-      "  A. It is where the 3D image will be shown once activated.",
-      "  B. The space that will enable multi-user collaboration.",
-      "  C. Nothing.",
-      "  D. Provides a workspace for annotations.",
+      "  A. Click on the push pin in the top left corner",
+      "  B. Use the magnify glass icon",
+      "  C. Click on the Extension Manager",
+      "  D. Navigate through the Module Selection toolbar",
+    ],
+    correctAnswer: "A. Click on the push pin in the top left corner",
+  },
+  {
+    question:
+    "5. This current view in the 3D slicer is called “four up”. What is the empty window on the upper right intended for?", 
+  
+    options: [
+      "A. It is where the 3D image will be shown once activated.",
+      "B. The space that will enable multi-user collaboration.",
+      "C. Nothing.",
+      "D. Provides a workspace for annotations.",
     ],
     image: "image2-2.png",
-    correctAnswer: "A. It is where the 3D image will be shown once activated.",
+    correctAnswer: "A. It is where the 3D image will be shown once activated."
   },
   {
     question: (
       <div className="mb-2"
         dangerouslySetInnerHTML={{
-          __html: `5. Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized?<br/>
+          __html: `6. Modules in 3D slicer allow us to perform actions that affect the DICOM files in various ways. From the activity you’ve performed earlier, what are the three (3) modules you have utilized?<br/>
           i.) Crop Volume <br/> ii.) Volume Rendering <br/>  iii.) segment editor <br/>  iv) Volumes <br/>  v.)Threshold `,
         }}
       />
@@ -71,20 +83,40 @@ const quizQuestions = [
   
   {
     question:
-      "6. What file format is often used in 3D printing to describe the surface geometry of objects, allowing them to be produced with precision using additive manufacturing?",
-    options: ["  A. STL", "  B. PNG", "  C. DOCX", "  D. MP3"],
-    correctAnswer: "A. STL",
+      `7. In the Data module's Subject hierarchy tab, what does clicking the "eye" icon do?`,
+    options: ["  A. Adjust transparency", "  B. Show/hide an item in all views", "  C. Scroll through slices", "  D. Install extensions"],
+    correctAnswer: "B. Show/hide an item in all views",
   },
   {
-    question: '7. What does the abbreviation "STL" stand for?',
+    question: '8. What is the primary objective of threshold-based segmentation in 3D Slicer?',
     options: [
-      "  A. Standard Triangular Language",
-      "  B. Solid Transfer Language",
-      "  C. Structured Texture Lexicon",
-      "  D. Standard Tessellation Language",
+      "  A. Adjust transparency",
+      "  B. Customize appearance and behavior",
+      "  C. Distinguish and outline specific structures within medical imaging data",
+      "  D. Load DICOM files",
     ],
-    correctAnswer: "D. Standard Tessellation Language",
+    correctAnswer: "C. Distinguish and outline specific structures within medical imaging data",
   },
+  {
+    question: '9. In the "LPS" coordinate system, what does "Posterior" refer to?',
+    options: [
+      "A. The left side of the patient",
+      "B. The upper part of the patient",
+      "C. The front side of the patient",
+      "D. The back side of the patient",
+    ],
+    correctAnswer: "D. The back side of the patient"
+  },
+  {
+    question: '10. Why is the integration of the scale factor and virtual coordinate system essential in 3D Slicer?',
+    options: [
+      "A. To change the appearance of the toolbar",
+      "B. To customize the font size",
+      "C. For precise spatial analysis and visualization",
+      "D. To show/hide toolbars",
+    ],
+    correctAnswer: "C. For precise spatial analysis and visualization"
+  }
 ];
 
 export default function QuizApp() {

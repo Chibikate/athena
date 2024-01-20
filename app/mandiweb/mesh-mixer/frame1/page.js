@@ -21,25 +21,30 @@ export default function Page() {
         </div>
 
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
-          <div className="text-center pb-4 mb-4">
-            <p className="mt-4 text-center">
-              Click on the &ldquo;<span className="font-bold">Import</span>
-              &rdquo; button and select the desired &ldquo;
-              <span className="font-bold">.STL</span>&rdquo; file.
+          <div className="text-left pb-4 mb-4">
+            <p className="mt-4 text-left">
+              Once the user properly installed and opened the Meshmixer, an opening screen with some
+              starting action buttons will be shown. The import button will bring into Meshmixer an external
+              mesh file of their choice. All of the most common mesh formats are supported (STL, OBJ, PLY,
+              AMF, 3MF, OFF, and MIX). 
             </p>
+            <p >For this tutorial, an STL file downloaded earlier will be used</p>
+            <p>Click on the <span className="font-bold text-primary">&#34;Import&#34;</span> button and select the desired .stl file.</p>
+            <p>The user can simply drag-and-drop the mesh files into the edit space and either replace the
+              current object or append to the model.</p>
           </div>
-          <div className="flex  justify-center ">
+          <div className="flex  justify-center">
             <Image
               className="mr-16 ml-16"
               alt="Somethings never change"
               src={Image2}
               width="100%"
-            height="auto"
+              height="auto"
             />
           </div>
         </div>
         <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/mesh-mixer" className="md:hidden flex">
+          <Link href="/mandiweb/mesh-mixer" className="md:hidden flex">
             <div className="w-16 h-16 bg-primary hover-border hover:border-white-400 hover:border-2 flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>

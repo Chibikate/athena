@@ -22,8 +22,9 @@ export default function Page() {
       <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">
           <p className="mt-4 pb-4 text-center">
-          If clicking the eye icon will make the <span className="font-bold">&#34;accept&#34;</span> button for mirror function disappear, click again the <span className="font-bold">&#34;edit&#34;</span>, and then the <span className="font-bold">&#34;mirror&#34;</span>. You can make some adjustments with your mandible. 
- 
+          If clicking the eye icon will make the <span className="font-bold">&#34;Accept&#34; </span> 
+           button for mirror function disappear, click again the <span className="font-bold">&#34;edit&#34;</span>, 
+          and then the <span className="font-bold">&#34;mirror&#34;</span>. The user can make some adjustments with the mandible.  
           </p>
           <div className="flex justify-center ">
             <Image 

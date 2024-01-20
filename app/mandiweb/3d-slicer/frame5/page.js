@@ -19,8 +19,7 @@ export default function Page() {
               🎉 Congratulations!
             </h2>
             <p className="text-justify">
-              You have successfully converted a CT scan of a patient into a 3D
-              file. 🚀 Further manipulation of this file is needed depending on
+             Congratulations on successfully converting a CT scan of a patient into a 3D file. 🚀 Further manipulation of this file is needed depending on
               the need. If no other modifications are required, feel free to
               print the file as is. Take note though, that the file may be too
               large or may contain errors depending on how well the segmentation

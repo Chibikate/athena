@@ -28,9 +28,10 @@ export default function Page() {
           <div className="flex flex-row items-center justify-center y-2">
             <div className="flex flex-col items-center">
             <p className="text-center">
-                Since the mandible is still a mesh, we have to make the model
-                into a solid that could be 3D printed. To do this, click on 
-                <span className="font-bold">“Edit”</span> on the left toolbar and click on <span className="font-bold">&#34;Make Solid&#34;</span>
+            Given that the mandible remains a mesh, the user needs to convert the model into a solid form
+suitable for 3D printing. This can be achieved by clicking on 
+                <span className="font-bold text-primary"> “Edit”</span> in the left toolbar and
+subsequently selecting <span className="font-bold text-primary">&#34;Make Solid&#34;</span>
               </p>
               <Image className="py-2 mr-16 ml-16"
                 alt="Somethings never change"
