@@ -28,7 +28,7 @@ export default function Page() {
               To switch the side to be kept, the user should click the small arrow, as indicated below. If
               both halves need to be preserved,
               the cut type can be set to &ldquo;slice (Keep
-              Both)&rdquo; " from the dropdown menu, as demonstrated below. To confirm and complete the cut, the user should click on
+              Both)&rdquo; from the dropdown menu, as demonstrated below. To confirm and complete the cut, the user should click on
               the
               <span className="font-bold"> Accept</span> button.
             </p>
