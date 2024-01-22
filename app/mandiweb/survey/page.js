@@ -31,7 +31,7 @@ export default function Page() {
         </p>
       </div>
       <div className="p-4">
-        <Link href="https://drive.google.com/drive/u/0/folders/1ZEBXGFmwzkjMSSq2ZuIimeO8OC8b8lEx?hl=en"> 
+        <Link href="https://drive.google.com/drive/u/0/folders/1ciVBRQvbwgVIS3pYTzfoHrLUdxF75YiE?fbclid=IwAR3eLBzygW8lKBP-EhXk3fuUdDewXM0r7VKo0woLBERzPd51OHZVt7lPnBo"> 
         <p className="bg-primary rounded-md p-2 text-white hover:bg-sky-600 cursor-pointer">
           Submission Bin
         </p>
