@@ -37,7 +37,8 @@ export default function AthenaHome() {
               </p>
             </Link>
             <Link href="./mandiweb">
-            <p className="p-2 rounded-md cursor-pointer font-semibold hover:ring-2 text-white ring-zinc-800 bg-[#001524]">
+            <p className="p-2 rounded-md cursor-pointer font-semibold hover:ring-2 
+            text-white ring-zinc-800 bg-[#001524]">
               Courses
             </p>
             </Link>
