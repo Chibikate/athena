@@ -9,16 +9,7 @@ export default function Page() {
           Please fill in the website information
         </p>
 
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSelDmfvkkisu4gCXXInHc5m0KH2xqDoD4oVOaiwCPNi60vm-A/viewform?embedded=true"
-          width="700"
-          height="520"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-        >
-          Loading…
-        </iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelDmfvkkisu4gCXXInHc5m0KH2xqDoD4oVOaiwCPNi60vm-A/viewform?embedded=true" width="640" height="5056" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
 
       <div className="p-4 dark:text-white">
