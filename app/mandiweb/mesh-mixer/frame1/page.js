@@ -29,7 +29,7 @@ export default function Page() {
               AMF, 3MF, OFF, and MIX). 
             </p>
             <p >For this tutorial, an STL file downloaded earlier will be used</p>
-            <p>Click on the <span className="font-bold text-primary">&#34;Import&#34;</span> button and select the desired .stl file.</p>
+            <p>Click on the <span className="font-bold dark:text-white text-primary">&#34;Import&#34;</span> button and select the desired .stl file.</p>
             <p>The user can simply drag-and-drop the mesh files into the edit space and either replace the
               current object or append to the model.</p>
           </div>

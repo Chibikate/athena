@@ -9,7 +9,7 @@ const grayLink = {
 };
 export default function Page() {
   return (
-    <div className="space-y-4 p-14 dark:text-white">
+    <div className="space-y-4 p-14 dark:text-white min-h-screen">
   
       <div className="flex flex-col sm:flex-row space-x-4 pt-5 animate_animated animate_rotateInDownLeft">
         <Image
@@ -28,7 +28,7 @@ export default function Page() {
           <ul className="list-disc list-inside space-y-2">
             <li>
               <span className="font-semibold">
-                Download 3D slicer (Stable version 5.2.2):{" "}
+                Download 3D slicer (Stable version 5.6.1):{" "}
               </span>
               <Link
                 href=" https://download.slicer.org/"

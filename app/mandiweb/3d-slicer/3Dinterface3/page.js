@@ -21,7 +21,7 @@ export default function Page() {
           <div className="flex flex-col items-center space-y-4">
             <div className="flex-1 flex justify-center ">
               <p className="mb-4 padding text-center ">
-                <span className="text-3xl font-bold text-primary">
+                <span className="text-3xl font-bold dark:text-white text-primary">
                   INTRODUCTION TO 3D SLICER INTERFACE
                 </span>
               </p>
@@ -39,7 +39,7 @@ export default function Page() {
               />
             </div>
 
-            <p className="text-primary font-bold text-xl text-left">
+            <p className="text-primary dark:text-white font-bold text-xl text-left">
               View Data
             </p>
             <p className="text-left pb-2">

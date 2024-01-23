@@ -24,9 +24,7 @@ export default function Page() {
           <div className="flex flex-col items-center space-y-4">
             <div className="flex-1 flex justify-center ">
               <p className="mb-4 padding text-center ">
-                Click
-                <span className="text-lg font-bold">
-                  &#34; Import DICOM files &#34;
+                Click <span className="text-lg font-bold"> &#34;Import DICOM files&#34;
                 </span>
               </p>
             </div>

@@ -30,7 +30,7 @@ export default function Page() {
               the cut type can be set to &ldquo;slice (Keep
               Both)&rdquo; from the dropdown menu, as demonstrated below. To confirm and complete the cut, the user should click on
               the
-              <span className="font-bold"> Accept</span> button.
+              <span className="font-bold"> &#34;Accept&#34;</span> button.
             </p>
             <div className="flex justify-center">
               <Image

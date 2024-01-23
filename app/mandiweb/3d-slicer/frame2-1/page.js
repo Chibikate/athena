@@ -27,8 +27,7 @@ export default function Page() {
                 Click on the{" "}
                 <span className="font-bold">
                   &ldquo;Magnifying Glass&rdquo;
-                </span>
-                 icon on the toolbar, just left from the module drop-down box to
+                </span> icon on the toolbar, just left from the module drop-down box to
                 bring up the search function and type in &ldquo;
                 <span className="font-bold">Crop</span>&rdquo;. Select{" "}
                 <span className="font-bold">Crop Volume</span> and click on{" "}

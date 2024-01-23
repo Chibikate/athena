@@ -23,7 +23,7 @@ export default function Page() {
           <div className="text-center  mb-4">
             <p className="mt-4 text-center pb-4 mr-16 ml-16">
               Once satisfied with the position of the mirrored mandible, click
-              <span className="font-bold"> accept</span>. Click again the eye icon
+              <span className="font-bold"> &#34;accept&#34;</span>. Click again the eye icon
               to hide the remaining anatomy.
             </p>
             <div className="flex  justify-center">

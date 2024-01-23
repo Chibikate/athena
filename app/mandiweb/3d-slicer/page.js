@@ -9,7 +9,7 @@ function ListItem({ text }) {
 
 export default function Page() {
   return (
-    <div className="dark:text-white rounded-lg shadow-md p-14">
+    <div className="dark:text-white min-h-screen rounded-lg shadow-md p-14">
       <div className="flex flex-col sm:flex-row items-center ">
         <div className="w-1/2 py-4">
           <Image 
@@ -45,7 +45,7 @@ export default function Page() {
       </div>
       <div className="flex justify-center sm:flex sm:justify-end mt-4">
         <div className="w-32 h-12 hover-border hover:border-white-400 bg-primary hover-border hover:border-white-400 hover:border-2 hover:text-white flex items-center justify-center text-white font-bold rounded-lg shadow-md cursor-pointer">
-          <Link href="/mandiweb/3d-slicer/frame1-1">Continue!</Link>
+          <Link href="/mandiweb/3d-slicer/3Dinterface">Continue!</Link>
         </div>
       </div>
     </div>

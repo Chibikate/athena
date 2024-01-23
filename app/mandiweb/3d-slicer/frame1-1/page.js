@@ -25,7 +25,7 @@ export default function Page() {
             <div className="flex-1 flex justify-center ">
               
               <p className="mb-4 padding text-center ">
-                <span className="text-2xl font-bold text-primary">Add DICOM to 3D Slicer</span> <br/>
+                <span className="text-2xl font-bold dark:text-white text-primary">Add DICOM to 3D Slicer</span> <br/>
                 Click
                 <span className="text-lg font-bold">&#34; Add DICOM data &#34;</span>
               </p>

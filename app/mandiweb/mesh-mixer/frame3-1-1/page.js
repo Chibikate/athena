@@ -24,9 +24,9 @@ export default function Page() {
           <div className="text-center mb-4">
             <p className="mt-4 text-justify pb-4 ml-16 mr-16">
               After the mandible has been separated, the user can proceed to &ldquo;
-              <span className="font-bold text-primary">cut off</span>&rdquo; the diseased side by
-              utilizing the plane cut function. This function is accessible by clicking on &ldquo;<span className=" text-primary font-bold">Edit</span>&rdquo;
-              in the left toolbar and selecting &ldquo; <span className="font-bold text-primary">Plane Cut</span>&rdquo;.
+              <span className="font-bold dark:text-white text-primary">cut off</span>&rdquo; the diseased side by
+              utilizing the plane cut function. This function is accessible by clicking on &ldquo;<span className=" text-primary font-bold dark:text-white">Edit</span>&rdquo;
+              in the left toolbar and selecting &ldquo; <span className="font-bold dark:text-white text-primary">Plane Cut</span>&rdquo;.
             </p>
           </div>
           <div className="flex items-center justify-center py-2">

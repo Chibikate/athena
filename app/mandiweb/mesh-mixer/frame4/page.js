@@ -25,7 +25,7 @@ export default function Page() {
             <p className="mt-4 text-center">
               To recreate the diseased side in reference to the remaining anatomy, the remaining parts can be
               unhidden by clicking on
-              <span className="font-bold text-primary"> &#34;View&#34;</span> on the top toolbar and
+              <span className="font-bold text-primary dark:text-white"> &#34;View&#34;</span> on the top toolbar and
               selecting “<span className="font-bold">Show Objects Browser</span>
               ”.
             </p>

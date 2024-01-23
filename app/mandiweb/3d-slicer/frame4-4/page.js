@@ -24,7 +24,7 @@ export default function Page() {
           <div className="text-left pb-4 mb-4">
             <p className="mt-4 text-left">
               Selecting{" "}
-              <span className="text-primary">&#34;Export to Files&#34;</span>{" "}
+              <span className="text-primary font-bold dark:text-white">&#34;Export to Files&#34;</span>{" "}
               will prompt a small window to appear where the user can then
               adjust the size scale and coordinate system of the image. The user
               can choose the destination folder by clicking on the file path as
@@ -55,7 +55,7 @@ export default function Page() {
             <p className="pt-4">
               Once the desired file destination, size scale, and coordinate
               system are set, click{" "}
-              <span className="text-primary">&#34;Export&#34;</span> to save the
+              <span className="text-primary dark:text-white font-bold">&#34;Export&#34;</span> to save the
               file.
             </p>
           </div>

@@ -23,7 +23,7 @@ export default function Page() {
           <div className="flex flex-col items-center space-y-4">
             <div className="flex-1 flex justify-center ">
               <p className="mb-4 padding text-center ">
-                <span className="text-3xl font-bold text-primary">
+                <span className="text-3xl font-bold dark:text-white text-primary">
                   INTRODUCTION TO 3D SLICER INTERFACE
                 </span>
               </p>
@@ -41,33 +41,33 @@ export default function Page() {
           </div>
 
           <div className="p-2">
-            <p className="text-left font-bold text-xl text-primary">
+            <p className="text-left font-bold text-xl dark:text-white">
               Application Menu{" "}
             </p>
             <ul class="list-disc pl-10 p-2">
               <li className="text-left">
-                <span className="font-bold text-primary">File:</span> The file
+                <span className="font-bold">File:</span> The file
                 menu is for loading previously saved scene or individual
                 datasets of various types, and downloading sample datasets from
                 the internet. An option for saving scenes and data is also
                 provided here.{" "}
               </li>
               <p className="text-left ml-20">
-                <span className="font-bold text-primary">- Add Data</span>{" "}
+                <span className="font-bold">- Add Data</span>{" "}
                 allows loading data from files.
               </p>
               <p className="text-left ml-20">
-                <span className="font-bold text-primary">- DICOM</span> module
+                <span className="font-bold">- DICOM</span> module
                 is recommended to import data from DICOM files and loading of
                 imported DICOM data.
               </p>
               <p className="text-left ml-20">
-                <span className="font-bold text-primary">- Save</span> opens the
+                <span className="font-bold">- Save</span> opens the
                 &#34;Save Data&#34; window, which offers a variety of options for saving
                 all data or selected datasets.
               </p>
               <li className="text-left">
-                <span className="font-bold text-primary">Edit:</span> contains
+                <span className="font-bold">Edit:</span> contains
                 an option for showing Application Settings, which allows users
                 to customize appearance and behavior of Slicer, such as modules
                 displayed in the toolbar, application font size, temporary
@@ -75,27 +75,27 @@ export default function Page() {
                 include.{" "}
               </li>
               <li className="text-left">
-                <span className="font-bold text-primary">View:</span> Functions
+                <span className="font-bold">View:</span> Functions
                 for showing/hiding additional windows and widgets, such as:{" "}
               </li>
               <p className="text-left ml-20">
-                <span className="font-bold text-primary">
+                <span className="font-bold">
                   - Extension Manager
                 </span>{" "}
                 for installing extensions form Slicer app store;
               </p>
               <p className="text-left ml-20">
-                <span className="font-bold text-primary">- Error Log</span> for
+                <span className="font-bold">- Error Log</span> for
                 checking if the application encountered any potential errors;
               </p>
               <p className="text-left ml-20">
-                <span className="font-bold text-primary">
+                <span className="font-bold">
                   - Show/hide toolbars,
                 </span>{" "}
                 or{" "}
               </p>
               <p className="text-left ml-20">
-                <span className="font-bold text-primary">
+                <span className="font-bold">
                   - Switch view layout.
                 </span>
               </p>

@@ -35,7 +35,7 @@ export default function Navigator() {
             <div className="ml-10 flex items-center space-x-4">
               <DarkThemeToggle className=""/>
               <Link href="/">
-                <p className="text-white hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <p className="text-white  hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </p>
               </Link>

@@ -29,7 +29,7 @@ export default function Page() {
               image.
             </p>
             <p className="pt-4 text-left">Depending on the computer, a short lag period may happen. If the 3D image does not 
-appear in the upper right corner, the user can click on the <span className="text-primary">&#34;centre view&#34;</span> button on the upper 
+appear in the upper right corner, the user can click on the <span className="text-primary font-bold dark:text-white">&#34;centre view&#34;</span> button on the upper 
 left of the blue window. Clicking on the 3D image with the left mouse button will allow the 
 user to move the 3D image. To zoom in and out, click and hold the right mouse button and 
 drag until desired view is achieved.</p>

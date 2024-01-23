@@ -24,9 +24,9 @@ export default function Page() {
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
           <div className="text-center pb-4 mb-4">
             <p className="mt-4 text-justify">
-              A <span className="font-bold text-primary">double left click</span> will highlight an entire group. In the example below, most of the mandible was
+              A <span className="font-bold dark:text-white text-primary">double left click</span> will highlight an entire group. In the example below, most of the mandible was
               selected. This is because of the assigned face group. The user can now work on selecting the
-              remaining areas of the mandible by manual <span className="font-bold text-primary">&#34;Painting&#34;</span>. Select brush size can be increased and
+              remaining areas of the mandible by manual <span className="font-bold dark:text-white text-primary">&#34;Painting&#34;</span>. Select brush size can be increased and
               decreased depending on the accuracy needed. If a mistake is made, holding shift and clicking the
               left mouse button will erase the selected area
             </p>

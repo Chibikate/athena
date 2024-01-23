@@ -24,8 +24,8 @@ export default function Page() {
           <div className="text-center pb-4 mb-4">
             <p className="mr-16 ml-16">
               Sometimes, the gridlines are shown in the 3D printer bed after importing the file. These gridlines
-              can be removed from the view by navigating to the upper left corner and clicking <span className="font-bold text-primary">&#34;view&#34;</span>. </p>
-          <p>Then uncheck <span className="font-bold text-primary">&#34;Show Grid&#34;</span> and <span className="font-bold text-primary">Show Printer Bed&#34;.</span>&#34;</p>
+              can be removed from the view by navigating to the upper left corner and clicking <span className="font-bold dark:text-white text-primary">&#34;view&#34;</span>. </p>
+          <p>Then uncheck <span className="font-bold dark:text-white text-primary">&#34;Show Grid&#34;</span> and <span className="font-bold dark:text-white text-primary">Show Printer Bed&#34;.</span>&#34;</p>
           </div>
           <div className="flex justify-center">
             <Image className="mr-16 ml-16"

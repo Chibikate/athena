@@ -22,7 +22,7 @@ export default function Page() {
 
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
           <div className="text-center mb-4 pb-4 space-y-4">
-            <p className="text-center font-bold text-primary text-2xl mt-4">
+            <p className="text-center font-bold text-primary dark:text-white text-2xl mt-4">
               Separating the Mandible
             </p>
             <p className="text-center justify-center items-center mt-4">
@@ -33,7 +33,7 @@ export default function Page() {
               on &ldquo;
               <span className="font-bold">Generate Face Groups</span>&rdquo;.
             </p>
-            <p className="pt-1"><span className="font-bold text-primary">Generate Face Groups</span> function serves the purpose of isolating the faces of a 3D mesh
+            <p className="pt-1"><span className="font-bold dark:text-white text-primary">Generate Face Groups</span> function serves the purpose of isolating the faces of a 3D mesh
               simplifying the workflow and minimizing the risk of unintended modifications to other parts of the
               mesh.</p>
             <div className="flex justify-center">

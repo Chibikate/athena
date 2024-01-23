@@ -24,7 +24,7 @@ export default function Page() {
           <div className="text-center pb-4 mb-4">
             <p className="mt-4 text-justify">
               Once the face groups have been assigned, the user can now select the areas by face group. To
-              do this, first click on <span className="font-bold text-primary ">&#34;select&#34;</span> on the left toolbar. This will create a selection area (shadow) over
+              do this, first click on <span className="font-bold dark:text-white text-primary ">&#34;select&#34;</span> on the left toolbar. This will create a selection area (shadow) over
               your pointer. The size can be adjusted using the slider or by inputting a number on the size option
               as shown below.
             </p>
