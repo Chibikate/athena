@@ -24,7 +24,7 @@ export default function Page() {
           <div className="text-center pb-4 mb-4">
             <p className="mt-4 text-justify">
               Once the mandible has been satisfactorily highlighted, it can now be separated from the rest of
-              the skull. Still, under the <span className="font-bold dark:text-white text-primary">Select</span> menu, click on  &ldquo;<span className="font-bold dark:text-white text-primary">edit</span> as shown below to bring out another
+              the skull. Still, under the <span className="font-bold dark:text-white text-primary">Select</span> menu, hover the &ldquo;<span className="font-bold dark:text-white text-primary">edit</span> as shown below to bring out another
               selection menu and click <span className="font-bold dark:text-white text-primary">&#34;Separate&#34;</span>. A quicker way would be using the hotkey <span className="font-bold dark:text-white text-primary">&#34;Y&#34;</span>. WARNING,
               edit under the select menu is entirely different from the edit button seen in the left toolbar.
               Selecting the edit menu in the toolbar will cause all the selected areas to disappear.

@@ -8,7 +8,7 @@ function ListItem({ text }) {
 
 export default function YourComponentName() {
   return (
-    <div className="dark:text-white rounded-lg shadow-md p-14">
+    <div className="dark:text-white min-h-screen rounded-lg shadow-md p-14">
       <div className="flex flex-col sm:flex-row items-center">
         <div className="w-1/2 py-4">
           <Image

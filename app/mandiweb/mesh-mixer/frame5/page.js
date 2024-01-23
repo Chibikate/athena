@@ -6,7 +6,7 @@ export default function Page() {
     <main className="flex flex-col text-center items-center justify-between p-24 space-y-4">
       <div className="flex flex-row items-center">
         <div className="md:flex justify-between mt-8 space-x-4 hidden">
-          <Link href="/mandiweb/3d-slicer/frame4-2">
+          <Link href="/mandiweb/mesh-mixer/frame4-2">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>
@@ -33,7 +33,7 @@ export default function Page() {
       </div>
 
       <div className=" flex flex-row p-10 text-center justify-between space-x-4">
-        <Link href="/mandiweb/3d-slicer/frame4-2" className="md:hidden flex">
+        <Link href="/mandiweb/mesh-mixer/frame4-2" className="md:hidden flex">
           <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
             <ChevronLeftIcon className="w-8 h-8" />
           </div>
