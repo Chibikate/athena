@@ -81,9 +81,9 @@ export default function AboutUs() {
               qualified professionals. </p>
               <p className="mt-4">
               Explore our web-based tutorial system, a
-              cornerstone of our thesis titled "Web-Based Tutorial System for
+              cornerstone of our thesis titled &#34;Web-Based Tutorial System for
               the Standardized Process of Virtual Surgical Planning in
-              Mandibular Reconstruction." We invite you to delve into the
+              Mandibular Reconstruction.&#34; We invite you to delve into the
               innovative approach to medical education and surgical planning
               offered on our platform.
             </p>
