@@ -14,7 +14,7 @@ const CertificateComponent = React.forwardRef(({ fullName, date }, ref) => {
       ref={ref}
     >
       <div
-  className={`w-[845px] mx-auto bg-[#c7dfff] p-5 border-x-2 border-y-2 rounded-md shadow-md ${inter.className} border-primary flex flex-col items-center`}
+  className={`w-[845px] mx-auto bg-[#ffffff] p-5 border-x-2 border-y-2 rounded-md shadow-md ${inter.className} border-[#10172c] flex flex-col items-center`}
       >
 
         <div className="rounded-full">

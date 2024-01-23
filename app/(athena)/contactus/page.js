@@ -109,7 +109,7 @@ export default function Page() {
 
       <div>
         <div className="flex flex-col hover-border-white-400 hover-border-2 text-center">
-          <Link href="/">
+          <Link href="/app">
             <p className="text-primary font-bold">Back</p>
           </Link>
         </div>
