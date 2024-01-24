@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Image1 from "@/public/athena/about-us/Image1.gif";
-import hero from "@/public/athena/about-us/hero.png";
+import hero from "@/public/athena/about-us/hero.jpg";
 import Image2 from "@/public/athena/about-us/image2.png";
 import Image3 from "@/public/athena/about-us/image3.png";
 import GIF from "@/public/athena/about-us/Image1.gif";
-import Link from "next/link";
+import Link from "next/link"; 
 
 const TeamMembers = [
   {
