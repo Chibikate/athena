@@ -57,7 +57,7 @@ export default function Card({
       <circle cx="12" cy="12" r="10" />
       <path d="M12 6v6l3.25 1.625" />
     </svg>
-    <p className="text-xs">2 hrs 30 mins activity</p>
+    <p className="text-xs">1 hrs 40 mins activity</p>
   </div>
   </div>
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import hero from "@/public/mandiweb/hero.png";
+import hero from "@/public/mandiweb/hero.jpg";
 import Image2 from "@/public/mandiweb/image2.png";
 import Image3 from "@/public/mandiweb/Image3.png";
 import Navigator from "@/components/navigator";
@@ -34,7 +34,7 @@ export default function Home() {
         <div className="py-12 ">
           <p className="text-center font-bold text-3xl text-primary dark:text-white">
             Enhancing Surgical Proficiency, One Fracture at a Time
-          </p>
+          </p>  
         </div>
 
         <div className="bg-primary space-y-4 p-12 text-white text-center">
