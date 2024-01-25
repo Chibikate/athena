@@ -25,10 +25,10 @@ export default function Page() {
           <div className="text-center pb-4 mb-4">
             <p className="mt-4 text-justify">
               A <span className="font-bold dark:text-white text-primary">double left click</span> will highlight an entire group. In the example below, most of the mandible was
-              selected. This is because of the assigned face group. The user can now work on selecting the
-              remaining areas of the mandible by manual <span className="font-bold dark:text-white text-primary">&#34;Painting&#34;</span>. Select brush size can be increased and
-              decreased depending on the accuracy needed. If a mistake is made, holding shift and clicking the
-              left mouse button will erase the selected area
+              selected. This is because of the assigned face group. The user can now work on <span className="font-bold">selecting the
+              remaining areas of the mandible</span> by manual <span className="font-bold dark:text-white text-primary">&#34;Painting&#34;</span>. Select brush size can be increased and
+              decreased depending on the accuracy needed. If a <span className="font-bold">mistake</span> is made, <span className="font-bold">holding shift</span> and clicking the
+              <span className="font-bold"> left mouse</span> button will erase the selected area
             </p>
           </div>
           <div className="flex justify-center">

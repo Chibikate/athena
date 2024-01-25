@@ -24,25 +24,27 @@ export default function Page() {
           <div>
             <div className="flex flex-col space-y-2 pb-4 items-center">
               <p className="text-center mt-4">
-              Once the threshold effect has been activated, the user can proceed to adjust the threshold 
-range that the user desires to focus on. The can either input a specific number or drag the 
-slider from left to right until the desired threshold is achieved. For this tutorial, input <span className="font-bold">450</span>  in 
-the minimum threshold (left box) as indicated above.
+                Once the threshold effect has been activated, the user can
+                proceed to <span className="font-bold">adjust the threshold range</span> that the user desires to
+                focus on. The can either input a specific number or drag the
+                slider from left to right until the desired threshold is
+                achieved. For this tutorial, input{" "}
+                <span className="font-bold">&#34;450&#34;</span> in the minimum threshold
+                (left box) as indicated below.
               </p>
             </div>
             <div className="flex justify-center ">
               <Image
-               
                 alt="Somethings never change"
                 src={image16}
                 width="100%"
-            height="auto"
+                height="auto"
               />
             </div>
           </div>
         </div>
         <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/3d-slicer/frame3-3" className="md:hidden flex">
+          <Link href="/mandiweb/3d-slicer/frame3-3" className="md:hidden flex">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>

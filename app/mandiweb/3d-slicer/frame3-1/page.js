@@ -26,25 +26,25 @@ export default function Page() {
               <p className="text-center mt-4">
                 Select{" "}
                 <span className="font-bold">
-                  &#34;no series description cropped&#34;
+                  &#34;No series description cropped&#34;
                 </span>{" "}
-                , then, select CT bone window level as indicated 
-above.
+                , then, select{" "}
+                <span className="font-bold">CT bone window level</span> as
+                indicated below.
               </p>
             </div>
             <div className="flex justify-center">
               <Image
-                
                 alt="somethings never change"
                 src={image12}
                 width="100%"
-            height="auto"
+                height="auto"
               />
             </div>
           </div>
         </div>
         <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/3d-slicer/frame3" className="md:hidden flex"> 
+          <Link href="/mandiweb/3d-slicer/frame3" className="md:hidden flex">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>

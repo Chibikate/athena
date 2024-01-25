@@ -43,7 +43,7 @@ export default function Page() {
           <div className="flex flex-col items-center mx-2 y-2">
           <p className="text-center">
               {" "}
-              A mirror image of the selected part will appear.<br/>  To bring the mandible together, click and drag
+              A mirror image of the selected part will appear.<br/>  To bring the mandible together, <span className="font-bold">click and drag</span>
                <br/>  the arrow as shown below or click on the desired area
             </p>
           <Image 

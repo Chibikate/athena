@@ -22,17 +22,24 @@ export default function Page() {
         </div>
 
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
-          <div className="text-left pb-4 mb-4">
-            <p className="mt-4 text-left mr-16">
+          <div className="text-center pb-4 mb-4">
+            <p className="mt-4 text-center mr-16">
               With the threshold effect applied, click on the
-              <span className="font-bold"> Show 3D</span> button to render the 3D
-              image.
+              <span className="font-bold"> Show 3D</span> button to render the
+              3D image.
             </p>
-            <p className="pt-4 text-left">Depending on the computer, a short lag period may happen. If the 3D image does not 
-appear in the upper right corner, the user can click on the <span className="text-primary font-bold dark:text-white">&#34;centre view&#34;</span> button on the upper 
-left of the blue window. Clicking on the 3D image with the left mouse button will allow the 
-user to move the 3D image. To zoom in and out, click and hold the right mouse button and 
-drag until desired view is achieved.</p>
+            <p className="pt-4 text-center">
+              Depending on the computer, a short lag period may happen. If the
+              3D image does not appear in the upper right corner, the user can
+              click on the{" "}
+              <span className="text-primary font-bold dark:text-white">
+                &#34;centre view&#34;
+              </span>{" "}
+              button on the <span className="font-bold">upper left of the blue window</span>. Clicking on the 3D
+              image with the <span className="font-bold">left mouse button</span> will allow the user to move the
+              3D image. To <span className="font-bold">zoom in</span> and  <span className="font-bold">out</span>, <span className="font-bold">click</span> and <span className="font-bold">hold the right mouse button </span>
+              and drag until desired view is achieved.
+            </p>
           </div>
           <div className="flex justify-center">
             <Image

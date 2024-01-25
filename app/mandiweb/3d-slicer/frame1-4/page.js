@@ -25,13 +25,21 @@ export default function Page() {
           <div>
             <div className="flex flex-col space-y-4 p-2 text-justify items-center">
               <p>
-              The CT scan files appear once the DICOM files have finished loading. To zoom in and out, 
-users can hold the right mouse button and drag until the desired view is achieved. To scroll 
-through the CT scan, either using the middle mouse scroll or dragging the slider above the 
-boxes will work equally well. <br /> The current view is referred to as <span className="text-primary dark:text-white font-bold text-italic">&#34;four up&#34;</span>. The empty window on the upper right is where 
-the 3D image will be displayed once activated. Clicking on the arrow on the toolbar, as 
-indicated above, will activate a drop-down selection box containing different views that users 
-can utilize based on their preference. For this tutorial, the default four up view will be used.
+                The CT scan files appear once the DICOM files have finished
+                loading. To zoom in and out, users can hold the right mouse
+                button and drag until the desired view is achieved. To scroll
+                through the CT scan, either using the middle mouse scroll or
+                dragging the slider above the boxes will work equally well.{" "}
+                <br /> The current view is referred to as{" "}
+                <span className="text-primary dark:text-white font-bold text-italic">
+                  &#34;four up&#34;
+                </span>
+                . The empty window on the upper right is where the 3D image will
+                be displayed once activated. Clicking on the arrow on the
+                toolbar, as indicated above, will activate a drop-down selection
+                box containing different views that users can utilize based on
+                their preference. For this tutorial, the default four up view
+                will be used.
               </p>
             </div>
             <div className="flex justify-center">
@@ -40,7 +48,7 @@ can utilize based on their preference. For this tutorial, the default four up vi
                 alt="somethings never change"
                 src={image6}
                 width="100%"
-            height="auto"
+                height="auto"
               />
             </div>
           </div>

@@ -9,11 +9,11 @@ function ListItem({ text }) {
 
 export default function Page() {
   return (
-    <div className="dark:text-white min-h-screen rounded-lg shadow-md p-14">
-      <div className="flex flex-col sm:flex-row items-center ">
-        <div className="w-1/2 py-4">
+    <div className="dark:text-white min-h-screen rounded-lg shadow-md p-4 md:p-14">
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="w-full md:w-1/2 py-4">
           <Image 
-            className="animate-bounce mx-32 hidden md:block"
+            className="animate-bounce mx-auto md:mx-20 block md:hidden lg:block"
             src={Image1}
             width={300}
             height={200}

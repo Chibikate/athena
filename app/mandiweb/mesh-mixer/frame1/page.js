@@ -21,8 +21,8 @@ export default function Page() {
         </div>
 
         <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md">
-          <div className="text-left pb-4 mb-4">
-            <p className="mt-4 text-left">
+          <div className="text-center pb-4 mb-4">
+            <p className="mt-4 text-center">
               Once the user properly installed and opened the Meshmixer, an opening screen with some
               starting action buttons will be shown. The import button will bring into Meshmixer an external
               mesh file of their choice. All of the most common mesh formats are supported (STL, OBJ, PLY,

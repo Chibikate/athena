@@ -24,30 +24,31 @@ export default function Page() {
           <div>
             <div className="flex flex-col pb-4 space-y-2 items-center">
               <p className="text-center mt-4 mr-16 ml-16">
-              With a segment added, double click the <span className="font-bold">
-                   &#34;color selection button&#34;
+                With a segment added, <span className="font-bold">double click</span> the{" "}
+                <span className="font-bold">
+                  &#34;color selection button&#34;
                 </span>{" "}
-                and it will bring up a menu that will 
-allow the user to select and assign different colors for different structures if so desired. In this 
-context, tissue is represented by the color green, arteries by red, body fat by yellow, and 
-bone by a pale shade. For this tutorial, select
-                <span className="font-bold"> &ldquo;bone&rdquo;</span>.
+                and it will bring up a menu that will allow the user to select
+                and assign different colors for different structures if so
+                desired. In this context, tissue is represented by the color
+                green, arteries by red, body fat by yellow, and bone by a pale
+                shade. For this tutorial, select
+                <span className="font-bold"> &ldquo;Bone&rdquo;</span>.
               </p>
             </div>
             <div className="flex justify-center">
               <Image
-                
                 alt="somethings never change"
                 src={image12}
                 width="100%"
-            height="auto"
+                height="auto"
               />
             </div>
           </div>
         </div>
 
         <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/3d-slicer/frame3-2" className="md:hidden flex">
+          <Link href="/mandiweb/3d-slicer/frame3-2" className="md:hidden flex">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>

@@ -26,7 +26,7 @@ export default function Page() {
             <div className="flex flex-col space-y-2 items-center">
               <p className="text-center mt-4">
               Once in the crop volume module, click on the input Region of Interest (ROI) drop down box 
-and select <span className="font-bold">Create New ROI</span>.
+and select <span className="font-bold">&#34;Create New ROI&#34;</span>.
               </p>
             </div>
             <div className="flex justify-center">
@@ -45,7 +45,7 @@ and select <span className="font-bold">Create New ROI</span>.
               <p className="text-center mt-4">
                 Clicking on the &ldquo;
                 <span className="font-bold">Eye</span>&rdquo; icon will reveal a
-                bounding box that could be adjusted by clicking and dragging on
+                bounding box that could be adjusted by <span className="font-bold">clicking</span> and <span className="font-bold">dragging</span> on
                 the points to narrow the region of interest.
               </p>
             </div>

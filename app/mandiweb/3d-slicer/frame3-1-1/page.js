@@ -24,23 +24,23 @@ export default function Page() {
           <div>
             <div className="flex flex-col pb-4 space-y-2 items-center">
               <p className="text-center mt-4">
-              Once again, click on the module drop-down menu from the toolbar and select the segment 
-editor module.
+                Once again, click on the{" "}
+                <span className="font-bold">module</span> drop-down menu from
+                the toolbar and select the <span className="font-bold">Segment editor module</span>.
               </p>
             </div>
             <div className="flex justify-center">
               <Image
-                
                 alt="somethings never change"
                 src={image12}
                 width="100%"
-            height="auto"
+                height="auto"
               />
             </div>
           </div>
         </div>
         <div className="flex justify-between mt-8 space-x-4">
-        <Link href="/mandiweb/3d-slicer/frame3-1" className="md:hidden flex">
+          <Link href="/mandiweb/3d-slicer/frame3-1" className="md:hidden flex">
             <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>

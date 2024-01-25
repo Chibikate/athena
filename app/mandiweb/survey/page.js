@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-screen items-center">
-      <div className="flex flex-col min-h-screen items-center dark:text-white">
+    <main className="flex flex-col  items-center">
+      <div className="flex flex-col  items-center dark:text-white">
         <p className="text-3xl font-bold text-primary py-4">Website Survey</p>
         <p className="text-primary p-2">
           Please fill in the website information

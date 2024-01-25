@@ -23,8 +23,8 @@ export default function Page() {
       <div className="flex flex-col space-x-4 bg-[rgba(191,213,247,0.3)] p-4 rounded-lg shadow-md text-center">
         <div className="text-center mb-4">   
             <p className="mt-4 text-center">
-              A single left click will select the highlighted area. Holding
-              down the left mouse button will <span className="font-bold">&#34;Paint&#34;</span> the area.
+              A <span className="font-bold">single left click</span> will select the highlighted area. <span className="font-bold">Holding
+              down</span> the left mouse button will <span className="font-bold">&#34;Paint&#34;</span> the area.
             </p>
           </div>
           <div className="flex items-center justify-center py-2">

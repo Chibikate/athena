@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-screen items-center">
-      <div className="flex flex-col min-h-screen items-center dark:text-white">
+    <main className="flex flex-col items-center">
+      <div className="flex flex-col items-center dark:text-white">
         <p className="text-3xl font-bold text-primary py-4">Website Form</p>
         <p className="text-primary p-2">
           Please fill in the website information
         </p>
 
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelDmfvkkisu4gCXXInHc5m0KH2xqDoD4oVOaiwCPNi60vm-A/viewform?embedded=true" width="640" height="5056" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelDmfvkkisu4gCXXInHc5m0KH2xqDoD4oVOaiwCPNi60vm-A/viewform?embedded=true" width="640" height="7056" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
 
       <div className="p-4 dark:text-white">

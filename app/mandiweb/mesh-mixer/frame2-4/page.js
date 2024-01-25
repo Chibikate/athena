@@ -38,7 +38,7 @@ export default function Page() {
                 />
               </div>
               <div className="flex flex-col items-center">
-                <p className="text-center"> To rename each part, the user can double-click on the name
+                <p className="text-center"> To rename each part, the user can <span className="font-bold">double-click</span> on the name
                   of the respective part. In the course
                   of the <br/>activity, the user is required to rename<br /> the part into <span className="font-bold dark:text-white text-primary">&#34;mandible&#34;</span>.  Additionally, to optimize
                   program performance, it is advisable to hide<br /> the remaining parts that are not currently under

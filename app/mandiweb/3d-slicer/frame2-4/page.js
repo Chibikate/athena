@@ -25,7 +25,7 @@ export default function Page() {
           <div className="flex flex-col space-y-2 items-center">
          
           <p className="text-center text-md pb-2 mt-4">
-          The user will know their crop is applied when the image is zoomed in.
+          The user will know their crop is applied when the image is <span className="font-bold">zoomed in</span>.
           </p>
         </div>
         <div className="flex justify-center">

@@ -13,7 +13,8 @@ export default function Page() {
       <main className="flex flex-col md:flex md:flex-row items-center justify-between p-14 space-y-4">
         <div className="md:flex justify-between mt-8 space-x-4  hidden">
           <Link href="/mandiweb/3d-slicer">
-            <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 hover:text-white  bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
+            <div className="w-16 h-16 hover-border hover:border-white-400 hover:border-2 hover:text-white 
+             bg-primary flex items-center justify-center mx-10 text-white font-bold rounded-full shadow-lg">
               <ChevronLeftIcon className="w-8 h-8" />
             </div>
           </Link>
