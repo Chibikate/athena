@@ -19,10 +19,10 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
           <div className="absolute bottom-0 left-0 p-8 text-white pt-6">
-            <p className=" text-sm sm:text-2xl font-bold mb-4 dark:text-black shadow-pink text-shadow-[0_4px_8px_#000000] dark:text-shadow-[0_4px_8px_#FFFFFF]">
+            <p className=" text-sm sm:text-2xl font-bold mb-4 dark:text-white shadow-pink text-shadow-[0_4px_8px_#000000] dark:text-shadow-[0_4px_8px_#FFFFFF]">
               Welcome to the Virtual Surgical Planning Tutorial!
             </p>
-            <p className=" text-sm sm:text-xl font-semibold dark:text-black text-shadow-[0_4px_8px_#000000] dark:text-shadow-[0_4px_8px_#FFFFFF]">
+            <p className=" text-sm sm:text-xl font-semibold dark:text-white text-shadow-[0_4px_8px_#000000] dark:text-shadow-[0_4px_8px_#FFFFFF]">
               Are you ready to embark on a transformative learning journey?
               Explore our interactive modules, immersive visuals, and
               cutting-edge virtual surgical planning techniques to master the
