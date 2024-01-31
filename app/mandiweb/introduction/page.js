@@ -17,7 +17,7 @@ export default function Home() {
       <Modal show={openModal} onClose={() => setOpenModal(false)}>
         <Modal.Header>The Team</Modal.Header>
         <Modal.Body>
-          <div className={`flex flex-col items-center ${delius.className}`}>
+          <div className={`flex flex-col dark:text-white items-center ${delius.className}`}>
             <Image
               className="items-center"
               alt="somethings never change"
