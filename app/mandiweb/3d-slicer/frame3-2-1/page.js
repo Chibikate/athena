@@ -24,15 +24,21 @@ export default function Page() {
           <div>
             <div className="flex flex-col pb-4 space-y-2 items-center">
               <p className="text-center mt-4 mr-16 ml-16">
-                With a segment added, <span className="font-bold">double click</span> the{" "}
+                With a segment added,{" "}
+                <span className="font-bold">double click</span> the{" "}
                 <span className="font-bold">
                   &#34;color selection button&#34;
                 </span>{" "}
                 and it will bring up a menu that will allow the user to select
                 and assign different colors for different structures if so
                 desired. In this context, tissue is represented by the color
-                green, arteries by red, body fat by yellow, and bone by a pale
-                shade. For this tutorial, select
+                <span className="text-green-400 font-bold"> green</span>,
+                arteries by <span className="text-red-600 font-bold">red</span>{" "}
+                , body fat by{" "}
+                <span className="text-[#e0d53e] font-bold">yellow</span> , and
+                bone by a{" "}
+                <span className="text-[#eabd7b] font-bold">pale shade</span>.
+                For this tutorial, select
                 <span className="font-bold"> &ldquo;Bone&rdquo;</span>.
               </p>
             </div>
