@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center justify-between py-8 space-y-4">
+    <main className="flex flex-col items-center justify-between py-8 space-y-4 dark:text-white">
       <div className="flex justify-between mt-8 space-x-4">
-        <p className="text-center text-3xl text-primary py-2 font-bold">
+        <p className="text-center text-3xl text-primary py-2 font-bold dark:text-white">
           CONTACT US
         </p>
       </div>
 
       <div className="pt-4 border-2 text-center x-4 border-white shadow-sm">
-        <p className="py-2 text-primary">
+        <p className="py-2 text-primary dark:text-white">
           If you have any questions, concerns, or feedback, please feel free to reach out to our dedicated team.<br/> We&apos;re here to assist you, and your input is valuable to us.
         </p>
       </div>
@@ -109,8 +109,8 @@ export default function Page() {
 
       <div>
         <div className="flex flex-col hover-border-white-400 hover-border-2 text-center">
-          <Link href="/app">
-            <p className="text-primary font-bold">Back</p>
+          <Link href="/">
+            <p className="text-primary font-bold dark:text-white">Back</p>
           </Link>
         </div>
       </div>

@@ -35,19 +35,19 @@ export default function Navigator() {
             <div className="ml-10 flex items-center space-x-4">
               <DarkThemeToggle className=""/>
               <Link href="/">
-                <p className="text-white  hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <p className="text-white  hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-xl">
                   Home
                 </p>
               </Link>
 
               <Link href="/mandiweb/about-us">
-                <p className="text-white hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <p className="text-white hover:bg-gray-700 hover-border hover:border-white-400 hover:border-2 hover:text-white px-3 py-2 rounded-md text-xl">
                   About us
                 </p>
               </Link>
 
               <Link href="/mandiweb/introduction">
-                <p className="text-white hover:text-emerald-900 ring-2 ring-offset-2 ring-offset-blue-300 hover:ring-offset-purple-950 hover-border px-5 py-2 rounded-md  text-md font-bold bg-[#0091AD]">
+                <p className="text-white hover:text-emerald-900 ring-2 ring-offset-2 ring-offset-blue-300 hover:ring-offset-purple-950 hover-border text-xl px-5 py-2 rounded-md  text-md font-bold bg-[#0091AD]">
                   Start
                 </p>
               </Link>

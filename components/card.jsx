@@ -14,7 +14,7 @@ export default function Card({
   authorName2,
 }) {
   return (
-    <div className="w-96 border-2 rounded-lg shadow-3xl space-y-2 text-sm dark:bg-white hover:border-white-400 hover:border-2">
+    <div className="w-96 border-2 rounded-lg shadow-3xl text-white space-y-2 text-sm bg-[#253855] hover:border-white-400 hover:border-2">
       <Link href="/mandiweb">
 
       <div className={`${color} py-2 rounded-t-lg`}>
@@ -27,12 +27,12 @@ export default function Card({
         <p className={`${textColor} font-bold text-xl`}>{title}</p>
 
 </Link>
-        <p>{subtitle}</p>
-        <p className="text-justify">{desc}</p>
+        <p className="font-bold">{subtitle}</p>
+        <p className="text-justify font">{desc}</p>
 
 
-        <div className="flex flex-row space-x-4 items-center">
-          <div className="flex flex-row items-center space-x-4">
+        <div className="flex flex-row space-x-4 items-center ">
+          <div className="flex flex-row items-center text-white space-x-4">
             
             <p className="text-xs">{authorName}</p>
           </div>
@@ -57,7 +57,7 @@ export default function Card({
       <circle cx="12" cy="12" r="10" />
       <path d="M12 6v6l3.25 1.625" />
     </svg>
-    <p className="text-xs">1 hrs 40 mins activity</p>
+    <p className="text-xs text-white">1 hrs 40 mins activity</p>
   </div>
   </div>
 

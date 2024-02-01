@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Image5 from "@/public/mandiweb/Image5.png";
+import Image6 from "@/public/mandiweb/Image6.png";
 import { Delius } from "next/font/google";
 
 const delius = Delius({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen flow-x-hidden items-center justify-center py-4 ml-16 mr-16">
+    <div className="flex flex-col min-h-screen flow-x-hidden items-center justify-center py-4 ml-16 mr-16 ">
       <div className="flex flex-col space-between rounded-lg shadow-xl p-4 dark:bg-white">
         <div className="items-center text-center justify-between ">
           <p className="p-4 font-bold text-3xl text-white bg-primary">
@@ -74,11 +74,20 @@ export default function Home() {
             guidance on FDA-approved medical software
           </p>
         </div>
-        <div className={`flex flex-col dark:text-white  ${delius.className}`}>
+        <div className={`flex flex-col dark:text-primary ${delius.className}`}>
           <p className="font-bold text-4xl pt-10 text-center text-primary">
             THE TEAM
           </p>
-          <div className="flex flex-row justify-between p-4 text-center">
+          <div className="flex justify-center">
+            <Image
+              alt="somethings never change"
+              src={Image6}
+              width={200}
+              height={100}
+            />
+   
+            </div>
+          <div className="flex flex-col sm:flex-row  justify-between p-4 text-center">
             <p className="pl-3">
               Lemuel Clark Velasco <br />{" "}
               <span className="font-bold text-sm">Project Leader</span>
@@ -86,22 +95,22 @@ export default function Home() {
 
             <div>
               <p>
-                Dr. Rentor Cafino <br />{" "}
-               MD, DPSO-HM
+                Dr. Rentor Cafino <br /> MD, DPSO-HM
                 <br />
-               <span className="font-semibold text-sm"> Content Creator </span>
+                <span className="font-semibold text-sm"> Content Creator </span>
               </p>
-              </div>
-              <div>
+            </div>
+            <div>
               <p>
-                Dr. Armando T. Isla <br />{" "}
-                MD, FPSO-HNS
+                Dr. Armando T. Isla <br /> MD, FPSO-HNS
                 <br />
-                <span className="font-semibold text-sm">Content Validation</span>
+                <span className="font-semibold text-sm">
+                  Content Validation
+                </span>
               </p>
             </div>
             <div className="flex flex-col">
-              <p>Dr. Keren Mae Ty</p>
+              <p>Dr. Karen Mae Ty</p>
               <p>Dr. Jay Pee Amable</p>
               <p>Dr. Isaac Cesar De Guzman</p>
               <p>Dr. Jehan Grace Maglaya</p>

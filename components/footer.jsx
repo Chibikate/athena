@@ -13,7 +13,7 @@ export default function Footer() {
         <p className="text-xs lg:text-sm">
           Andres Bonifacio Avenue, Tibanga 9200 Iligan City, Philippines
         </p>
-        <p className="text-xs lg:text-sm">
+        <p className="tex   t-xs lg:text-sm">
           For inquiries, contact:{" "}
           <a href="mailto:contact@example.com">
             lemuelclark.velasco@g.msuiit.edu.ph
